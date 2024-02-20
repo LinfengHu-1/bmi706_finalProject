@@ -2,6 +2,11 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
+from io import StringIO
+from io import BytesIO
+from zipfile import ZipFile
+from urllib.request import urlopen
+
 ### P1.2 ###
 @st.cache_data
 def load_data():
@@ -26,13 +31,19 @@ def load_data():
     df["Rate"] = df["Deaths"] / df["Pop"] * 100_000
     return df
 
-
-# Uncomment the next line when finished
 df = load_data()
 
+@st.cache_data
+def load_data2021():
+    resp = urlopen("https://www.datafiles.samhsa.gov/sites/default/files/field-uploads-protected/studies/MH-CLD-2021/MH-CLD-2021-datasets/MH-CLD-2021-DS0001/MH-CLD-2021-DS0001-bundles-with-study-info/MH-CLD-2021-DS0001-bndl-data-csv_v1.zip")
+    myzip = ZipFile(BytesIO(resp.read()))  
+    df_2021 = pd.read_csv(myzip.open('mhcld_puf_2021.csv'))
+    return df_2021
+
+df_2021 = load_data2021()
+sex = st.radio("GENDER", options = df_2021["GENDER"].unique())
+
 ### P1.2 ###
-
-
 st.write("## Age-specific cancer mortality rates")
 
 ### P2.1 ###
