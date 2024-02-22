@@ -60,10 +60,9 @@ def load_data_MH():
 
 df = load_data_MH()
 st.dataframe(df)
-sex = st.radio("GENDER", options = df["GENDER"].unique())
 
 ### P1.2 ###
-st.write("## Age-specific cancer mortality rates")
+st.write("## Mental Health Outcomes and Accessibility to Care")
 
 ### P2.1 ###
 year = st.slider("Year", min_value=df["Year"].min(), max_value=df["Year"].max())
