@@ -23,13 +23,14 @@ with tab1:
    task1 = st.header("Mental Health Outcomes: Temporal Trends")
    states = st.multiselect("States", options=df_stackedState["STATEFIP"].unique())
    chart = alt.Chart(df_stackedState).mark_line().encode(
-    x=alt.X("Year", sort=YEAR),
+    x=alt.X("Year"),
     y=alt.Y("MH1_values_1", title="MH1_values_1"),
     #color=alt.Color("Rate", title="Mortality Rate (log scale)", scale=alt.Scale(type='log', domain=[0.01, 1000], clamp=True)),
     #tooltip=["Rate"],
 ).properties(
     title=f"Mental Health Disorder rates in {states}",
 )
+   st.altair_chart(chart, use_container_width=True)
 
 #year = st.slider("Year", min_value=df["Year"].min(), max_value=df["Year"].max())
 #sex = st.radio("Sex", options = df["Sex"].unique())
@@ -38,15 +39,8 @@ with tab1:
 #subset = df[(df["Year"] == year) & (df["Sex"] == sex) & (df["Country"].isin(countries)) & (df["Cancer"] == cancer)]
 
 
-### P2.5 ###
-st.altair_chart(chart, use_container_width=True)
-countries_in_subset = subset["Country"].unique()
-if len(countries_in_subset) != len(countries):
-    if len(countries_in_subset) == 0:
-        st.write("No data avaiable for given subset.")
-    else:
-        missing = set(countries) - set(countries_in_subset)
-        st.write("No data available for " + ", ".join(missing) + ".")
+
+
 
 
 

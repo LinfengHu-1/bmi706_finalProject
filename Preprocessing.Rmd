@@ -154,6 +154,30 @@ df_2019 <- aggregate_dataset_Diagnosis(mhcld_puf_2019_r)
 df_2020 <- aggregate_dataset_Diagnosis(mhcld_puf_2020_r)
 df_2021 <- aggregate_dataset_Diagnosis(mhcld_puf_2021_r)
 ```
+
+```{r}
+diag_map <- c(
+  "1" = "Trauma/Stress-related Disorder", "2" = "Anxiety Disorder", "3" = "ADHD", "4" = "Conduct Disorder", 
+  "5" = "Delirium/Dementia","6" = "Bipolar Disorder", "7" = "Depressive Disorder", 
+  "8" = "Oppositional Defiant Disorder", "9" = "Pervasive Developmental Disorders" ,
+  "10" = "Personality Disorders", "11" = "Schizophrenia or other Psychotic Disorders",
+  "12" = "Alcohol/Substance Use Disorders", "13" = "Other Disorder/Condition", "-9" = "Missing"
+)
+```
+
+```{r}
+df_2013$MH1 <- diag_map[as.character(df_2013$MH1)]
+df_2014$MH1 <- diag_map[as.character(df_2014$MH1)]
+df_2015$MH1 <- diag_map[as.character(df_2015$MH1)]
+df_2016$MH1 <- diag_map[as.character(df_2016$MH1)]
+df_2017$MH1 <- diag_map[as.character(df_2017$MH1)]
+df_2018$MH1 <- diag_map[as.character(df_2018$MH1)]
+df_2019$MH1 <- diag_map[as.character(df_2019$MH1)]
+df_2020$MH1 <- diag_map[as.character(df_2020$MH1)]
+df_2021$MH1 <- diag_map[as.character(df_2021$MH1)]
+```
+
+
 ```{r}
 df_list <- list(df_2013, df_2014, df_2015, df_2016, df_2017, df_2018, df_2019, df_2020, df_2021)
 stacked_df <- bind_rows(df_list)
