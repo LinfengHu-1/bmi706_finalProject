@@ -19,20 +19,19 @@ def load_data():
 df_stackedState, df_stackedDiag = load_data()
 
 ### Layout ###
-st.write("## Mental Health Outcomes and Intervention Investigation")
+st.title("Mental Health Outcomes and Intervention Investigation")
 tab1, tab2 = st.tabs(["Mental Health Outcomes", "Access to Psychiatric Care"])
-
 ################### Tab 1: Mental Health Outcomes #######################
 with tab1:
     ### Tab 1, Task 1 ###
    task1 = st.header("Temporal Trends")
    df_stackedDiag.rename(columns={'MH1': 'Mental Health Outcomes'}, inplace=True)
    df_stackedDiag = df_stackedDiag[df_stackedDiag['Mental Health Outcomes'] != 'Missing']
-   diagnosis = st.multiselect("Mental Health Outcome", options=df_stackedDiag["Mental Health Outcomes"].unique(), 
+   diagnosis = st.multiselect(" ", options=df_stackedDiag["Mental Health Outcomes"].unique(), 
                               default = ['Trauma/Stress-related Disorder', 'Anxiety Disorder', 'ADHD'])
    filtered_df = df_stackedDiag[df_stackedDiag["Mental Health Outcomes"].isin(diagnosis)]
    filtered_df['YEAR'] = filtered_df['YEAR'].astype(str)
-   chart = alt.Chart(filtered_df).mark_line().encode(
+   chart1_1 = alt.Chart(filtered_df).mark_line().encode(
       x=alt.X("YEAR", axis=alt.Axis(format='', title='Year', labelAngle=0)),
       y=alt.Y("Population", title="Total Number of Patients"),
       color="Mental Health Outcomes:N",  # Color by state if needed
@@ -40,12 +39,26 @@ with tab1:
       ).properties(
          title=f"Mental Health Disorder rates of {', '.join(diagnosis)}",
          )
-   st.altair_chart(chart, use_container_width=True)
+   st.altair_chart(chart1_1, use_container_width=True)
+   chart1_1bar = alt.Chart(df_stackedDiag).mark_bar().encode(
+       x=alt.X("YEAR:O", title="Year"),
+       y=alt.Y("Population", title="Patients"),
+       color='Mental Health Outcomes:N',order=alt.Order('Mental Health Outcomes:O'),
+       ).properties(
+          title=f"Mental Health Disorder proportion",
+          )
+   st.altair_chart(chart1_1bar, use_container_width=True)
 
    ### Tab 1, Task 2 ###
    task2 = st.header("Geospatial Pattern")
-
-
+   source = alt.topo_feature(data.us_10m.url, 'states')
+   # a gray map using as the visualization background
+   width = 900
+   height  = 600
+   project = 'albers'
+   background = alt.Chart(source).mark_geoshape(
+      fill='#aaa', stroke='white').properties(width=width, height=height).project(project)
+   st.altair_chart(background, use_container_width=True)
 
 
    ### Tab 1, Task 3 ###
