@@ -58,23 +58,22 @@ with tab1:
    source = alt.topo_feature(data.us_10m.url, 'states')
    width = 900
    height  = 600
-   #background = alt.Chart(source).mark_geoshape(fill='#aaa', stroke='white').properties(width=width, height=height).project('albers')
-   filtered_df12 = df_stackedState[df_stackedState["YEAR"]==year]
-   filtered_df12 = filtered_df12[['STATEFIP', 'YEAR', 'POPULATION', 'CODE', diag]]
-   st.dataframe(filtered_df12)
-   #rate_scale = alt.Scale(domain=[filtered_df12[diag].min(), filtered_df12[diag].max()], scheme='oranges')
-   #rate_color = alt.Color(field="Rate", type="quantitative", scale=rate_scale)
+   background = alt.Chart(source).mark_geoshape(fill='#aaa', stroke='white').properties(width=width, height=height).project('albersUsa')
+   filtered_df12 = df_stackedState[df_stackedState["YEAR"]==year][['STATEFIP', 'YEAR', 'POPULATION', 'CODE', diag]]
+   #st.dataframe(filtered_df12)
+   rate_scale = alt.Scale(domain=[filtered_df12[diag].min(), filtered_df12[diag].max()], scheme='oranges')
+   rate_color = alt.Color(field="Individuals with Disorder", type="quantitative", scale=rate_scale)
+   #st.write(rate_color)
    chart1_2 = alt.Chart(source).mark_geoshape().encode(
-      color = 'POPULATION:Q', 
+      color = rate_color,
       ).transform_lookup(
-         lookup='CODE',
-         from_=alt.LookupData(filtered_df12, 'CODE', ['POPULATION'])
+         lookup='id',
+         from_=alt.LookupData(filtered_df12, 'CODE', [diag])
       ).properties(
          width=width, height=height,
          title=f'Proportion of Individuals with {diag} in {year}',
          ).project('albersUsa')
-   st.altair_chart(chart1_2, use_container_width=True)
-
+   st.altair_chart(background+chart1_2, use_container_width=True)
 
    ### Tab 1, Task 3 ###
    task3 = st.header("Explore influential factors of mental health outcomes")
