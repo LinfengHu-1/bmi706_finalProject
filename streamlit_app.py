@@ -26,11 +26,13 @@ tab1, tab2 = st.tabs(["Mental Health Outcomes", "Access to Psychiatric Care"])
 with tab1:
    task1 = st.header("Mental Health Outcomes: Temporal Trends")
    states = st.multiselect("States", options=df_stackedState["STATEFIP"].unique())
-   chart = alt.Chart(df_stackedState).mark_line().encode(
-      x=alt.X("Year"),
-      y=alt.Y("MH1_values_1", title="MH1_values_1"),
-      #color=alt.Color("Rate", title="Mortality Rate (log scale)", scale=alt.Scale(type='log', domain=[0.01, 1000], clamp=True)),
-      #tooltip=["Rate"],
+   filtered_df = df_stackedState[df_stackedState["STATEFIP"].isin(states)]
+   filtered_df["ADHD_rate"] = filtered_df["ADHD"] / filtered_df["POPULATION"]
+   chart = alt.Chart(filtered_df).mark_line().encode(
+      x="YEAR",
+      y=alt.Y("ADHD_rate", title="ADHD Rate"),
+      color="STATEFIP:N",  # Color by state if needed
+      tooltip=["YEAR", "ADHD_rate"]
       ).properties(
          title=f"Mental Health Disorder rates in {states}",
          )
