@@ -37,6 +37,15 @@ with tab1:
          )
    st.altair_chart(chart, use_container_width=True)
 
+
+
+   ### Tab 1, Task 3 ###
+   task3 = st.header("Explore influential factors of mental health outcomes")
+
+
+
+
+
 #year = st.slider("Year", min_value=df["Year"].min(), max_value=df["Year"].max())
 #sex = st.radio("Sex", options = df["Sex"].unique())
 #ages = ["Age <5", "Age 5-14",]
