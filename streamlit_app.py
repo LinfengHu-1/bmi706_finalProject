@@ -10,7 +10,6 @@ from urllib.request import urlopen
 
 ################# Loading & Layout ##########################
 st.set_page_config(layout="wide")
-
 @st.cache_data
 def load_data():
    df_stackedState = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_state.csv")
@@ -19,18 +18,21 @@ def load_data():
 df_stackedState, df_stackedDiag = load_data()
 df_stackedDiag.rename(columns={'MH1': 'Mental Health Outcomes'}, inplace=True)
 df_stackedDiag = df_stackedDiag[df_stackedDiag['Mental Health Outcomes'] != 'Missing']
-
+df_stackedState = df_stackedState[df_stackedState['CODE'] != 99]
 ### Layout ###
 st.title("Mental Health Outcomes and Intervention Investigation")
 tab1, tab2 = st.tabs(["Mental Health Outcomes", "Access to Psychiatric Care"])
+
+
 ################### Tab 1: Mental Health Outcomes #######################
 with tab1:
     ### Tab 1, Task 1 ###
    task1 = st.header("Temporal Trends")
    diagnosis = st.multiselect(" ", options=df_stackedDiag["Mental Health Outcomes"].unique(), 
                               default = ['Trauma/Stress-related Disorder', 'Anxiety Disorder', 'ADHD'])
-   filtered_df = df_stackedDiag[df_stackedDiag["Mental Health Outcomes"].isin(diagnosis)]
-   filtered_df['YEAR'] = filtered_df['YEAR'].astype(str)
+   filtered_df1BAR = df_stackedDiag[df_stackedDiag["Mental Health Outcomes"].isin(diagnosis)]
+   filtered_df = filtered_df1BAR
+   filtered_df['YEAR'] = filtered_df1BAR['YEAR'].astype(str)
    chart1_1 = alt.Chart(filtered_df).mark_line().encode(
       x=alt.X("YEAR", axis=alt.Axis(format='', title='Year', labelAngle=0)),
       y=alt.Y("Population", title="Total Number of Patients"),
@@ -40,7 +42,7 @@ with tab1:
          title=f"Mental Health Disorder rates of {', '.join(diagnosis)}",
          )
    st.altair_chart(chart1_1, use_container_width=True)
-   chart1_1bar = alt.Chart(df_stackedDiag).mark_bar().encode(
+   chart1_1bar = alt.Chart(filtered_df1BAR).mark_bar().encode(
        x=alt.X("YEAR:O", title="Year"),
        y=alt.Y("Population", title="Patients"),
        color='Mental Health Outcomes:N',order=alt.Order('Mental Health Outcomes:O'),
@@ -56,23 +58,21 @@ with tab1:
    source = alt.topo_feature(data.us_10m.url, 'states')
    width = 900
    height  = 600
-   project = 'albers'
-   # gray background of all states in the US
-   background = alt.Chart(source).mark_geoshape(
-      fill='#aaa', stroke='white').properties(width=width, height=height).project(project)
-   chart_base = alt.Chart(source).properties(
-      width=width, height=height).project(project).transform_lookup(
-        lookup="id",
-        from_=alt.LookupData(df_stackedState, "state-code"),
-    )
-   rate_scale = alt.Scale(domain=[df_stackedState['ADHD'].min(), df_stackedState['ADHD'].max()], scheme='oranges')
-   rate_color = alt.Color(field="Rate", type="quantitative", scale=rate_scale)
-   chart1_2 = chart_base.mark_geoshape().encode(
-      color=rate_color, 
-      #tooltip=['Country:N', 'Rate:Q'],
+   #background = alt.Chart(source).mark_geoshape(fill='#aaa', stroke='white').properties(width=width, height=height).project('albers')
+   filtered_df12 = df_stackedState[df_stackedState["YEAR"]==year]
+   filtered_df12 = filtered_df12[['STATEFIP', 'YEAR', 'POPULATION', 'CODE', diag]]
+   st.dataframe(filtered_df12)
+   #rate_scale = alt.Scale(domain=[filtered_df12[diag].min(), filtered_df12[diag].max()], scheme='oranges')
+   #rate_color = alt.Color(field="Rate", type="quantitative", scale=rate_scale)
+   chart1_2 = alt.Chart(source).mark_geoshape().encode(
+      color = 'POPULATION:Q', 
+      ).transform_lookup(
+         lookup='CODE',
+         from_=alt.LookupData(filtered_df12, 'CODE', ['POPULATION'])
       ).properties(
-        title=f'Proportion of Individuals with {diag} in {year}'
-        )
+         width=width, height=height,
+         title=f'Proportion of Individuals with {diag} in {year}',
+         ).project('albersUsa')
    st.altair_chart(chart1_2, use_container_width=True)
 
 
@@ -81,11 +81,6 @@ with tab1:
 
 
 
-
-
-#sex = st.radio("Sex", options = df["Sex"].unique())
-#ages = ["Age <5", "Age 5-14",]
-#subset = df[(df["Year"] == year) & (df["Sex"] == sex) & (df["Country"].isin(countries)) & (df["Cancer"] == cancer)]
 
 
 ############## Tab 2: Mental Health Outcomes ##########################
