@@ -25,24 +25,23 @@ tab1, tab2 = st.tabs(["Mental Health Outcomes", "Access to Psychiatric Care"])
 ################### Tab 1: Mental Health Outcomes #######################
 with tab1:
    task1 = st.header("Mental Health Outcomes: Temporal Trends")
-   states = st.multiselect("States", options=df_stackedState["STATEFIP"].unique())
-   filtered_df = df_stackedState[df_stackedState["STATEFIP"].isin(states)]
-   filtered_df["ADHD_rate"] = filtered_df["ADHD"] / filtered_df["POPULATION"]
-   chart = alt.Chart(filtered_df).mark_line().encode(
+   diagnosis = st.multiselect("Mental Health Outcome", options=df_stackedDiag["MH1"].unique())
+   #filtered_df = df_stackedDiag[df_stackedDiag["STATEFIP"].isin(diagnosis)]
+   chart = alt.Chart(df_stackedDiag).mark_line().encode(
       x="YEAR",
-      y=alt.Y("ADHD_rate", title="ADHD Rate"),
+      y=alt.Y("Population", title="Total Number of Patients"),
       color="STATEFIP:N",  # Color by state if needed
-      tooltip=["YEAR", "ADHD_rate"]
+      tooltip=["YEAR", "ADHD"]
       ).properties(
-         title=f"Mental Health Disorder rates in {states}",
+         title=f"Mental Health Disorder rates in {diagnosis}",
          )
    st.altair_chart(chart, use_container_width=True)
 
 #year = st.slider("Year", min_value=df["Year"].min(), max_value=df["Year"].max())
 #sex = st.radio("Sex", options = df["Sex"].unique())
-#cancer = st.selectbox("Cancer", options = df["Cancer"].unique())
 #ages = ["Age <5", "Age 5-14",]
 #subset = df[(df["Year"] == year) & (df["Sex"] == sex) & (df["Country"].isin(countries)) & (df["Cancer"] == cancer)]
+
 
 ############## Tab 2: Mental Health Outcomes ##########################
 
