@@ -93,6 +93,30 @@ stacked_df <- bind_rows(df_list)
 write.csv(stacked_df, "stacked_data_state.csv", row.names = FALSE)
 ```
 
+diag_map <- c(
+  "1" = "Trauma/Stress-related Disorder", "2" = "Anxiety Disorder", "3" = "ADHD", "4" = "Conduct Disorder", 
+  "5" = "Delirium/Dementia","6" = "Bipolar Disorder", "7" = "Depressive Disorder", 
+  "8" = "Oppositional Defiant Disorder", "9" = "Pervasive Developmental Disorders" ,
+  "10" = "Personality Disorders", "11" = "Schizophrenia or other Psychotic Disorders",
+  "12" = "Alcohol/Substance Use Disorders", "13" = "Other Disorder/Condition", "-9" = "Missing"
+)
+
+```{r}
+df <- read.csv("stacked_data_state.csv")
+df <- df %>%
+  rename(
+    "Trauma/Stress-related Disorder" = "MH1_values_1", "Anxiety Disorder" = "MH1_values_2", 
+    "ADHD" = "MH1_values_3", "Conduct Disorder" = "MH1_values_4", "Delirium/Dementia" = "MH1_values_5",
+    "Bipolar Disorder" = "MH1_values_6", "Depressive Disorder" = "MH1_values_7", 
+    "Oppositional Defiant Disorder" = "MH1_values_8", "Pervasive Developmental Disorders" = "MH1_values_9", 
+    "Personality Disorders" = "MH1_values_10", "Schizophrenia or other Psychotic Disorders" = "MH1_values_11",
+    "Alcohol/Substance Use Disorders" = "MH1_values_12", "Other Disorder/Condition" = "MH1_values_13",
+    "Missing" = "MH1_values_.9"
+  )
+write.csv(df, "stacked_data_state.csv", row.names = FALSE)
+```
+
+
 ## Merge all dataframes based on STATE
 ```{r}
 add_year_to_columns <- function(df, year) {

@@ -1,4 +1,4 @@
-"STATEFIP","YEAR","POPULATION","SPHSERVICE","CMPSERVICE","OPISERVICE","RTCSERVICE","IJSSERVICE","MH1_values_-9","MH1_values_1","MH1_values_2","MH1_values_3","MH1_values_4","MH1_values_5","MH1_values_6","MH1_values_7","MH1_values_8","MH1_values_9","MH1_values_10","MH1_values_11","MH1_values_12","MH1_values_13"
+"STATEFIP","YEAR","POPULATION","SPHSERVICE","CMPSERVICE","OPISERVICE","RTCSERVICE","IJSSERVICE","Missing","Trauma/Stress-related Disorder","Anxiety Disorder","ADHD","Conduct Disorder","Delirium/Dementia","Bipolar Disorder","Depressive Disorder","Oppositional Defiant Disorder","Pervasive Developmental Disorders","Personality Disorders","Schizophrenia or other Psychotic Disorders","Alcohol/Substance Use Disorders","Other Disorder/Condition"
 "Alabama",2013,97362,1995,96690,1733,70,1,2139,6252,4532,12546,2911,719,16224,27650,1822,803,45,17126,1764,2829
 "Arizona",2013,191093,266,190931,12225,294,2,38,28555,19483,20780,3974,142,46004,42082,1809,4279,566,19382,80,3919
 "Arkansas",2013,69963,989,69484,3055,762,1,3355,7906,6006,5313,2856,154,12317,16526,2856,157,158,8332,0,4027

@@ -16,10 +16,6 @@ def load_data():
    return df_stackedState, df_stackedDiag
 df_stackedState, df_stackedDiag = load_data()
 
-#df_mergedState = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/merged_data_state.csv")
-#df_stackedState = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_state.csv")
-#df_stackedDiag = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis.csv")
-
 st.dataframe(df_stackedState.head())
 
 ### General Layout ###
