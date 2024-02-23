@@ -17,6 +17,8 @@ def load_data():
    df_stackedDiag = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis.csv")
    return df_stackedState, df_stackedDiag
 df_stackedState, df_stackedDiag = load_data()
+df_stackedDiag.rename(columns={'MH1': 'Mental Health Outcomes'}, inplace=True)
+df_stackedDiag = df_stackedDiag[df_stackedDiag['Mental Health Outcomes'] != 'Missing']
 
 ### Layout ###
 st.title("Mental Health Outcomes and Intervention Investigation")
@@ -25,8 +27,6 @@ tab1, tab2 = st.tabs(["Mental Health Outcomes", "Access to Psychiatric Care"])
 with tab1:
     ### Tab 1, Task 1 ###
    task1 = st.header("Temporal Trends")
-   df_stackedDiag.rename(columns={'MH1': 'Mental Health Outcomes'}, inplace=True)
-   df_stackedDiag = df_stackedDiag[df_stackedDiag['Mental Health Outcomes'] != 'Missing']
    diagnosis = st.multiselect(" ", options=df_stackedDiag["Mental Health Outcomes"].unique(), 
                               default = ['Trauma/Stress-related Disorder', 'Anxiety Disorder', 'ADHD'])
    filtered_df = df_stackedDiag[df_stackedDiag["Mental Health Outcomes"].isin(diagnosis)]
@@ -51,14 +51,29 @@ with tab1:
 
    ### Tab 1, Task 2 ###
    task2 = st.header("Geospatial Pattern")
+   year = st.slider("Year", min_value=df_stackedState["YEAR"].min(), max_value=df_stackedState["YEAR"].max())
+   diag = st.selectbox("Mental Health Outcome", options = df_stackedDiag["Mental Health Outcomes"].unique())
    source = alt.topo_feature(data.us_10m.url, 'states')
-   # a gray map using as the visualization background
    width = 900
    height  = 600
    project = 'albers'
+   # gray background of all states in the US
    background = alt.Chart(source).mark_geoshape(
       fill='#aaa', stroke='white').properties(width=width, height=height).project(project)
-   st.altair_chart(background, use_container_width=True)
+   chart_base = alt.Chart(source).properties(
+      width=width, height=height).project(project).transform_lookup(
+        lookup="id",
+        from_=alt.LookupData(df_stackedState, "state-code"),
+    )
+   rate_scale = alt.Scale(domain=[df_stackedState['ADHD'].min(), df_stackedState['ADHD'].max()], scheme='oranges')
+   rate_color = alt.Color(field="Rate", type="quantitative", scale=rate_scale)
+   chart1_2 = chart_base.mark_geoshape().encode(
+      color=rate_color, 
+      #tooltip=['Country:N', 'Rate:Q'],
+      ).properties(
+        title=f'Proportion of Individuals with {diag} in {year}'
+        )
+   st.altair_chart(chart1_2, use_container_width=True)
 
 
    ### Tab 1, Task 3 ###
@@ -68,7 +83,6 @@ with tab1:
 
 
 
-#year = st.slider("Year", min_value=df["Year"].min(), max_value=df["Year"].max())
 #sex = st.radio("Sex", options = df["Sex"].unique())
 #ages = ["Age <5", "Age 5-14",]
 #subset = df[(df["Year"] == year) & (df["Sex"] == sex) & (df["Country"].isin(countries)) & (df["Cancer"] == cancer)]

@@ -76,6 +76,16 @@ df_2019 <- aggregate_dataset(mhcld_puf_2019_r)
 df_2020 <- aggregate_dataset(mhcld_puf_2020_r)
 df_2021 <- aggregate_dataset(mhcld_puf_2021_r)
 
+df_2013$CODE <- df_2013$STATEFIP
+df_2014$CODE <- df_2014$STATEFIP
+df_2015$CODE <- df_2015$STATEFIP
+df_2016$CODE <- df_2016$STATEFIP
+df_2017$CODE <- df_2017$STATEFIP
+df_2018$CODE <- df_2018$STATEFIP
+df_2019$CODE <- df_2019$STATEFIP
+df_2020$CODE <- df_2020$STATEFIP
+df_2021$CODE <- df_2021$STATEFIP
+
 df_2013$STATEFIP <- state_map[as.character(df_2013$STATEFIP)]
 df_2014$STATEFIP <- state_map[as.character(df_2014$STATEFIP)]
 df_2015$STATEFIP <- state_map[as.character(df_2015$STATEFIP)]
@@ -93,13 +103,6 @@ stacked_df <- bind_rows(df_list)
 write.csv(stacked_df, "stacked_data_state.csv", row.names = FALSE)
 ```
 
-diag_map <- c(
-  "1" = "Trauma/Stress-related Disorder", "2" = "Anxiety Disorder", "3" = "ADHD", "4" = "Conduct Disorder", 
-  "5" = "Delirium/Dementia","6" = "Bipolar Disorder", "7" = "Depressive Disorder", 
-  "8" = "Oppositional Defiant Disorder", "9" = "Pervasive Developmental Disorders" ,
-  "10" = "Personality Disorders", "11" = "Schizophrenia or other Psychotic Disorders",
-  "12" = "Alcohol/Substance Use Disorders", "13" = "Other Disorder/Condition", "-9" = "Missing"
-)
 
 ```{r}
 df <- read.csv("stacked_data_state.csv")
