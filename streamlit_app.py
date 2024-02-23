@@ -16,7 +16,7 @@ def load_data():
    return df_stackedState, df_stackedDiag
 df_stackedState, df_stackedDiag = load_data()
 
-st.dataframe(df_stackedState.head())
+st.dataframe(df_stackedDiag.head())
 
 ### General Layout ###
 st.write("## Mental Health Outcomes and Intervention Investigation")
@@ -30,10 +30,10 @@ with tab1:
    chart = alt.Chart(df_stackedDiag).mark_line().encode(
       x="YEAR",
       y=alt.Y("Population", title="Total Number of Patients"),
-      color="STATEFIP:N",  # Color by state if needed
-      tooltip=["YEAR", "ADHD"]
+      color="MH1:N",  # Color by state if needed
+      tooltip=["YEAR", "Population"]
       ).properties(
-         title=f"Mental Health Disorder rates in {diagnosis}",
+         title=f"Mental Health Disorder rates of {diagnosis}",
          )
    st.altair_chart(chart, use_container_width=True)
 
