@@ -149,20 +149,22 @@ aggregate_dataset_Diagnosis <- function(dataset) {
   result <- dataset %>%
     group_by(YEAR, MH1) %>%
     summarise(
-      Male = mean(GENDER == 1, na.rm = TRUE),
-      SpecialEdu = mean(EDUC == 1, na.rm = TRUE),
-      Edu8 = mean(EDUC == 2, na.rm = TRUE),
-      Edu12 = mean(EDUC == 3 | EDUC == 4, na.rm = TRUE),
-      EduHigh = mean(EDUC == 5, na.rm = TRUE),
-      Black = mean(RACE == 3, na.rm = TRUE),
-      White = mean(RACE == 5, na.rm = TRUE),
-      OtherRace = mean(RACE %in% c(1,2,4,6), na.rm = TRUE),
-      NeverMarried = mean(MARSTAT == 1, na.rm = TRUE),
-      NeverMarried = mean(MARSTAT == 1, na.rm = TRUE),
-      MarriageHistory = mean(MARSTAT %in% c(2,3,4), na.rm = TRUE),
-      NotSMISED = mean(SMISED == 3, na.rm = TRUE),
-      SAP = mean(SAP == 1, na.rm = TRUE),
-      PrivateResidence = mean(LIVARAG == 2, na.rm = TRUE)
+      Population = n(),
+      SMHAserviceAccess = sum(CMPSERVICE == 1, na.rm = TRUE),
+      Male = sum(GENDER == 1, na.rm = TRUE),
+      SpecialEdu = sum(EDUC == 1, na.rm = TRUE),
+      Edu8 = sum(EDUC == 2, na.rm = TRUE),
+      Edu12 = sum(EDUC == 3 | EDUC == 4, na.rm = TRUE),
+      EduHigh = sum(EDUC == 5, na.rm = TRUE),
+      Black = sum(RACE == 3, na.rm = TRUE),
+      White = sum(RACE == 5, na.rm = TRUE),
+      OtherRace = sum(RACE %in% c(1,2,4,6), na.rm = TRUE),
+      NeverMarried = sum(MARSTAT == 1, na.rm = TRUE),
+      NeverMarried = sum(MARSTAT == 1, na.rm = TRUE),
+      MarriageHistory = sum(MARSTAT %in% c(2,3,4), na.rm = TRUE),
+      NotSMISED = sum(SMISED == 3, na.rm = TRUE),
+      SAP = sum(SAP == 1, na.rm = TRUE),
+      PrivateResidence = sum(LIVARAG == 2, na.rm = TRUE)
       )
 }
 ```
@@ -205,6 +207,6 @@ df_2021$MH1 <- diag_map[as.character(df_2021$MH1)]
 ```{r}
 df_list <- list(df_2013, df_2014, df_2015, df_2016, df_2017, df_2018, df_2019, df_2020, df_2021)
 stacked_df <- bind_rows(df_list)
-write.csv(stacked_df, "merged_data_diagnosis.csv", row.names = FALSE)
+write.csv(stacked_df, "stacked_data_diagnosis.csv", row.names = FALSE)
 ```
 
