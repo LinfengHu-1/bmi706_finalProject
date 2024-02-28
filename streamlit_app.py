@@ -21,7 +21,7 @@ df_stackedDiag = df_stackedDiag[df_stackedDiag['Mental Health Outcomes'] != 'Mis
 df_stackedState = df_stackedState[df_stackedState['CODE'] != 99]
 ### Layout ###
 st.title("Mental Health Outcomes and Intervention Investigation")
-tab1, tab2 = st.tabs(["Mental Health Outcomes", "Access to Psychiatric Care"])
+tab1, tab2 = st.tabs(["Mental Health Outcomes", "Access to Mental Health Services"])
 
 
 ################### Tab 1: Mental Health Outcomes #######################
@@ -85,13 +85,25 @@ with tab1:
 ############## Tab 2: Access to Psychiatric Care ##########################
 with tab2:
    task1 = st.header("Temporal Trends")
-   #calculate care accessing rate
+   #calculate care accessing proportion
    df_stackedDiag['Prop']=round(df_stackedDiag['SMHAserviceAccess']/df_stackedDiag['Population'],3)
+   #create diagnosis selection tab 
+   diagnosis = st.multiselect('Mental Health Disorder', options=df_stackedDiag['Mental Health Outcomes'].unique(), 
+                              default = ['Trauma/Stress-related Disorder', 'Anxiety Disorder', 'ADHD'])
+   subset1=df_stackedDiag[df_stackedDiag['Mental Health Outcomes'].isin(diagnosis)]
+   # create bubble chart
+   chart2_1 = alt.Chart(subset1).mark_line().encode(
+      x=alt.X('YEAR:O', axis=alt.Axis(format='', title='Year', labelAngle=0)),
+      y=alt.Y('Prop:Q', title='Proportion of Patients Received Services',scale=alt.Scale(domain=(0.85,1))),
+      color=alt.Color('Mental Health Outcomes:N',title='Mental Health Disorder'),
+      tooltip=['YEAR','Prop']
+      ).properties(
+         title='Proportion of Patients Received Services from Sate Mental Health Agency (SMHA) Funded Community-Based Program',
+         )
+   st.altair_chart(chart2_1, use_container_width=True)
 
-
-
-
-
+   task2 = st.header("Factors Impacting Access to Mental Health Services")
+   
 
 
 
