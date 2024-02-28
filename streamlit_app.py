@@ -82,12 +82,11 @@ with tab1:
 
 
 
-############## Tab 2: Mental Health Outcomes ##########################
+############## Tab 2: Access to Psychiatric Care ##########################
 with tab2:
    task1 = st.header("Temporal Trends")
-
-
-
+   #calculate care accessing rate
+   df_stackedDiag['Prop']=round(df_stackedDiag['SMHAserviceAccess']/df_stackedDiag['Population'],3)
 
 
 
