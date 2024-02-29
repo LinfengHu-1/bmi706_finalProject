@@ -223,16 +223,14 @@ with tab2:
    #prop_scale = alt.Scale(domain=[test['prop'].min(), test['prop'].max()], scheme='orangered')
    #prop_color = alt.Color(field="prop", type="quantitative", scale=prop_scale)
 
-import folium
-
-chart_rate = alt.Chart(test).mark_geoshape().encode(
-    color=('prop:Q'),
-).properties(
-    width=500,
-    height=300
-   ).project('albersUsa')
+#chart_rate = alt.Chart(test).mark_geoshape().encode(
+    #color=('prop:Q'),
+#).properties(
+    #width=500,
+    #height=300
+   #).project('albersUsa')
 
 # Display the map in Streamlit
-st.map(background+chart_rate, use_container_width=True)
+#st.map(background+chart_rate, use_container_width=True)
 
    
