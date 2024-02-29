@@ -20,6 +20,7 @@ df_stackedState, df_stackedDiag, df_stackedAccess= load_data()
 df_stackedDiag.rename(columns={'MH1': 'Mental Health Outcomes'}, inplace=True)
 df_stackedDiag = df_stackedDiag[df_stackedDiag['Mental Health Outcomes'] != 'Missing']
 df_stackedState = df_stackedState[df_stackedState['CODE'] != 99]
+df_stackedAccess.rename(columns={'MH1': 'Mental Health Disorder'}, inplace=True)
 ### Layout ###
 st.title("Mental Health Outcomes and Intervention Investigation")
 tab1, tab2 = st.tabs(["Mental Health Outcomes", "Access to Mental Health Services"])
@@ -107,22 +108,30 @@ with tab2:
    ### Tab 2, Task 2 ###
    task2 = st.header("Factors Impacting Access to Mental Health Services")
    #keep Service==1
-   df_stackedAccess_t=df_stackedAccess[df_stackedAccess[CMPSERVICE=='1']]
-   ### Gender
-   #calcualte care accessing proportion
-   df_stackedAccess_t['Prop_m']=round(df_stackedAccess_t['Male']/df_stackedAccess_t['Population'],3)
-   df_stackedAccess_t['Prop_f']=round(1-df_stackedAccess_t['Prop_m'])
-   df_gender=df_stackedAccess_t[['MH1','Prop_m','Prop_f']]
-   df_gender_melt=df.melt('MH1',var_name='Gender',value_name="Proportion")
+   df_stackedAccess_t=df_stackedAccess[df_stackedAccess['CMPSERVICE']==1]
+   df_stackedAccess_t.rename(columns={'Male': 'Male_n'}, inplace=True)
+   #create diagnosis selection tab 
+   diagnosis = st.multiselect('Mental Health Disorder', options=df_stackedAccess_t['Mental Health Disorder'].unique(), 
+                              default = ['Trauma/Stress-related Disorder', 'Anxiety Disorder', 'ADHD'])
+   ### Gender & Marital Status
+   #calculate care accessing proportion
+   df_stackedAccess_t['Male']=round(df_stackedAccess_t['Male_n']/df_stackedAccess_t['Population'],3)
+   df_stackedAccess_t['Female']=round(1-df_stackedAccess_t['Male'],3)
+   df_stackedAccess_t['Male']=round(df_stackedAccess_t['Male_n']/df_stackedAccess_t['Population'],3)
+   df_gender=df_stackedAccess_t[['Mental Health Disorder','Male','Female']]
+   df_gender_melt=df_gender.melt('Mental Health Disorder',var_name='Gender',value_name="Proportion")
+   # add selection tab
+   df_gender_melt_subset=df_gender_melt[df_gender_melt['Mental Health Disorder'].isin(diagnosis)]
    # create bar chart
-   chart2_1 = alt.Chart(df_gender_melt).mark_bar().encode(
+   chart2_2 = alt.Chart(df_gender_melt_subset).mark_bar().encode(
       x=alt.X('Proportion:Q', title='Proportion of Patients Received Services'),
-      y=alt.Y('Gender', title=''),
-      row=alt.Row('MH1',title='Mental Health Disorder'),
-      color=alt.Color('Gender',title='Gender'),
-      tooltip=['MH1','Prop']
+      y=alt.Y('Gender',title=None),
+      row=alt.Row('Mental Health Disorder',header=alt.Header(labelAngle=0,labelAlign='left')),
+      color=alt.Color('Gender'),
+      tooltip=['Mental Health Disorder','Proportion']
       ).properties(
-         title='Proportion of Patients Received Services from Sate Mental Health Agency (SMHA) Funded Community-Based Program',
+         title='Proportion of Patients Received Services by Gender',
+         width=700
          )
-
+   st.altair_chart(chart2_2)
 
