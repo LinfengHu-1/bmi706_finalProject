@@ -14,8 +14,9 @@ st.set_page_config(layout="wide")
 def load_data():
    df_stackedState = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_state.csv")
    df_stackedDiag = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis.csv")
-   return df_stackedState, df_stackedDiag
-df_stackedState, df_stackedDiag = load_data()
+   df_stackedAccess = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_access_diagnosis.csv")
+   return df_stackedState, df_stackedDiag, df_stackedAccess
+df_stackedState, df_stackedDiag, df_stackedAccess= load_data()
 df_stackedDiag.rename(columns={'MH1': 'Mental Health Outcomes'}, inplace=True)
 df_stackedDiag = df_stackedDiag[df_stackedDiag['Mental Health Outcomes'] != 'Missing']
 df_stackedState = df_stackedState[df_stackedState['CODE'] != 99]
