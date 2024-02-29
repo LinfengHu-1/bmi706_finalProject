@@ -110,6 +110,8 @@ with tab2:
    #keep Service==1
    df_stackedAccess_t=df_stackedAccess[df_stackedAccess['CMPSERVICE']==1]
    df_stackedAccess_t.rename(columns={'Male': 'Male_n'}, inplace=True)
+   df_stackedAccess_t.rename(columns={'White': 'White_n'}, inplace=True)
+   df_stackedAccess_t.rename(columns={'Black': 'Black_n'}, inplace=True)
    #create diagnosis selection tab 
    diagnosis = st.multiselect('Mental Health Disorder', options=df_stackedAccess_t['Mental Health Disorder'].unique(), 
                               default = ['Trauma/Stress-related Disorder', 'Anxiety Disorder', 'ADHD'])
@@ -135,7 +137,7 @@ with tab2:
       y=alt.Y('Gender',title=None),
       row=alt.Row('Mental Health Disorder',header=alt.Header(labelAngle=0,labelAlign='left')),
       color=alt.Color('Gender'),
-      tooltip=['Mental Health Disorder','Proportion']
+      tooltip=['Mental Health Disorder','Gender','Proportion']
       ).properties(
          title='Proportion of Patients Received Services by Gender',
          width=700
@@ -147,7 +149,7 @@ with tab2:
       y=alt.Y('Marital Status',title=None),
       row=alt.Row('Mental Health Disorder',header=alt.Header(labelAngle=0,labelAlign='left')),
       color=alt.Color('Marital Status'),
-      tooltip=['Mental Health Disorder','Proportion']
+      tooltip=['Mental Health Disorder','Marital Status','Proportion']
       ).properties(
          title='Proportion of Patients Received Services by Marital Status',
          width=700
@@ -155,5 +157,47 @@ with tab2:
    st.altair_chart(chart2_3)
    
    ### Race & Education Level
+   #create diagnosis selection tab 
+   diagnosis2 = st.selectbox('Mental Health Disorder', df_stackedAccess_t['Mental Health Disorder'].unique())
+   #calculate care accessing proportion
+   ##race
+   df_stackedAccess_t['Black']=round(df_stackedAccess_t['Black_n']/df_stackedAccess_t['Population'],3)
+   df_stackedAccess_t['White']=round(df_stackedAccess_t['White_n']/df_stackedAccess_t['Population'],3)
+   df_stackedAccess_t['Other']=round(df_stackedAccess_t['OtherRace']/df_stackedAccess_t['Population'],3)
+   df_race=df_stackedAccess_t[['Mental Health Disorder','Black','White','Other']]
+   df_race_melt=df_race.melt('Mental Health Disorder',var_name='Race',value_name="Proportion")
+   ##education level
+   df_stackedAccess_t['Special Education']=round(df_stackedAccess_t['SpecialEdu']/df_stackedAccess_t['Population'],3)
+   df_stackedAccess_t['School Grade 0 to 8']=round(df_stackedAccess_t['Edu8']/df_stackedAccess_t['Population'],3)
+   df_stackedAccess_t['School Grade 9 to 12']=round(df_stackedAccess_t['Edu12']/df_stackedAccess_t['Population'],3)
+   df_stackedAccess_t['School Grade >12']=round(df_stackedAccess_t['EduHigh']/df_stackedAccess_t['Population'],3)
+   df_edu=df_stackedAccess_t[['Mental Health Disorder','Special Education','School Grade 0 to 8',
+                              'School Grade 9 to 12','School Grade >12']]
+   df_edu_melt=df_edu.melt('Mental Health Disorder',var_name='Education',value_name="Proportion")
    
+   # add selection tab
+   df_race_melt_subset=df_race_melt[df_race_melt['Mental Health Disorder']==diagnosis2]
+   df_edu_melt_subset=df_edu_melt[df_edu_melt['Mental Health Disorder']==diagnosis2]
+   
+   # create donut charts
+   ##marital status
+   chart2_4 = alt.Chart(df_race_melt_subset).mark_arc(innerRadius=50).encode(
+      theta='Proportion:Q',
+      color='Race:N',
+      tooltip=['Mental Health Disorder','Race','Proportion']
+      ).properties(
+         title='Proportion of Patients Received Services by Race'
+         )
+   ##education level
+   chart2_5 = alt.Chart(df_edu_melt_subset).mark_arc(innerRadius=50).encode(
+      theta='Proportion:Q',
+      color='Education:N',
+      tooltip=['Mental Health Disorder','Education','Proportion']
+      ).properties(
+         title='Proportion of Patients Received Services by Education Level'
+         )
 
+   #display charts side-by-side
+   col1, col2 = st.columns(2)
+   col1.altair_chart(chart2_4, use_container_width=True)
+   col2.altair_chart(chart2_5, use_container_width=True)
