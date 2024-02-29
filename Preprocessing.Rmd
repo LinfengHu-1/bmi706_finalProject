@@ -255,7 +255,6 @@ df_2021 <- aggregate_dataset_Diagnosis_access(mhcld_puf_2021_r)
 ```{r}
 df_list <- list(df_2013, df_2014, df_2015, df_2016, df_2017, df_2018, df_2019, df_2020, df_2021)
 stacked_df <- bind_rows(df_list)
-
 ```
 ```{r}
 diag_map <- c(
@@ -267,6 +266,14 @@ diag_map <- c(
 )
 stacked_df$MH1 <- diag_map[as.character(stacked_df$MH1)]
 ```
+```{r}
+stacked_df <- stacked_df %>% group_by(MH1, CMPSERVICE) %>% summarise_all(sum)
+```
+
+```{r}
+write.csv(stacked_df, "stacked_data_access_diagnosis.csv", row.names = FALSE)
+```
+
 
 
 
