@@ -115,14 +115,21 @@ with tab2:
                               default = ['Trauma/Stress-related Disorder', 'Anxiety Disorder', 'ADHD'])
    ### Gender & Marital Status
    #calculate care accessing proportion
+   ##gender
    df_stackedAccess_t['Male']=round(df_stackedAccess_t['Male_n']/df_stackedAccess_t['Population'],3)
    df_stackedAccess_t['Female']=round(1-df_stackedAccess_t['Male'],3)
-   df_stackedAccess_t['Male']=round(df_stackedAccess_t['Male_n']/df_stackedAccess_t['Population'],3)
    df_gender=df_stackedAccess_t[['Mental Health Disorder','Male','Female']]
    df_gender_melt=df_gender.melt('Mental Health Disorder',var_name='Gender',value_name="Proportion")
+   ##marital status
+   df_stackedAccess_t['Never Married']=round(df_stackedAccess_t['NeverMarried']/df_stackedAccess_t['Population'],3)
+   df_stackedAccess_t['Ever Married']=round(df_stackedAccess_t['MarriageHistory']/df_stackedAccess_t['Population'],3)
+   df_marital=df_stackedAccess_t[['Mental Health Disorder','Never Married','Ever Married']]
+   df_marital_melt=df_marital.melt('Mental Health Disorder',var_name='Marital Status',value_name="Proportion")
    # add selection tab
    df_gender_melt_subset=df_gender_melt[df_gender_melt['Mental Health Disorder'].isin(diagnosis)]
-   # create bar chart
+   df_marital_melt_subset=df_marital_melt[df_marital_melt['Mental Health Disorder'].isin(diagnosis)]
+   # create bar charts
+   ##gender
    chart2_2 = alt.Chart(df_gender_melt_subset).mark_bar().encode(
       x=alt.X('Proportion:Q', title='Proportion of Patients Received Services'),
       y=alt.Y('Gender',title=None),
@@ -134,4 +141,19 @@ with tab2:
          width=700
          )
    st.altair_chart(chart2_2)
+   ##marital status
+   chart2_3 = alt.Chart(df_marital_melt_subset).mark_bar().encode(
+      x=alt.X('Proportion:Q', title='Proportion of Patients Received Services'),
+      y=alt.Y('Marital Status',title=None),
+      row=alt.Row('Mental Health Disorder',header=alt.Header(labelAngle=0,labelAlign='left')),
+      color=alt.Color('Marital Status'),
+      tooltip=['Mental Health Disorder','Proportion']
+      ).properties(
+         title='Proportion of Patients Received Services by Marital Status',
+         width=700
+         )
+   st.altair_chart(chart2_3)
+   
+   ### Race & Education Level
+   
 
