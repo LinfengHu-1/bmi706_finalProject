@@ -213,3 +213,63 @@ stacked_df <- bind_rows(df_list)
 write.csv(stacked_df, "stacked_data_diagnosis.csv", row.names = FALSE)
 ```
 
+
+### new stacked by diagnosis, combine all years, features are e.g. male with depression with access
+```{r}
+aggregate_dataset_Diagnosis_access <- function(dataset) {
+  result <- dataset %>%
+    group_by(MH1,CMPSERVICE) %>%
+    summarise(
+      Population = n(),
+      #SMHAserviceAccess = sum(CMPSERVICE == 1, na.rm = TRUE),
+      Male = sum(GENDER == 1, na.rm = TRUE),
+      SpecialEdu = sum(EDUC == 1, na.rm = TRUE),
+      Edu8 = sum(EDUC == 2, na.rm = TRUE),
+      Edu12 = sum(EDUC == 3 | EDUC == 4, na.rm = TRUE),
+      EduHigh = sum(EDUC == 5, na.rm = TRUE),
+      Black = sum(RACE == 3, na.rm = TRUE),
+      White = sum(RACE == 5, na.rm = TRUE),
+      OtherRace = sum(RACE %in% c(1,2,4,6), na.rm = TRUE),
+      NeverMarried = sum(MARSTAT == 1, na.rm = TRUE),
+      NeverMarried = sum(MARSTAT == 1, na.rm = TRUE),
+      MarriageHistory = sum(MARSTAT %in% c(2,3,4), na.rm = TRUE),
+      NotSMISED = sum(SMISED == 3, na.rm = TRUE),
+      SAP = sum(SAP == 1, na.rm = TRUE),
+      PrivateResidence = sum(LIVARAG == 2, na.rm = TRUE)
+      )
+}
+```
+
+```{r}
+df_2013 <- aggregate_dataset_Diagnosis_access(mhcld_puf_2013_r)
+df_2014 <- aggregate_dataset_Diagnosis_access(mhcld_puf_2014_r)
+df_2015 <- aggregate_dataset_Diagnosis_access(mhcld_puf_2015_r)
+df_2016 <- aggregate_dataset_Diagnosis_access(mhcld_puf_2016_r)
+df_2017 <- aggregate_dataset_Diagnosis_access(mhcld_puf_2017_r)
+df_2018 <- aggregate_dataset_Diagnosis_access(mhcld_puf_2018_r)
+df_2019 <- aggregate_dataset_Diagnosis_access(mhcld_puf_2019_r)
+df_2020 <- aggregate_dataset_Diagnosis_access(mhcld_puf_2020_r)
+df_2021 <- aggregate_dataset_Diagnosis_access(mhcld_puf_2021_r)
+```
+
+```{r}
+df_list <- list(df_2013, df_2014, df_2015, df_2016, df_2017, df_2018, df_2019, df_2020, df_2021)
+stacked_df <- bind_rows(df_list)
+
+```
+```{r}
+diag_map <- c(
+  "1" = "Trauma/Stress-related Disorder", "2" = "Anxiety Disorder", "3" = "ADHD", "4" = "Conduct Disorder", 
+  "5" = "Delirium/Dementia","6" = "Bipolar Disorder", "7" = "Depressive Disorder", 
+  "8" = "Oppositional Defiant Disorder", "9" = "Pervasive Developmental Disorders" ,
+  "10" = "Personality Disorders", "11" = "Schizophrenia or other Psychotic Disorders",
+  "12" = "Alcohol/Substance Use Disorders", "13" = "Other Disorder/Condition", "-9" = "Missing"
+)
+stacked_df$MH1 <- diag_map[as.character(stacked_df$MH1)]
+```
+
+
+
+
+
+
