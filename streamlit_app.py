@@ -91,9 +91,9 @@ with tab2:
    #calculate care accessing proportion
    df_stackedDiag['Prop']=round(df_stackedDiag['SMHAserviceAccess']/df_stackedDiag['Population'],3)
    #create diagnosis selection tab 
-   diagnosis = st.multiselect('Mental Health Disorder', options=df_stackedDiag['Mental Health Outcomes'].unique(), 
+   diagnosis_tab2_1 = st.multiselect('Mental Health Disorder', options=df_stackedDiag['Mental Health Outcomes'].unique(), 
                               default = ['Trauma/Stress-related Disorder', 'Anxiety Disorder', 'ADHD'])
-   subset1=df_stackedDiag[df_stackedDiag['Mental Health Outcomes'].isin(diagnosis)]
+   subset1=df_stackedDiag[df_stackedDiag['Mental Health Outcomes'].isin(diagnosis_tab2_1)]
    # create bubble chart
    chart2_1 = alt.Chart(subset1).mark_line().encode(
       x=alt.X('YEAR:O', axis=alt.Axis(format='', title='Year', labelAngle=0)),
@@ -113,7 +113,7 @@ with tab2:
    df_stackedAccess_t.rename(columns={'White': 'White_n'}, inplace=True)
    df_stackedAccess_t.rename(columns={'Black': 'Black_n'}, inplace=True)
    #create diagnosis selection tab 
-   diagnosis = st.multiselect('Mental Health Disorder', options=df_stackedAccess_t['Mental Health Disorder'].unique(), 
+   diagnosis_tab2_2 = st.multiselect('Mental Health Disorder', options=df_stackedAccess_t['Mental Health Disorder'].unique(), 
                               default = ['Trauma/Stress-related Disorder', 'Anxiety Disorder', 'ADHD'])
    ### Gender & Marital Status
    #calculate care accessing proportion
@@ -127,9 +127,9 @@ with tab2:
    df_stackedAccess_t['Ever Married']=round(df_stackedAccess_t['MarriageHistory']/df_stackedAccess_t['Population'],3)
    df_marital=df_stackedAccess_t[['Mental Health Disorder','Never Married','Ever Married']]
    df_marital_melt=df_marital.melt('Mental Health Disorder',var_name='Marital Status',value_name="Proportion")
-   # add selection tab
-   df_gender_melt_subset=df_gender_melt[df_gender_melt['Mental Health Disorder'].isin(diagnosis)]
-   df_marital_melt_subset=df_marital_melt[df_marital_melt['Mental Health Disorder'].isin(diagnosis)]
+   #add selection tab
+   df_gender_melt_subset=df_gender_melt[df_gender_melt['Mental Health Disorder'].isin(diagnosis_tab2_2)]
+   df_marital_melt_subset=df_marital_melt[df_marital_melt['Mental Health Disorder'].isin(diagnosis_tab2_2)]
    # create bar charts
    ##gender
    chart2_2 = alt.Chart(df_gender_melt_subset).mark_bar().encode(
@@ -158,7 +158,7 @@ with tab2:
    
    ### Race & Education Level
    #create diagnosis selection tab 
-   diagnosis2 = st.selectbox('Mental Health Disorder', df_stackedAccess_t['Mental Health Disorder'].unique())
+   diagnosis_tab2_3 = st.selectbox('Mental Health Disorder', df_stackedAccess_t['Mental Health Disorder'].unique())
    #calculate care accessing proportion
    ##race
    df_stackedAccess_t['Black']=round(df_stackedAccess_t['Black_n']/df_stackedAccess_t['Population'],3)
@@ -175,11 +175,11 @@ with tab2:
                               'School Grade 9 to 12','School Grade >12']]
    df_edu_melt=df_edu.melt('Mental Health Disorder',var_name='Education',value_name="Proportion")
    
-   # add selection tab
-   df_race_melt_subset=df_race_melt[df_race_melt['Mental Health Disorder']==diagnosis2]
-   df_edu_melt_subset=df_edu_melt[df_edu_melt['Mental Health Disorder']==diagnosis2]
+   #add selection tab
+   df_race_melt_subset=df_race_melt[df_race_melt['Mental Health Disorder']==diagnosis_tab2_3]
+   df_edu_melt_subset=df_edu_melt[df_edu_melt['Mental Health Disorder']==diagnosis_tab2_3]
    
-   # create donut charts
+   #create donut charts
    ##marital status
    chart2_4 = alt.Chart(df_race_melt_subset).mark_arc(innerRadius=50).encode(
       theta='Proportion:Q',
@@ -196,8 +196,43 @@ with tab2:
       ).properties(
          title='Proportion of Patients Received Services by Education Level'
          )
-
    #display charts side-by-side
    col1, col2 = st.columns(2)
    col1.altair_chart(chart2_4, use_container_width=True)
    col2.altair_chart(chart2_5, use_container_width=True)
+
+   ### Tab 2, Task 3 ###
+   
+   task2 = st.header("Geospatial Pattern")
+   test = df_stackedState[df_stackedState['YEAR']==2013]
+   test['prop'] = test['CMPSERVICE']/(test['POPULATION']-test['Missing'])
+   test.rename(columns={'STATEFIP': 'state'}, inplace=True)
+   
+   #US states background
+   #states = alt.topo_feature(data.us_10m.url, feature='states')
+   #background = alt.Chart(states).mark_geoshape(
+    #fill='lightgray',
+    #stroke='white'
+  # ).properties(
+   # width=500,
+   # height=300
+  # ).project('albersUsa')
+   #create diagnosis selection tab 
+   #diagosis_tab2_4 = st.selectbox("Mental Health Disorder", options = df_stackedDiag["Mental Health Outcomes"].unique())
+   #test_subset = test2[test2['Mental Health Outcome']==diagnosis_tab2_4]
+   #prop_scale = alt.Scale(domain=[test['prop'].min(), test['prop'].max()], scheme='orangered')
+   #prop_color = alt.Color(field="prop", type="quantitative", scale=prop_scale)
+
+import folium
+
+chart_rate = alt.Chart(test).mark_geoshape().encode(
+    color=('prop:Q'),
+).properties(
+    width=500,
+    height=300
+   ).project('albersUsa')
+
+# Display the map in Streamlit
+st.map(background+chart_rate, use_container_width=True)
+
+   
