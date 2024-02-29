@@ -106,8 +106,23 @@ with tab2:
 
    ### Tab 2, Task 2 ###
    task2 = st.header("Factors Impacting Access to Mental Health Services")
+   #keep Service==1
+   df_stackedAccess_t=df_stackedAccess[df_stackedAccess[CMPSERVICE=='1']]
    ### Gender
-   
-
+   #calcualte care accessing proportion
+   df_stackedAccess_t['Prop_m']=round(df_stackedAccess_t['Male']/df_stackedAccess_t['Population'],3)
+   df_stackedAccess_t['Prop_f']=round(1-df_stackedAccess_t['Prop_m'])
+   df_gender=df_stackedAccess_t[['MH1','Prop_m','Prop_f']]
+   df_gender_melt=df.melt('MH1',var_name='Gender',value_name="Proportion")
+   # create bar chart
+   chart2_1 = alt.Chart(df_gender_melt).mark_bar().encode(
+      x=alt.X('Proportion:Q', title='Proportion of Patients Received Services'),
+      y=alt.Y('Gender', title=''),
+      row=alt.Row('MH1',title='Mental Health Disorder'),
+      color=alt.Color('Gender',title='Gender'),
+      tooltip=['MH1','Prop']
+      ).properties(
+         title='Proportion of Patients Received Services from Sate Mental Health Agency (SMHA) Funded Community-Based Program',
+         )
 
 
