@@ -1,0 +1,841 @@
+"STATEFIP","CMPSERVICE","YEAR","Population","CODE"
+"Alabama",1,2013,96690,1
+"Alabama",2,2013,672,1
+"Arizona",1,2013,190931,4
+"Arizona",2,2013,162,4
+"Arkansas",1,2013,69484,5
+"Arkansas",2,2013,479,5
+"California",1,2013,654819,6
+"California",2,2013,17801,6
+"Colorado",1,2013,99900,8
+"Colorado",2,2013,3382,8
+"Connecticut",1,2013,88602,9
+"Connecticut",2,2013,1037,9
+"Delaware",1,2013,7035,10
+"Delaware",2,2013,2092,10
+"Florida",1,2013,257410,12
+"Florida",2,2013,2655,12
+"Hawaii",1,2013,12672,15
+"Hawaii",2,2013,137,15
+"Idaho",1,2013,11225,16
+"Idaho",2,2013,655,16
+"Illinois",1,2013,133559,17
+"Illinois",2,2013,6923,17
+"Indiana",1,2013,125295,18
+"Indiana",2,2013,730,18
+"Iowa",1,2013,105541,19
+"Iowa",2,2013,610,19
+"Kansas",1,2013,82828,20
+"Kansas",2,2013,1808,20
+"Kentucky",1,2013,159654,21
+"Kentucky",2,2013,1787,21
+"Louisiana",1,2013,49837,22
+"Louisiana",2,2013,1316,22
+"Maine",1,2013,71117,23
+"Maine",2,2013,119,23
+"Maryland",1,2013,152188,24
+"Maryland",2,2013,1580,24
+"Massachusetts",1,2013,28642,25
+"Massachusetts",2,2013,584,25
+"Mississippi",1,2013,86262,28
+"Mississippi",2,2013,1117,28
+"Missouri",1,2013,74467,29
+"Missouri",2,2013,1240,29
+"Montana",1,2013,41224,30
+"Montana",2,2013,588,30
+"Nebraska",1,2013,20127,31
+"Nebraska",2,2013,1913,31
+"Nevada",1,2013,28751,32
+"Nevada",2,2013,445,32
+"New Jersey",1,2013,308098,34
+"New Jersey",2,2013,16123,34
+"New Mexico",1,2013,80102,35
+"New Mexico",2,2013,670,35
+"New York",1,2013,46277,36
+"New York",2,2013,6723,36
+"North Carolina",1,2013,221683,37
+"North Carolina",2,2013,1757,37
+"North Dakota",1,2013,15012,38
+"Ohio",1,2013,321972,39
+"Ohio",2,2013,1568,39
+"Oklahoma",1,2013,76192,40
+"Oklahoma",2,2013,1217,40
+"Oregon",1,2013,126905,41
+"Oregon",2,2013,2340,41
+"Pennsylvania",1,2013,646365,42
+"Pennsylvania",2,2013,240,42
+"Rhode Island",1,2013,31888,44
+"Rhode Island",2,2013,259,44
+"South Carolina",1,2013,78588,45
+"South Carolina",2,2013,713,45
+"South Dakota",1,2013,13176,46
+"South Dakota",2,2013,1262,46
+"Tennessee",1,2013,87911,47
+"Tennessee",2,2013,7725,47
+"Texas",1,2013,308798,48
+"Texas",2,2013,2430,48
+"Utah",1,2013,45161,49
+"Utah",2,2013,648,49
+"Vermont",1,2013,24378,50
+"Vermont",2,2013,57,50
+"Virginia",1,2013,108623,51
+"Virginia",2,2013,1076,51
+"Washington",1,2013,145770,53
+"Washington",2,2013,2207,53
+"Wisconsin",1,2013,91482,55
+"Wisconsin",2,2013,6330,55
+"Wyoming",1,2013,16272,56
+"Wyoming",2,2013,310,56
+"Other Jurisdiction",1,2013,206,99
+"Alabama",1,2014,93892,1
+"Alabama",2,2014,582,1
+"Arizona",1,2014,158019,4
+"Arizona",2,2014,154,4
+"Arkansas",1,2014,67209,5
+"Arkansas",2,2014,432,5
+"California",1,2014,659315,6
+"California",2,2014,37865,6
+"Colorado",1,2014,110647,8
+"Colorado",2,2014,4074,8
+"Connecticut",1,2014,90449,9
+"Connecticut",2,2014,1076,9
+"Delaware",1,2014,9644,10
+"Delaware",2,2014,421,10
+"District of Columbia",1,2014,23726,11
+"District of Columbia",2,2014,1375,11
+"Florida",1,2014,227461,12
+"Florida",2,2014,6051,12
+"Hawaii",1,2014,12443,15
+"Hawaii",2,2014,151,15
+"Idaho",1,2014,13484,16
+"Idaho",2,2014,623,16
+"Illinois",1,2014,133144,17
+"Illinois",2,2014,6555,17
+"Indiana",1,2014,128444,18
+"Indiana",2,2014,723,18
+"Iowa",1,2014,110851,19
+"Iowa",2,2014,500,19
+"Kansas",1,2014,79374,20
+"Kansas",2,2014,1617,20
+"Kentucky",1,2014,156283,21
+"Kentucky",2,2014,1803,21
+"Louisiana",1,2014,43967,22
+"Louisiana",2,2014,1406,22
+"Maryland",1,2014,163626,24
+"Maryland",2,2014,1720,24
+"Massachusetts",1,2014,31430,25
+"Massachusetts",2,2014,616,25
+"Minnesota",1,2014,204988,27
+"Minnesota",2,2014,853,27
+"Mississippi",1,2014,83901,28
+"Mississippi",2,2014,2061,28
+"Missouri",1,2014,73401,29
+"Missouri",2,2014,1269,29
+"Montana",1,2014,43241,30
+"Montana",2,2014,551,30
+"Nebraska",1,2014,20611,31
+"Nebraska",2,2014,1967,31
+"Nevada",1,2014,27733,32
+"Nevada",2,2014,2625,32
+"New Jersey",1,2014,308024,34
+"New Jersey",2,2014,16916,34
+"New Mexico",1,2014,92209,35
+"New Mexico",2,2014,1091,35
+"New York",1,2014,46797,36
+"New York",2,2014,6708,36
+"North Carolina",1,2014,217801,37
+"North Carolina",2,2014,1647,37
+"North Dakota",1,2014,14533,38
+"Ohio",1,2014,370817,39
+"Ohio",2,2014,2148,39
+"Oklahoma",1,2014,78107,40
+"Oklahoma",2,2014,1644,40
+"Oregon",1,2014,119000,41
+"Oregon",2,2014,1564,41
+"Pennsylvania",1,2014,614514,42
+"Pennsylvania",2,2014,1056,42
+"Rhode Island",1,2014,30550,44
+"Rhode Island",2,2014,182,44
+"South Carolina",1,2014,80156,45
+"South Carolina",2,2014,826,45
+"South Dakota",1,2014,13597,46
+"South Dakota",2,2014,1220,46
+"Tennessee",1,2014,109753,47
+"Tennessee",2,2014,1512,47
+"Texas",1,2014,322131,48
+"Texas",2,2014,2308,48
+"Utah",1,2014,48075,49
+"Utah",2,2014,492,49
+"Vermont",1,2014,24574,50
+"Vermont",2,2014,39,50
+"Virginia",1,2014,111460,51
+"Virginia",2,2014,1117,51
+"Washington",1,2014,62341,53
+"Washington",2,2014,8115,53
+"Wisconsin",1,2014,97758,55
+"Wisconsin",2,2014,2926,55
+"Wyoming",1,2014,16882,56
+"Wyoming",2,2014,260,56
+"Puerto Rico",1,2014,18074,72
+"Puerto Rico",2,2014,3313,72
+"Other Jurisdiction",1,2014,182,99
+"Alabama",1,2015,101102,1
+"Alabama",2,2015,480,1
+"Arizona",1,2015,154895,4
+"Arizona",2,2015,227,4
+"Arkansas",1,2015,68963,5
+"Arkansas",2,2015,435,5
+"California",1,2015,656093,6
+"California",2,2015,39722,6
+"Colorado",1,2015,126393,8
+"Colorado",2,2015,4144,8
+"Connecticut",1,2015,89515,9
+"Connecticut",2,2015,1009,9
+"Delaware",1,2015,9116,10
+"Delaware",2,2015,564,10
+"District of Columbia",1,2015,27385,11
+"District of Columbia",2,2015,1146,11
+"Florida",1,2015,227046,12
+"Florida",2,2015,3606,12
+"Hawaii",1,2015,10486,15
+"Hawaii",2,2015,159,15
+"Idaho",1,2015,13793,16
+"Idaho",2,2015,632,16
+"Illinois",1,2015,124258,17
+"Illinois",2,2015,5744,17
+"Indiana",1,2015,133413,18
+"Indiana",2,2015,708,18
+"Iowa",1,2015,116092,19
+"Iowa",2,2015,351,19
+"Kentucky",1,2015,158228,21
+"Kentucky",2,2015,1868,21
+"Louisiana",1,2015,42412,22
+"Louisiana",2,2015,1419,22
+"Maryland",1,2015,183486,24
+"Maryland",2,2015,1820,24
+"Massachusetts",1,2015,32862,25
+"Massachusetts",2,2015,694,25
+"Minnesota",1,2015,224562,27
+"Minnesota",2,2015,1224,27
+"Mississippi",1,2015,88738,28
+"Mississippi",2,2015,1541,28
+"Missouri",1,2015,74180,29
+"Missouri",2,2015,1292,29
+"Montana",1,2015,45620,30
+"Montana",2,2015,668,30
+"Nebraska",1,2015,17608,31
+"Nebraska",2,2015,1833,31
+"Nevada",1,2015,25208,32
+"Nevada",2,2015,3381,32
+"New Jersey",1,2015,308249,34
+"New Jersey",2,2015,16853,34
+"New Mexico",1,2015,110759,35
+"New Mexico",2,2015,10844,35
+"New York",1,2015,47982,36
+"New York",2,2015,6542,36
+"North Carolina",1,2015,223844,37
+"North Carolina",2,2015,1608,37
+"North Dakota",1,2015,14943,38
+"Ohio",1,2015,413937,39
+"Ohio",2,2015,1157,39
+"Oklahoma",1,2015,73252,40
+"Oklahoma",2,2015,1584,40
+"Oregon",1,2015,129492,41
+"Oregon",2,2015,2089,41
+"Rhode Island",1,2015,31925,44
+"Rhode Island",2,2015,136,44
+"South Carolina",1,2015,82466,45
+"South Carolina",2,2015,820,45
+"South Dakota",1,2015,14309,46
+"South Dakota",2,2015,1619,46
+"Tennessee",1,2015,113724,47
+"Tennessee",2,2015,1444,47
+"Texas",1,2015,346122,48
+"Texas",2,2015,2025,48
+"Utah",1,2015,50592,49
+"Utah",2,2015,488,49
+"Vermont",1,2015,24533,50
+"Vermont",2,2015,47,50
+"Virginia",1,2015,114426,51
+"Virginia",2,2015,1398,51
+"Washington",1,2015,67322,53
+"Washington",2,2015,8506,53
+"Wisconsin",1,2015,70755,55
+"Wisconsin",2,2015,2174,55
+"Wyoming",1,2015,17547,56
+"Wyoming",2,2015,251,56
+"Puerto Rico",1,2015,19366,72
+"Puerto Rico",2,2015,3828,72
+"Other Jurisdiction",1,2015,154,99
+"Other Jurisdiction",2,2015,21,99
+"Alabama",1,2016,103881,1
+"Alabama",2,2016,439,1
+"Arizona",1,2016,187713,4
+"Arizona",2,2016,259,4
+"Arkansas",1,2016,73952,5
+"Arkansas",2,2016,506,5
+"California",1,2016,607872,6
+"California",2,2016,39456,6
+"Colorado",1,2016,121663,8
+"Colorado",2,2016,2348,8
+"Connecticut",1,2016,93681,9
+"Connecticut",2,2016,860,9
+"Delaware",1,2016,3104,10
+"Delaware",2,2016,4352,10
+"District of Columbia",1,2016,34627,11
+"District of Columbia",2,2016,401,11
+"Florida",1,2016,211104,12
+"Florida",2,2016,3153,12
+"Hawaii",1,2016,9933,15
+"Hawaii",2,2016,184,15
+"Idaho",1,2016,14682,16
+"Idaho",2,2016,638,16
+"Illinois",1,2016,72504,17
+"Illinois",2,2016,6199,17
+"Indiana",1,2016,134695,18
+"Indiana",2,2016,689,18
+"Iowa",1,2016,115392,19
+"Iowa",2,2016,236,19
+"Kentucky",1,2016,152864,21
+"Kentucky",2,2016,2150,21
+"Louisiana",1,2016,33245,22
+"Louisiana",2,2016,1263,22
+"Maryland",1,2016,201242,24
+"Maryland",2,2016,1730,24
+"Massachusetts",1,2016,33204,25
+"Massachusetts",2,2016,717,25
+"Minnesota",1,2016,257491,27
+"Minnesota",2,2016,1533,27
+"Mississippi",1,2016,82114,28
+"Mississippi",2,2016,1318,28
+"Missouri",1,2016,74932,29
+"Missouri",2,2016,1336,29
+"Montana",1,2016,37828,30
+"Montana",2,2016,648,30
+"Nebraska",1,2016,17630,31
+"Nebraska",2,2016,2109,31
+"Nevada",1,2016,21464,32
+"Nevada",2,2016,2481,32
+"New Jersey",1,2016,307486,34
+"New Jersey",2,2016,15906,34
+"New Mexico",1,2016,120328,35
+"New Mexico",2,2016,10892,35
+"New York",1,2016,50977,36
+"New York",2,2016,5991,36
+"North Carolina",1,2016,122795,37
+"North Carolina",2,2016,15284,37
+"North Dakota",1,2016,14842,38
+"Ohio",1,2016,428711,39
+"Ohio",2,2016,1434,39
+"Oklahoma",1,2016,90699,40
+"Oklahoma",2,2016,1611,40
+"Oregon",1,2016,125560,41
+"Oregon",2,2016,759,41
+"Pennsylvania",1,2016,536819,42
+"Pennsylvania",2,2016,6799,42
+"Rhode Island",1,2016,31518,44
+"Rhode Island",2,2016,125,44
+"South Carolina",1,2016,84442,45
+"South Carolina",2,2016,812,45
+"South Dakota",1,2016,14845,46
+"South Dakota",2,2016,1210,46
+"Tennessee",1,2016,117230,47
+"Tennessee",2,2016,1379,47
+"Texas",1,2016,366530,48
+"Texas",2,2016,2192,48
+"Utah",1,2016,53224,49
+"Utah",2,2016,484,49
+"Vermont",1,2016,31211,50
+"Vermont",2,2016,33,50
+"Virginia",1,2016,115674,51
+"Virginia",2,2016,1741,51
+"Washington",1,2016,82506,53
+"Washington",2,2016,9670,53
+"Wisconsin",1,2016,75629,55
+"Wisconsin",2,2016,1716,55
+"Wyoming",1,2016,17572,56
+"Wyoming",2,2016,349,56
+"Puerto Rico",1,2016,14469,72
+"Puerto Rico",2,2016,3098,72
+"Other Jurisdiction",1,2016,355,99
+"Other Jurisdiction",2,2016,21,99
+"Alabama",1,2017,103492,1
+"Alabama",2,2017,467,1
+"Arizona",1,2017,195884,4
+"Arizona",2,2017,328,4
+"Arkansas",1,2017,74526,5
+"Arkansas",2,2017,459,5
+"California",1,2017,600262,6
+"California",2,2017,38193,6
+"Colorado",1,2017,140984,8
+"Colorado",2,2017,6266,8
+"Connecticut",1,2017,96198,9
+"Connecticut",2,2017,932,9
+"Delaware",1,2017,4414,10
+"Delaware",2,2017,5164,10
+"District of Columbia",1,2017,36360,11
+"District of Columbia",2,2017,308,11
+"Florida",1,2017,210557,12
+"Florida",2,2017,3201,12
+"Hawaii",1,2017,9714,15
+"Hawaii",2,2017,201,15
+"Idaho",1,2017,14750,16
+"Idaho",2,2017,674,16
+"Illinois",1,2017,66847,17
+"Illinois",2,2017,4348,17
+"Indiana",1,2017,136980,18
+"Indiana",2,2017,648,18
+"Iowa",1,2017,100078,19
+"Iowa",2,2017,1685,19
+"Kentucky",1,2017,153118,21
+"Kentucky",2,2017,2074,21
+"Louisiana",1,2017,48326,22
+"Louisiana",2,2017,976,22
+"Maine",1,2017,45029,23
+"Maine",2,2017,4473,23
+"Maryland",1,2017,199997,24
+"Maryland",2,2017,1721,24
+"Massachusetts",1,2017,30977,25
+"Massachusetts",2,2017,682,25
+"Michigan",1,2017,173324,26
+"Michigan",2,2017,3965,26
+"Minnesota",1,2017,268902,27
+"Minnesota",2,2017,1749,27
+"Mississippi",1,2017,72206,28
+"Mississippi",2,2017,1661,28
+"Missouri",1,2017,76172,29
+"Missouri",2,2017,1325,29
+"Montana",1,2017,50262,30
+"Montana",2,2017,253,30
+"Nebraska",1,2017,19771,31
+"Nebraska",2,2017,2156,31
+"Nevada",1,2017,18402,32
+"Nevada",2,2017,2133,32
+"New Jersey",1,2017,375834,34
+"New Jersey",2,2017,26635,34
+"New Mexico",1,2017,133400,35
+"New Mexico",2,2017,14269,35
+"New York",1,2017,52416,36
+"New York",2,2017,5624,36
+"North Carolina",1,2017,130742,37
+"North Carolina",2,2017,11923,37
+"North Dakota",1,2017,13978,38
+"Ohio",1,2017,530080,39
+"Ohio",2,2017,1623,39
+"Oklahoma",1,2017,94620,40
+"Oklahoma",2,2017,1748,40
+"Oregon",1,2017,125752,41
+"Oregon",2,2017,741,41
+"Pennsylvania",1,2017,565856,42
+"Pennsylvania",2,2017,7583,42
+"Rhode Island",1,2017,31123,44
+"Rhode Island",2,2017,126,44
+"South Carolina",1,2017,84928,45
+"South Carolina",2,2017,826,45
+"South Dakota",1,2017,14688,46
+"South Dakota",2,2017,1038,46
+"Tennessee",1,2017,106794,47
+"Tennessee",2,2017,1475,47
+"Texas",1,2017,377201,48
+"Texas",2,2017,2755,48
+"Utah",1,2017,55062,49
+"Utah",2,2017,463,49
+"Vermont",1,2017,30889,50
+"Vermont",2,2017,35,50
+"Virginia",1,2017,120751,51
+"Virginia",2,2017,1873,51
+"Washington",1,2017,100762,53
+"Washington",2,2017,6502,53
+"Wisconsin",1,2017,63943,55
+"Wisconsin",2,2017,1136,55
+"Wyoming",1,2017,17015,56
+"Wyoming",2,2017,350,56
+"Puerto Rico",1,2017,21151,72
+"Puerto Rico",2,2017,4378,72
+"Other Jurisdiction",1,2017,355,99
+"Other Jurisdiction",2,2017,34,99
+"Alabama",1,2018,101954,1
+"Alabama",2,2018,470,1
+"Arizona",1,2018,224328,4
+"Arizona",2,2018,445,4
+"Arkansas",1,2018,74436,5
+"Arkansas",2,2018,452,5
+"California",1,2018,669143,6
+"California",2,2018,39491,6
+"Colorado",1,2018,144286,8
+"Colorado",2,2018,6261,8
+"Connecticut",1,2018,93047,9
+"Connecticut",2,2018,900,9
+"Delaware",1,2018,3220,10
+"Delaware",2,2018,6669,10
+"District of Columbia",1,2018,45024,11
+"District of Columbia",2,2018,536,11
+"Florida",1,2018,213685,12
+"Florida",2,2018,4683,12
+"Hawaii",1,2018,9827,15
+"Hawaii",2,2018,179,15
+"Idaho",1,2018,16000,16
+"Idaho",2,2018,718,16
+"Illinois",1,2018,62753,17
+"Illinois",2,2018,3903,17
+"Indiana",1,2018,136703,18
+"Indiana",2,2018,654,18
+"Iowa",1,2018,187748,19
+"Iowa",2,2018,1599,19
+"Kentucky",1,2018,155650,21
+"Kentucky",2,2018,2082,21
+"Louisiana",1,2018,38479,22
+"Louisiana",2,2018,934,22
+"Maryland",1,2018,211941,24
+"Maryland",2,2018,1664,24
+"Massachusetts",1,2018,25570,25
+"Massachusetts",2,2018,813,25
+"Michigan",1,2018,227554,26
+"Michigan",2,2018,4399,26
+"Minnesota",1,2018,285937,27
+"Minnesota",2,2018,2025,27
+"Mississippi",1,2018,83626,28
+"Mississippi",2,2018,1823,28
+"Missouri",1,2018,75040,29
+"Missouri",2,2018,1369,29
+"Montana",1,2018,62509,30
+"Montana",2,2018,541,30
+"Nebraska",1,2018,22727,31
+"Nebraska",2,2018,2256,31
+"Nevada",1,2018,19582,32
+"Nevada",2,2018,53,32
+"New Jersey",1,2018,395830,34
+"New Jersey",2,2018,25546,34
+"New Mexico",1,2018,148772,35
+"New Mexico",2,2018,731,35
+"New York",1,2018,52602,36
+"New York",2,2018,5327,36
+"North Carolina",1,2018,90561,37
+"North Carolina",2,2018,10485,37
+"North Dakota",1,2018,13866,38
+"Ohio",1,2018,480917,39
+"Ohio",2,2018,1181,39
+"Oklahoma",1,2018,99965,40
+"Oklahoma",2,2018,1866,40
+"Oregon",1,2018,134304,41
+"Oregon",2,2018,439,41
+"Pennsylvania",1,2018,555836,42
+"Pennsylvania",2,2018,9601,42
+"Rhode Island",1,2018,30251,44
+"Rhode Island",2,2018,132,44
+"South Carolina",1,2018,86602,45
+"South Carolina",2,2018,590,45
+"South Dakota",1,2018,15284,46
+"South Dakota",2,2018,994,46
+"Tennessee",1,2018,116239,47
+"Tennessee",2,2018,1316,47
+"Texas",1,2018,397448,48
+"Texas",2,2018,2706,48
+"Utah",1,2018,55622,49
+"Utah",2,2018,473,49
+"Vermont",1,2018,31213,50
+"Vermont",2,2018,50,50
+"Virginia",1,2018,120701,51
+"Virginia",2,2018,2400,51
+"Washington",1,2018,108081,53
+"Washington",2,2018,3377,53
+"West Virginia",1,2018,45476,54
+"West Virginia",2,2018,5129,54
+"Wisconsin",1,2018,70137,55
+"Wisconsin",2,2018,1056,55
+"Wyoming",1,2018,15955,56
+"Wyoming",2,2018,301,56
+"Puerto Rico",1,2018,2086,72
+"Puerto Rico",2,2018,832,72
+"Other Jurisdiction",1,2018,366,99
+"Other Jurisdiction",2,2018,26,99
+"Alabama",1,2019,102725,1
+"Alabama",2,2019,478,1
+"Alaska",1,2019,10715,2
+"Alaska",2,2019,367,2
+"Arkansas",1,2019,75693,5
+"Arkansas",2,2019,446,5
+"California",1,2019,703235,6
+"California",2,2019,39801,6
+"Colorado",1,2019,131831,8
+"Colorado",2,2019,5448,8
+"Connecticut",1,2019,93274,9
+"Connecticut",2,2019,925,9
+"Delaware",1,2019,9442,10
+"Delaware",2,2019,4590,10
+"District of Columbia",1,2019,44631,11
+"District of Columbia",2,2019,558,11
+"Florida",1,2019,189245,12
+"Florida",2,2019,14831,12
+"Hawaii",1,2019,9684,15
+"Hawaii",2,2019,221,15
+"Idaho",1,2019,16753,16
+"Idaho",2,2019,712,16
+"Illinois",1,2019,42079,17
+"Illinois",2,2019,3591,17
+"Indiana",1,2019,138398,18
+"Indiana",2,2019,728,18
+"Iowa",1,2019,257829,19
+"Iowa",2,2019,5283,19
+"Kentucky",1,2019,163914,21
+"Kentucky",2,2019,2085,21
+"Louisiana",1,2019,35283,22
+"Louisiana",2,2019,988,22
+"Maryland",1,2019,224311,24
+"Maryland",2,2019,1692,24
+"Massachusetts",1,2019,25933,25
+"Massachusetts",2,2019,342,25
+"Michigan",1,2019,236875,26
+"Michigan",2,2019,7293,26
+"Minnesota",1,2019,285429,27
+"Minnesota",2,2019,2241,27
+"Mississippi",1,2019,85471,28
+"Mississippi",2,2019,1935,28
+"Missouri",1,2019,79411,29
+"Missouri",2,2019,1360,29
+"Montana",1,2019,71277,30
+"Montana",2,2019,493,30
+"Nebraska",1,2019,24413,31
+"Nebraska",2,2019,1867,31
+"Nevada",1,2019,18889,32
+"Nevada",2,2019,48,32
+"New Jersey",1,2019,401919,34
+"New Jersey",2,2019,25546,34
+"New Mexico",1,2019,202022,35
+"New Mexico",2,2019,1015,35
+"New York",1,2019,52254,36
+"New York",2,2019,5269,36
+"North Carolina",1,2019,95112,37
+"North Carolina",2,2019,11979,37
+"North Dakota",1,2019,14761,38
+"North Dakota",2,2019,382,38
+"Ohio",1,2019,577566,39
+"Ohio",2,2019,1710,39
+"Oklahoma",1,2019,104984,40
+"Oklahoma",2,2019,1654,40
+"Oregon",1,2019,142276,41
+"Oregon",2,2019,654,41
+"Pennsylvania",1,2019,578786,42
+"Pennsylvania",2,2019,8127,42
+"Rhode Island",1,2019,32445,44
+"Rhode Island",2,2019,118,44
+"South Carolina",1,2019,99021,45
+"South Carolina",2,2019,493,45
+"South Dakota",1,2019,15145,46
+"South Dakota",2,2019,1062,46
+"Tennessee",1,2019,111003,47
+"Tennessee",2,2019,1423,47
+"Texas",1,2019,413717,48
+"Texas",2,2019,2621,48
+"Utah",1,2019,55709,49
+"Utah",2,2019,515,49
+"Vermont",1,2019,31270,50
+"Vermont",2,2019,63,50
+"Virginia",1,2019,123482,51
+"Virginia",2,2019,2607,51
+"Washington",1,2019,158874,53
+"Washington",2,2019,2574,53
+"Wisconsin",1,2019,72366,55
+"Wisconsin",2,2019,1913,55
+"Wyoming",1,2019,16425,56
+"Wyoming",2,2019,285,56
+"Puerto Rico",1,2019,3027,72
+"Puerto Rico",2,2019,920,72
+"Other Jurisdiction",1,2019,493,99
+"Other Jurisdiction",2,2019,33,99
+"Alabama",1,2020,97096,1
+"Alabama",2,2020,431,1
+"Alaska",1,2020,10023,2
+"Alaska",2,2020,314,2
+"Arizona",1,2020,384116,4
+"Arizona",2,2020,218,4
+"Arkansas",1,2020,76556,5
+"Arkansas",2,2020,996,5
+"California",1,2020,646002,6
+"California",2,2020,33594,6
+"Colorado",1,2020,123190,8
+"Colorado",2,2020,4779,8
+"Connecticut",1,2020,86006,9
+"Connecticut",2,2020,909,9
+"Delaware",1,2020,7035,10
+"Delaware",2,2020,5195,10
+"District of Columbia",1,2020,50521,11
+"District of Columbia",2,2020,552,11
+"Florida",1,2020,255032,12
+"Florida",2,2020,27196,12
+"Georgia",1,2020,137103,13
+"Georgia",2,2020,3558,13
+"Hawaii",1,2020,10006,15
+"Hawaii",2,2020,8,15
+"Idaho",1,2020,15556,16
+"Idaho",2,2020,808,16
+"Illinois",1,2020,36302,17
+"Illinois",2,2020,3198,17
+"Indiana",1,2020,137963,18
+"Indiana",2,2020,734,18
+"Iowa",1,2020,227193,19
+"Iowa",2,2020,8848,19
+"Kansas",1,2020,146151,20
+"Kansas",2,2020,1,20
+"Kentucky",1,2020,154312,21
+"Kentucky",2,2020,1911,21
+"Louisiana",1,2020,34927,22
+"Louisiana",2,2020,964,22
+"Massachusetts",1,2020,24508,25
+"Massachusetts",2,2020,247,25
+"Michigan",1,2020,216676,26
+"Michigan",2,2020,7574,26
+"Minnesota",1,2020,315823,27
+"Minnesota",2,2020,2625,27
+"Mississippi",1,2020,95885,28
+"Mississippi",2,2020,6176,28
+"Missouri",1,2020,80740,29
+"Missouri",2,2020,1377,29
+"Montana",1,2020,73501,30
+"Montana",2,2020,912,30
+"Nebraska",1,2020,26867,31
+"Nebraska",2,2020,2861,31
+"Nevada",1,2020,15347,32
+"Nevada",2,2020,1069,32
+"New Jersey",1,2020,396759,34
+"New Jersey",2,2020,19073,34
+"New Mexico",1,2020,178983,35
+"New Mexico",2,2020,644,35
+"New York",1,2020,50967,36
+"New York",2,2020,5030,36
+"North Carolina",1,2020,94484,37
+"North Carolina",2,2020,14527,37
+"North Dakota",1,2020,14091,38
+"North Dakota",2,2020,291,38
+"Ohio",1,2020,513577,39
+"Ohio",2,2020,1821,39
+"Oklahoma",1,2020,107476,40
+"Oklahoma",2,2020,1597,40
+"Oregon",1,2020,144615,41
+"Oregon",2,2020,819,41
+"Pennsylvania",1,2020,595783,42
+"Pennsylvania",2,2020,7847,42
+"Rhode Island",1,2020,32525,44
+"Rhode Island",2,2020,120,44
+"South Carolina",1,2020,99297,45
+"South Carolina",2,2020,458,45
+"South Dakota",1,2020,14792,46
+"South Dakota",2,2020,1014,46
+"Tennessee",1,2020,96990,47
+"Tennessee",2,2020,1462,47
+"Texas",1,2020,413128,48
+"Texas",2,2020,2222,48
+"Utah",1,2020,56914,49
+"Utah",2,2020,542,49
+"Vermont",1,2020,27430,50
+"Vermont",2,2020,21,50
+"Virginia",1,2020,126069,51
+"Virginia",2,2020,2601,51
+"Washington",1,2020,237136,53
+"Washington",2,2020,1311,53
+"Wisconsin",1,2020,74178,55
+"Wisconsin",2,2020,1727,55
+"Wyoming",1,2020,15904,56
+"Wyoming",2,2020,265,56
+"Puerto Rico",1,2020,2328,72
+"Puerto Rico",2,2020,798,72
+"Other Jurisdiction",1,2020,550,99
+"Other Jurisdiction",2,2020,44,99
+"Alabama",1,2021,94468,1
+"Alabama",2,2021,430,1
+"Alaska",1,2021,9435,2
+"Alaska",2,2021,201,2
+"Arizona",1,2021,405497,4
+"Arizona",2,2021,212,4
+"Arkansas",1,2021,75652,5
+"Arkansas",2,2021,831,5
+"California",1,2021,620941,6
+"California",2,2021,30485,6
+"Colorado",1,2021,136817,8
+"Colorado",2,2021,5868,8
+"Connecticut",1,2021,87018,9
+"Connecticut",2,2021,965,9
+"Delaware",1,2021,10154,10
+"Delaware",2,2021,5325,10
+"District of Columbia",1,2021,69129,11
+"District of Columbia",2,2021,873,11
+"Georgia",1,2021,125401,13
+"Georgia",2,2021,5013,13
+"Hawaii",1,2021,9341,15
+"Hawaii",2,2021,155,15
+"Idaho",1,2021,13246,16
+"Idaho",2,2021,793,16
+"Illinois",1,2021,26954,17
+"Illinois",2,2021,2734,17
+"Indiana",1,2021,141510,18
+"Indiana",2,2021,725,18
+"Iowa",1,2021,301227,19
+"Iowa",2,2021,4790,19
+"Kansas",1,2021,61604,20
+"Kansas",2,2021,1,20
+"Kentucky",1,2021,144595,21
+"Kentucky",2,2021,1799,21
+"Louisiana",1,2021,40294,22
+"Louisiana",2,2021,955,22
+"Maryland",1,2021,219874,24
+"Maryland",2,2021,1367,24
+"Massachusetts",1,2021,24027,25
+"Massachusetts",2,2021,355,25
+"Michigan",1,2021,276826,26
+"Michigan",2,2021,11302,26
+"Minnesota",1,2021,310074,27
+"Minnesota",2,2021,2751,27
+"Mississippi",1,2021,93634,28
+"Mississippi",2,2021,2151,28
+"Missouri",1,2021,81027,29
+"Missouri",2,2021,1380,29
+"Montana",1,2021,71124,30
+"Montana",2,2021,630,30
+"Nebraska",1,2021,23233,31
+"Nebraska",2,2021,1545,31
+"Nevada",1,2021,15881,32
+"Nevada",2,2021,56,32
+"New Hampshire",1,2021,44834,33
+"New Hampshire",2,2021,4257,33
+"New Jersey",1,2021,400245,34
+"New Jersey",2,2021,18192,34
+"New Mexico",1,2021,199438,35
+"New Mexico",2,2021,421,35
+"New York",1,2021,42682,36
+"New York",2,2021,4587,36
+"North Carolina",1,2021,85368,37
+"North Carolina",2,2021,15787,37
+"North Dakota",1,2021,10829,38
+"North Dakota",2,2021,150,38
+"Oklahoma",1,2021,107564,40
+"Oklahoma",2,2021,1585,40
+"Oregon",1,2021,158049,41
+"Oregon",2,2021,832,41
+"Pennsylvania",1,2021,563647,42
+"Pennsylvania",2,2021,7699,42
+"Rhode Island",1,2021,32209,44
+"Rhode Island",2,2021,105,44
+"South Carolina",1,2021,96339,45
+"South Carolina",2,2021,405,45
+"Tennessee",1,2021,100141,47
+"Tennessee",2,2021,1088,47
+"Texas",1,2021,423122,48
+"Texas",2,2021,2424,48
+"Utah",1,2021,56866,49
+"Utah",2,2021,611,49
+"Vermont",1,2021,27468,50
+"Vermont",2,2021,73,50
+"Virginia",1,2021,124202,51
+"Virginia",2,2021,2396,51
+"Washington",1,2021,290067,53
+"Washington",2,2021,1072,53
+"West Virginia",1,2021,17722,54
+"West Virginia",2,2021,867,54
+"Wisconsin",1,2021,68542,55
+"Wisconsin",2,2021,1303,55
+"Wyoming",1,2021,14030,56
+"Wyoming",2,2021,203,56
+"Puerto Rico",1,2021,4993,72
+"Puerto Rico",2,2021,3181,72
+"Other Jurisdiction",1,2021,719,99
+"Other Jurisdiction",2,2021,36,99
