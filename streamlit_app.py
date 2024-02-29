@@ -84,6 +84,7 @@ with tab1:
 
 ############## Tab 2: Access to Psychiatric Care ##########################
 with tab2:
+   ### Tab 2, Task 1 ###
    task1 = st.header("Temporal Trends")
    #calculate care accessing proportion
    df_stackedDiag['Prop']=round(df_stackedDiag['SMHAserviceAccess']/df_stackedDiag['Population'],3)
@@ -102,7 +103,9 @@ with tab2:
          )
    st.altair_chart(chart2_1, use_container_width=True)
 
+   ### Tab 2, Task 2 ###
    task2 = st.header("Factors Impacting Access to Mental Health Services")
+   ### Gender
    
 
 
