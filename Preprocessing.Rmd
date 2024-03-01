@@ -284,7 +284,7 @@ write.csv(stacked_df, "stacked_data_access_diagnosis.csv", row.names = FALSE)
 ```{r}
 aggregate_dataset_state_access <- function(dataset) {
   result <- dataset %>%
-    group_by(STATEFIP,CMPSERVICE) %>%
+    group_by(STATEFIP,CMPSERVICE, MH1) %>%
     summarise(
       YEAR = first(YEAR),
       Population = n()
@@ -338,10 +338,20 @@ df_2019$STATEFIP <- state_map[as.character(df_2019$STATEFIP)]
 df_2020$STATEFIP <- state_map[as.character(df_2020$STATEFIP)]
 df_2021$STATEFIP <- state_map[as.character(df_2021$STATEFIP)]
 ```
-
 ```{r}
 df_list <- list(df_2013, df_2014, df_2015, df_2016, df_2017, df_2018, df_2019, df_2020, df_2021)
 stacked_df <- bind_rows(df_list)
+diag_map <- c(
+  "1" = "Trauma/Stress-related Disorder", "2" = "Anxiety Disorder", "3" = "ADHD", "4" = "Conduct Disorder", 
+  "5" = "Delirium/Dementia","6" = "Bipolar Disorder", "7" = "Depressive Disorder", 
+  "8" = "Oppositional Defiant Disorder", "9" = "Pervasive Developmental Disorders" ,
+  "10" = "Personality Disorders", "11" = "Schizophrenia or other Psychotic Disorders",
+  "12" = "Alcohol/Substance Use Disorders", "13" = "Other Disorder/Condition", "-9" = "Missing"
+)
+stacked_df$MH1 <- diag_map[as.character(stacked_df$MH1)]
+```
+
+```{r}
 write.csv(stacked_df, "stacked_data_access_state.csv", row.names = FALSE)
 ```
 
