@@ -1,0 +1,2463 @@
+"YEAR","MH1","EDUC","MARSTAT","Subgroup_Population"
+2013,"Missing",1,1,709
+2013,"Missing",1,2,218
+2013,"Missing",1,3,47
+2013,"Missing",1,4,134
+2013,"Missing",2,1,28320
+2013,"Missing",2,2,3589
+2013,"Missing",2,3,1249
+2013,"Missing",2,4,3141
+2013,"Missing",3,1,16261
+2013,"Missing",3,2,3166
+2013,"Missing",3,3,1369
+2013,"Missing",3,4,2904
+2013,"Missing",4,1,18984
+2013,"Missing",4,2,10798
+2013,"Missing",4,3,3091
+2013,"Missing",4,4,9087
+2013,"Missing",5,1,5252
+2013,"Missing",5,2,3371
+2013,"Missing",5,3,850
+2013,"Missing",5,4,3563
+2013,"Trauma/Stress-related Disorder",1,1,765
+2013,"Trauma/Stress-related Disorder",1,2,231
+2013,"Trauma/Stress-related Disorder",1,3,76
+2013,"Trauma/Stress-related Disorder",1,4,156
+2013,"Trauma/Stress-related Disorder",2,1,84211
+2013,"Trauma/Stress-related Disorder",2,2,3838
+2013,"Trauma/Stress-related Disorder",2,3,1414
+2013,"Trauma/Stress-related Disorder",2,4,2990
+2013,"Trauma/Stress-related Disorder",3,1,28463
+2013,"Trauma/Stress-related Disorder",3,2,3913
+2013,"Trauma/Stress-related Disorder",3,3,1950
+2013,"Trauma/Stress-related Disorder",3,4,3446
+2013,"Trauma/Stress-related Disorder",4,1,22938
+2013,"Trauma/Stress-related Disorder",4,2,13655
+2013,"Trauma/Stress-related Disorder",4,3,4793
+2013,"Trauma/Stress-related Disorder",4,4,10582
+2013,"Trauma/Stress-related Disorder",5,1,7381
+2013,"Trauma/Stress-related Disorder",5,2,4944
+2013,"Trauma/Stress-related Disorder",5,3,1782
+2013,"Trauma/Stress-related Disorder",5,4,5300
+2013,"Anxiety Disorder",1,1,775
+2013,"Anxiety Disorder",1,2,157
+2013,"Anxiety Disorder",1,3,41
+2013,"Anxiety Disorder",1,4,119
+2013,"Anxiety Disorder",2,1,27340
+2013,"Anxiety Disorder",2,2,2965
+2013,"Anxiety Disorder",2,3,906
+2013,"Anxiety Disorder",2,4,2653
+2013,"Anxiety Disorder",3,1,14682
+2013,"Anxiety Disorder",3,2,4001
+2013,"Anxiety Disorder",3,3,1514
+2013,"Anxiety Disorder",3,4,3606
+2013,"Anxiety Disorder",4,1,21170
+2013,"Anxiety Disorder",4,2,11264
+2013,"Anxiety Disorder",4,3,3006
+2013,"Anxiety Disorder",4,4,9486
+2013,"Anxiety Disorder",5,1,8160
+2013,"Anxiety Disorder",5,2,4887
+2013,"Anxiety Disorder",5,3,1191
+2013,"Anxiety Disorder",5,4,4544
+2013,"ADHD",1,1,910
+2013,"ADHD",1,2,23
+2013,"ADHD",1,3,2
+2013,"ADHD",1,4,5
+2013,"ADHD",2,1,111293
+2013,"ADHD",2,2,454
+2013,"ADHD",2,3,95
+2013,"ADHD",2,4,220
+2013,"ADHD",3,1,15513
+2013,"ADHD",3,2,325
+2013,"ADHD",3,3,113
+2013,"ADHD",3,4,190
+2013,"ADHD",4,1,5155
+2013,"ADHD",4,2,903
+2013,"ADHD",4,3,201
+2013,"ADHD",4,4,657
+2013,"ADHD",5,1,1446
+2013,"ADHD",5,2,593
+2013,"ADHD",5,3,137
+2013,"ADHD",5,4,491
+2013,"Conduct Disorder",1,1,316
+2013,"Conduct Disorder",1,4,2
+2013,"Conduct Disorder",2,1,29378
+2013,"Conduct Disorder",2,2,97
+2013,"Conduct Disorder",2,3,25
+2013,"Conduct Disorder",2,4,38
+2013,"Conduct Disorder",3,1,7055
+2013,"Conduct Disorder",3,2,51
+2013,"Conduct Disorder",3,3,12
+2013,"Conduct Disorder",3,4,19
+2013,"Conduct Disorder",4,1,979
+2013,"Conduct Disorder",4,2,44
+2013,"Conduct Disorder",4,3,4
+2013,"Conduct Disorder",4,4,28
+2013,"Conduct Disorder",5,1,78
+2013,"Conduct Disorder",5,2,13
+2013,"Conduct Disorder",5,3,7
+2013,"Conduct Disorder",5,4,2
+2013,"Delirium/Dementia",1,1,76
+2013,"Delirium/Dementia",1,2,14
+2013,"Delirium/Dementia",1,3,1
+2013,"Delirium/Dementia",1,4,11
+2013,"Delirium/Dementia",2,1,675
+2013,"Delirium/Dementia",2,2,300
+2013,"Delirium/Dementia",2,3,50
+2013,"Delirium/Dementia",2,4,611
+2013,"Delirium/Dementia",3,1,453
+2013,"Delirium/Dementia",3,2,241
+2013,"Delirium/Dementia",3,3,50
+2013,"Delirium/Dementia",3,4,421
+2013,"Delirium/Dementia",4,1,1146
+2013,"Delirium/Dementia",4,2,974
+2013,"Delirium/Dementia",4,3,107
+2013,"Delirium/Dementia",4,4,1300
+2013,"Delirium/Dementia",5,1,190
+2013,"Delirium/Dementia",5,2,197
+2013,"Delirium/Dementia",5,3,41
+2013,"Delirium/Dementia",5,4,310
+2013,"Bipolar Disorder",1,1,1493
+2013,"Bipolar Disorder",1,2,225
+2013,"Bipolar Disorder",1,3,92
+2013,"Bipolar Disorder",1,4,305
+2013,"Bipolar Disorder",2,1,36744
+2013,"Bipolar Disorder",2,2,5117
+2013,"Bipolar Disorder",2,3,2436
+2013,"Bipolar Disorder",2,4,6240
+2013,"Bipolar Disorder",3,1,40270
+2013,"Bipolar Disorder",3,2,8560
+2013,"Bipolar Disorder",3,3,4587
+2013,"Bipolar Disorder",3,4,10326
+2013,"Bipolar Disorder",4,1,57104
+2013,"Bipolar Disorder",4,2,22526
+2013,"Bipolar Disorder",4,3,9354
+2013,"Bipolar Disorder",4,4,29542
+2013,"Bipolar Disorder",5,1,22584
+2013,"Bipolar Disorder",5,2,10880
+2013,"Bipolar Disorder",5,3,4185
+2013,"Bipolar Disorder",5,4,16892
+2013,"Depressive Disorder",1,1,1986
+2013,"Depressive Disorder",1,2,485
+2013,"Depressive Disorder",1,3,173
+2013,"Depressive Disorder",1,4,539
+2013,"Depressive Disorder",2,1,48537
+2013,"Depressive Disorder",2,2,11414
+2013,"Depressive Disorder",2,3,4757
+2013,"Depressive Disorder",2,4,13072
+2013,"Depressive Disorder",3,1,57780
+2013,"Depressive Disorder",3,2,14834
+2013,"Depressive Disorder",3,3,7530
+2013,"Depressive Disorder",3,4,17513
+2013,"Depressive Disorder",4,1,76133
+2013,"Depressive Disorder",4,2,40494
+2013,"Depressive Disorder",4,3,14916
+2013,"Depressive Disorder",4,4,47883
+2013,"Depressive Disorder",5,1,29041
+2013,"Depressive Disorder",5,2,16931
+2013,"Depressive Disorder",5,3,5854
+2013,"Depressive Disorder",5,4,23483
+2013,"Oppositional Defiant Disorder",1,1,251
+2013,"Oppositional Defiant Disorder",1,4,1
+2013,"Oppositional Defiant Disorder",2,1,31905
+2013,"Oppositional Defiant Disorder",2,2,66
+2013,"Oppositional Defiant Disorder",2,3,23
+2013,"Oppositional Defiant Disorder",2,4,25
+2013,"Oppositional Defiant Disorder",3,1,9650
+2013,"Oppositional Defiant Disorder",3,2,45
+2013,"Oppositional Defiant Disorder",3,3,20
+2013,"Oppositional Defiant Disorder",3,4,13
+2013,"Oppositional Defiant Disorder",4,1,1001
+2013,"Oppositional Defiant Disorder",4,2,31
+2013,"Oppositional Defiant Disorder",4,3,11
+2013,"Oppositional Defiant Disorder",4,4,21
+2013,"Oppositional Defiant Disorder",5,1,113
+2013,"Oppositional Defiant Disorder",5,2,6
+2013,"Oppositional Defiant Disorder",5,3,3
+2013,"Oppositional Defiant Disorder",5,4,8
+2013,"Pervasive Developmental Disorders",1,1,588
+2013,"Pervasive Developmental Disorders",1,2,1
+2013,"Pervasive Developmental Disorders",2,1,6131
+2013,"Pervasive Developmental Disorders",2,2,17
+2013,"Pervasive Developmental Disorders",2,3,7
+2013,"Pervasive Developmental Disorders",2,4,24
+2013,"Pervasive Developmental Disorders",3,1,1364
+2013,"Pervasive Developmental Disorders",3,2,7
+2013,"Pervasive Developmental Disorders",3,3,2
+2013,"Pervasive Developmental Disorders",3,4,6
+2013,"Pervasive Developmental Disorders",4,1,1589
+2013,"Pervasive Developmental Disorders",4,2,40
+2013,"Pervasive Developmental Disorders",4,3,5
+2013,"Pervasive Developmental Disorders",4,4,27
+2013,"Pervasive Developmental Disorders",5,1,354
+2013,"Pervasive Developmental Disorders",5,2,22
+2013,"Pervasive Developmental Disorders",5,3,3
+2013,"Pervasive Developmental Disorders",5,4,9
+2013,"Personality Disorders",1,1,93
+2013,"Personality Disorders",1,2,22
+2013,"Personality Disorders",1,3,3
+2013,"Personality Disorders",1,4,23
+2013,"Personality Disorders",2,1,1025
+2013,"Personality Disorders",2,2,262
+2013,"Personality Disorders",2,3,111
+2013,"Personality Disorders",2,4,316
+2013,"Personality Disorders",3,1,2071
+2013,"Personality Disorders",3,2,412
+2013,"Personality Disorders",3,3,240
+2013,"Personality Disorders",3,4,448
+2013,"Personality Disorders",4,1,3071
+2013,"Personality Disorders",4,2,1074
+2013,"Personality Disorders",4,3,396
+2013,"Personality Disorders",4,4,1145
+2013,"Personality Disorders",5,1,864
+2013,"Personality Disorders",5,2,375
+2013,"Personality Disorders",5,3,147
+2013,"Personality Disorders",5,4,499
+2013,"Schizophrenia or other Psychotic Disorders",1,1,2234
+2013,"Schizophrenia or other Psychotic Disorders",1,2,176
+2013,"Schizophrenia or other Psychotic Disorders",1,3,81
+2013,"Schizophrenia or other Psychotic Disorders",1,4,247
+2013,"Schizophrenia or other Psychotic Disorders",2,1,18557
+2013,"Schizophrenia or other Psychotic Disorders",2,2,3478
+2013,"Schizophrenia or other Psychotic Disorders",2,3,1774
+2013,"Schizophrenia or other Psychotic Disorders",2,4,5954
+2013,"Schizophrenia or other Psychotic Disorders",3,1,38195
+2013,"Schizophrenia or other Psychotic Disorders",3,2,4731
+2013,"Schizophrenia or other Psychotic Disorders",3,3,2977
+2013,"Schizophrenia or other Psychotic Disorders",3,4,8594
+2013,"Schizophrenia or other Psychotic Disorders",4,1,67683
+2013,"Schizophrenia or other Psychotic Disorders",4,2,10191
+2013,"Schizophrenia or other Psychotic Disorders",4,3,4835
+2013,"Schizophrenia or other Psychotic Disorders",4,4,19491
+2013,"Schizophrenia or other Psychotic Disorders",5,1,20674
+2013,"Schizophrenia or other Psychotic Disorders",5,2,3212
+2013,"Schizophrenia or other Psychotic Disorders",5,3,1405
+2013,"Schizophrenia or other Psychotic Disorders",5,4,7447
+2013,"Alcohol/Substance Use Disorders",1,1,192
+2013,"Alcohol/Substance Use Disorders",1,2,58
+2013,"Alcohol/Substance Use Disorders",1,3,22
+2013,"Alcohol/Substance Use Disorders",1,4,48
+2013,"Alcohol/Substance Use Disorders",2,1,2632
+2013,"Alcohol/Substance Use Disorders",2,2,824
+2013,"Alcohol/Substance Use Disorders",2,3,339
+2013,"Alcohol/Substance Use Disorders",2,4,705
+2013,"Alcohol/Substance Use Disorders",3,1,5494
+2013,"Alcohol/Substance Use Disorders",3,2,1016
+2013,"Alcohol/Substance Use Disorders",3,3,518
+2013,"Alcohol/Substance Use Disorders",3,4,932
+2013,"Alcohol/Substance Use Disorders",4,1,8707
+2013,"Alcohol/Substance Use Disorders",4,2,3788
+2013,"Alcohol/Substance Use Disorders",4,3,1088
+2013,"Alcohol/Substance Use Disorders",4,4,2839
+2013,"Alcohol/Substance Use Disorders",5,1,1642
+2013,"Alcohol/Substance Use Disorders",5,2,595
+2013,"Alcohol/Substance Use Disorders",5,3,206
+2013,"Alcohol/Substance Use Disorders",5,4,815
+2013,"Other Disorder/Condition",1,1,1067
+2013,"Other Disorder/Condition",1,2,99
+2013,"Other Disorder/Condition",1,3,31
+2013,"Other Disorder/Condition",1,4,60
+2013,"Other Disorder/Condition",2,1,19035
+2013,"Other Disorder/Condition",2,2,1356
+2013,"Other Disorder/Condition",2,3,456
+2013,"Other Disorder/Condition",2,4,983
+2013,"Other Disorder/Condition",3,1,7914
+2013,"Other Disorder/Condition",3,2,1112
+2013,"Other Disorder/Condition",3,3,422
+2013,"Other Disorder/Condition",3,4,879
+2013,"Other Disorder/Condition",4,1,9616
+2013,"Other Disorder/Condition",4,2,4362
+2013,"Other Disorder/Condition",4,3,1107
+2013,"Other Disorder/Condition",4,4,2949
+2013,"Other Disorder/Condition",5,1,1477
+2013,"Other Disorder/Condition",5,2,898
+2013,"Other Disorder/Condition",5,3,178
+2013,"Other Disorder/Condition",5,4,707
+2014,"Missing",1,1,758
+2014,"Missing",1,2,189
+2014,"Missing",1,3,41
+2014,"Missing",1,4,105
+2014,"Missing",2,1,31960
+2014,"Missing",2,2,4890
+2014,"Missing",2,3,1413
+2014,"Missing",2,4,3782
+2014,"Missing",3,1,18111
+2014,"Missing",3,2,3686
+2014,"Missing",3,3,1418
+2014,"Missing",3,4,3050
+2014,"Missing",4,1,22124
+2014,"Missing",4,2,12256
+2014,"Missing",4,3,3379
+2014,"Missing",4,4,9744
+2014,"Missing",5,1,7323
+2014,"Missing",5,2,4364
+2014,"Missing",5,3,1086
+2014,"Missing",5,4,4484
+2014,"Trauma/Stress-related Disorder",1,1,670
+2014,"Trauma/Stress-related Disorder",1,2,205
+2014,"Trauma/Stress-related Disorder",1,3,62
+2014,"Trauma/Stress-related Disorder",1,4,113
+2014,"Trauma/Stress-related Disorder",2,1,79978
+2014,"Trauma/Stress-related Disorder",2,2,3358
+2014,"Trauma/Stress-related Disorder",2,3,1180
+2014,"Trauma/Stress-related Disorder",2,4,2396
+2014,"Trauma/Stress-related Disorder",3,1,27533
+2014,"Trauma/Stress-related Disorder",3,2,3656
+2014,"Trauma/Stress-related Disorder",3,3,1754
+2014,"Trauma/Stress-related Disorder",3,4,3111
+2014,"Trauma/Stress-related Disorder",4,1,23196
+2014,"Trauma/Stress-related Disorder",4,2,13113
+2014,"Trauma/Stress-related Disorder",4,3,4545
+2014,"Trauma/Stress-related Disorder",4,4,10060
+2014,"Trauma/Stress-related Disorder",5,1,8509
+2014,"Trauma/Stress-related Disorder",5,2,5386
+2014,"Trauma/Stress-related Disorder",5,3,1887
+2014,"Trauma/Stress-related Disorder",5,4,6017
+2014,"Anxiety Disorder",1,1,729
+2014,"Anxiety Disorder",1,2,119
+2014,"Anxiety Disorder",1,3,21
+2014,"Anxiety Disorder",1,4,58
+2014,"Anxiety Disorder",2,1,27525
+2014,"Anxiety Disorder",2,2,2445
+2014,"Anxiety Disorder",2,3,713
+2014,"Anxiety Disorder",2,4,1854
+2014,"Anxiety Disorder",3,1,14760
+2014,"Anxiety Disorder",3,2,3252
+2014,"Anxiety Disorder",3,3,1173
+2014,"Anxiety Disorder",3,4,2755
+2014,"Anxiety Disorder",4,1,20269
+2014,"Anxiety Disorder",4,2,9814
+2014,"Anxiety Disorder",4,3,2511
+2014,"Anxiety Disorder",4,4,7982
+2014,"Anxiety Disorder",5,1,9038
+2014,"Anxiety Disorder",5,2,4869
+2014,"Anxiety Disorder",5,3,1236
+2014,"Anxiety Disorder",5,4,4710
+2014,"ADHD",1,1,790
+2014,"ADHD",1,2,15
+2014,"ADHD",1,4,1
+2014,"ADHD",2,1,108524
+2014,"ADHD",2,2,419
+2014,"ADHD",2,3,92
+2014,"ADHD",2,4,197
+2014,"ADHD",3,1,15489
+2014,"ADHD",3,2,313
+2014,"ADHD",3,3,63
+2014,"ADHD",3,4,152
+2014,"ADHD",4,1,4967
+2014,"ADHD",4,2,808
+2014,"ADHD",4,3,185
+2014,"ADHD",4,4,546
+2014,"ADHD",5,1,1587
+2014,"ADHD",5,2,617
+2014,"ADHD",5,3,112
+2014,"ADHD",5,4,527
+2014,"Conduct Disorder",1,1,339
+2014,"Conduct Disorder",1,2,1
+2014,"Conduct Disorder",1,4,2
+2014,"Conduct Disorder",2,1,29396
+2014,"Conduct Disorder",2,2,70
+2014,"Conduct Disorder",2,3,24
+2014,"Conduct Disorder",2,4,43
+2014,"Conduct Disorder",3,1,6713
+2014,"Conduct Disorder",3,2,42
+2014,"Conduct Disorder",3,3,13
+2014,"Conduct Disorder",3,4,28
+2014,"Conduct Disorder",4,1,893
+2014,"Conduct Disorder",4,2,42
+2014,"Conduct Disorder",4,3,8
+2014,"Conduct Disorder",4,4,25
+2014,"Conduct Disorder",5,1,122
+2014,"Conduct Disorder",5,2,7
+2014,"Conduct Disorder",5,3,2
+2014,"Conduct Disorder",5,4,4
+2014,"Delirium/Dementia",1,1,76
+2014,"Delirium/Dementia",1,2,14
+2014,"Delirium/Dementia",1,3,2
+2014,"Delirium/Dementia",1,4,11
+2014,"Delirium/Dementia",2,1,575
+2014,"Delirium/Dementia",2,2,298
+2014,"Delirium/Dementia",2,3,36
+2014,"Delirium/Dementia",2,4,529
+2014,"Delirium/Dementia",3,1,411
+2014,"Delirium/Dementia",3,2,201
+2014,"Delirium/Dementia",3,3,38
+2014,"Delirium/Dementia",3,4,372
+2014,"Delirium/Dementia",4,1,1053
+2014,"Delirium/Dementia",4,2,883
+2014,"Delirium/Dementia",4,3,85
+2014,"Delirium/Dementia",4,4,1208
+2014,"Delirium/Dementia",5,1,201
+2014,"Delirium/Dementia",5,2,196
+2014,"Delirium/Dementia",5,3,37
+2014,"Delirium/Dementia",5,4,295
+2014,"Bipolar Disorder",1,1,1424
+2014,"Bipolar Disorder",1,2,171
+2014,"Bipolar Disorder",1,3,76
+2014,"Bipolar Disorder",1,4,198
+2014,"Bipolar Disorder",2,1,37393
+2014,"Bipolar Disorder",2,2,4615
+2014,"Bipolar Disorder",2,3,2215
+2014,"Bipolar Disorder",2,4,5553
+2014,"Bipolar Disorder",3,1,41581
+2014,"Bipolar Disorder",3,2,8330
+2014,"Bipolar Disorder",3,3,4608
+2014,"Bipolar Disorder",3,4,9994
+2014,"Bipolar Disorder",4,1,60899
+2014,"Bipolar Disorder",4,2,22527
+2014,"Bipolar Disorder",4,3,9677
+2014,"Bipolar Disorder",4,4,30114
+2014,"Bipolar Disorder",5,1,25672
+2014,"Bipolar Disorder",5,2,11717
+2014,"Bipolar Disorder",5,3,4769
+2014,"Bipolar Disorder",5,4,18901
+2014,"Depressive Disorder",1,1,1780
+2014,"Depressive Disorder",1,2,401
+2014,"Depressive Disorder",1,3,147
+2014,"Depressive Disorder",1,4,380
+2014,"Depressive Disorder",2,1,49593
+2014,"Depressive Disorder",2,2,10366
+2014,"Depressive Disorder",2,3,4316
+2014,"Depressive Disorder",2,4,11377
+2014,"Depressive Disorder",3,1,60771
+2014,"Depressive Disorder",3,2,13992
+2014,"Depressive Disorder",3,3,7444
+2014,"Depressive Disorder",3,4,16763
+2014,"Depressive Disorder",4,1,79554
+2014,"Depressive Disorder",4,2,39800
+2014,"Depressive Disorder",4,3,15096
+2014,"Depressive Disorder",4,4,47599
+2014,"Depressive Disorder",5,1,33007
+2014,"Depressive Disorder",5,2,18522
+2014,"Depressive Disorder",5,3,6431
+2014,"Depressive Disorder",5,4,26722
+2014,"Oppositional Defiant Disorder",1,1,205
+2014,"Oppositional Defiant Disorder",1,4,1
+2014,"Oppositional Defiant Disorder",2,1,31140
+2014,"Oppositional Defiant Disorder",2,2,57
+2014,"Oppositional Defiant Disorder",2,3,25
+2014,"Oppositional Defiant Disorder",2,4,34
+2014,"Oppositional Defiant Disorder",3,1,9279
+2014,"Oppositional Defiant Disorder",3,2,40
+2014,"Oppositional Defiant Disorder",3,3,12
+2014,"Oppositional Defiant Disorder",3,4,10
+2014,"Oppositional Defiant Disorder",4,1,941
+2014,"Oppositional Defiant Disorder",4,2,23
+2014,"Oppositional Defiant Disorder",4,3,7
+2014,"Oppositional Defiant Disorder",4,4,14
+2014,"Oppositional Defiant Disorder",5,1,117
+2014,"Oppositional Defiant Disorder",5,2,3
+2014,"Oppositional Defiant Disorder",5,3,4
+2014,"Oppositional Defiant Disorder",5,4,3
+2014,"Pervasive Developmental Disorders",1,1,625
+2014,"Pervasive Developmental Disorders",1,3,2
+2014,"Pervasive Developmental Disorders",2,1,6884
+2014,"Pervasive Developmental Disorders",2,2,30
+2014,"Pervasive Developmental Disorders",2,3,7
+2014,"Pervasive Developmental Disorders",2,4,16
+2014,"Pervasive Developmental Disorders",3,1,1457
+2014,"Pervasive Developmental Disorders",3,2,16
+2014,"Pervasive Developmental Disorders",3,3,7
+2014,"Pervasive Developmental Disorders",3,4,5
+2014,"Pervasive Developmental Disorders",4,1,1816
+2014,"Pervasive Developmental Disorders",4,2,37
+2014,"Pervasive Developmental Disorders",4,3,8
+2014,"Pervasive Developmental Disorders",4,4,16
+2014,"Pervasive Developmental Disorders",5,1,383
+2014,"Pervasive Developmental Disorders",5,2,18
+2014,"Pervasive Developmental Disorders",5,3,3
+2014,"Pervasive Developmental Disorders",5,4,9
+2014,"Personality Disorders",1,1,72
+2014,"Personality Disorders",1,2,9
+2014,"Personality Disorders",1,3,3
+2014,"Personality Disorders",1,4,12
+2014,"Personality Disorders",2,1,855
+2014,"Personality Disorders",2,2,171
+2014,"Personality Disorders",2,3,76
+2014,"Personality Disorders",2,4,178
+2014,"Personality Disorders",3,1,1853
+2014,"Personality Disorders",3,2,308
+2014,"Personality Disorders",3,3,168
+2014,"Personality Disorders",3,4,308
+2014,"Personality Disorders",4,1,2739
+2014,"Personality Disorders",4,2,834
+2014,"Personality Disorders",4,3,303
+2014,"Personality Disorders",4,4,881
+2014,"Personality Disorders",5,1,794
+2014,"Personality Disorders",5,2,339
+2014,"Personality Disorders",5,3,122
+2014,"Personality Disorders",5,4,439
+2014,"Schizophrenia or other Psychotic Disorders",1,1,2040
+2014,"Schizophrenia or other Psychotic Disorders",1,2,132
+2014,"Schizophrenia or other Psychotic Disorders",1,3,72
+2014,"Schizophrenia or other Psychotic Disorders",1,4,211
+2014,"Schizophrenia or other Psychotic Disorders",2,1,18331
+2014,"Schizophrenia or other Psychotic Disorders",2,2,3249
+2014,"Schizophrenia or other Psychotic Disorders",2,3,1733
+2014,"Schizophrenia or other Psychotic Disorders",2,4,5572
+2014,"Schizophrenia or other Psychotic Disorders",3,1,39289
+2014,"Schizophrenia or other Psychotic Disorders",3,2,4712
+2014,"Schizophrenia or other Psychotic Disorders",3,3,2961
+2014,"Schizophrenia or other Psychotic Disorders",3,4,8565
+2014,"Schizophrenia or other Psychotic Disorders",4,1,70976
+2014,"Schizophrenia or other Psychotic Disorders",4,2,10269
+2014,"Schizophrenia or other Psychotic Disorders",4,3,5002
+2014,"Schizophrenia or other Psychotic Disorders",4,4,19611
+2014,"Schizophrenia or other Psychotic Disorders",5,1,23134
+2014,"Schizophrenia or other Psychotic Disorders",5,2,3503
+2014,"Schizophrenia or other Psychotic Disorders",5,3,1620
+2014,"Schizophrenia or other Psychotic Disorders",5,4,8262
+2014,"Alcohol/Substance Use Disorders",1,1,177
+2014,"Alcohol/Substance Use Disorders",1,2,60
+2014,"Alcohol/Substance Use Disorders",1,3,22
+2014,"Alcohol/Substance Use Disorders",1,4,51
+2014,"Alcohol/Substance Use Disorders",2,1,2263
+2014,"Alcohol/Substance Use Disorders",2,2,765
+2014,"Alcohol/Substance Use Disorders",2,3,296
+2014,"Alcohol/Substance Use Disorders",2,4,591
+2014,"Alcohol/Substance Use Disorders",3,1,4874
+2014,"Alcohol/Substance Use Disorders",3,2,995
+2014,"Alcohol/Substance Use Disorders",3,3,462
+2014,"Alcohol/Substance Use Disorders",3,4,785
+2014,"Alcohol/Substance Use Disorders",4,1,7841
+2014,"Alcohol/Substance Use Disorders",4,2,3509
+2014,"Alcohol/Substance Use Disorders",4,3,878
+2014,"Alcohol/Substance Use Disorders",4,4,2329
+2014,"Alcohol/Substance Use Disorders",5,1,1681
+2014,"Alcohol/Substance Use Disorders",5,2,581
+2014,"Alcohol/Substance Use Disorders",5,3,205
+2014,"Alcohol/Substance Use Disorders",5,4,805
+2014,"Other Disorder/Condition",1,1,891
+2014,"Other Disorder/Condition",1,2,78
+2014,"Other Disorder/Condition",1,3,22
+2014,"Other Disorder/Condition",1,4,42
+2014,"Other Disorder/Condition",2,1,19834
+2014,"Other Disorder/Condition",2,2,1437
+2014,"Other Disorder/Condition",2,3,400
+2014,"Other Disorder/Condition",2,4,917
+2014,"Other Disorder/Condition",3,1,7583
+2014,"Other Disorder/Condition",3,2,1015
+2014,"Other Disorder/Condition",3,3,392
+2014,"Other Disorder/Condition",3,4,809
+2014,"Other Disorder/Condition",4,1,9238
+2014,"Other Disorder/Condition",4,2,4010
+2014,"Other Disorder/Condition",4,3,1024
+2014,"Other Disorder/Condition",4,4,2739
+2014,"Other Disorder/Condition",5,1,1811
+2014,"Other Disorder/Condition",5,2,884
+2014,"Other Disorder/Condition",5,3,225
+2014,"Other Disorder/Condition",5,4,824
+2015,"Missing",1,1,890
+2015,"Missing",1,2,196
+2015,"Missing",1,3,53
+2015,"Missing",1,4,128
+2015,"Missing",2,1,45963
+2015,"Missing",2,2,5270
+2015,"Missing",2,3,1847
+2015,"Missing",2,4,4490
+2015,"Missing",3,1,29084
+2015,"Missing",3,2,5332
+2015,"Missing",3,3,2561
+2015,"Missing",3,4,5545
+2015,"Missing",4,1,36507
+2015,"Missing",4,2,16777
+2015,"Missing",4,3,5988
+2015,"Missing",4,4,16852
+2015,"Missing",5,1,13006
+2015,"Missing",5,2,6401
+2015,"Missing",5,3,2136
+2015,"Missing",5,4,8573
+2015,"Trauma/Stress-related Disorder",1,1,682
+2015,"Trauma/Stress-related Disorder",1,2,204
+2015,"Trauma/Stress-related Disorder",1,3,61
+2015,"Trauma/Stress-related Disorder",1,4,114
+2015,"Trauma/Stress-related Disorder",2,1,74039
+2015,"Trauma/Stress-related Disorder",2,2,3186
+2015,"Trauma/Stress-related Disorder",2,3,1166
+2015,"Trauma/Stress-related Disorder",2,4,2290
+2015,"Trauma/Stress-related Disorder",3,1,26988
+2015,"Trauma/Stress-related Disorder",3,2,3670
+2015,"Trauma/Stress-related Disorder",3,3,1789
+2015,"Trauma/Stress-related Disorder",3,4,3058
+2015,"Trauma/Stress-related Disorder",4,1,24445
+2015,"Trauma/Stress-related Disorder",4,2,13287
+2015,"Trauma/Stress-related Disorder",4,3,4564
+2015,"Trauma/Stress-related Disorder",4,4,10296
+2015,"Trauma/Stress-related Disorder",5,1,9402
+2015,"Trauma/Stress-related Disorder",5,2,5905
+2015,"Trauma/Stress-related Disorder",5,3,2036
+2015,"Trauma/Stress-related Disorder",5,4,6391
+2015,"Anxiety Disorder",1,1,867
+2015,"Anxiety Disorder",1,2,129
+2015,"Anxiety Disorder",1,3,23
+2015,"Anxiety Disorder",1,4,77
+2015,"Anxiety Disorder",2,1,28448
+2015,"Anxiety Disorder",2,2,2373
+2015,"Anxiety Disorder",2,3,705
+2015,"Anxiety Disorder",2,4,1880
+2015,"Anxiety Disorder",3,1,16720
+2015,"Anxiety Disorder",3,2,3345
+2015,"Anxiety Disorder",3,3,1237
+2015,"Anxiety Disorder",3,4,2931
+2015,"Anxiety Disorder",4,1,23060
+2015,"Anxiety Disorder",4,2,10754
+2015,"Anxiety Disorder",4,3,2832
+2015,"Anxiety Disorder",4,4,8810
+2015,"Anxiety Disorder",5,1,11076
+2015,"Anxiety Disorder",5,2,5800
+2015,"Anxiety Disorder",5,3,1463
+2015,"Anxiety Disorder",5,4,5445
+2015,"ADHD",1,1,958
+2015,"ADHD",1,2,15
+2015,"ADHD",1,4,1
+2015,"ADHD",2,1,101351
+2015,"ADHD",2,2,409
+2015,"ADHD",2,3,82
+2015,"ADHD",2,4,183
+2015,"ADHD",3,1,15054
+2015,"ADHD",3,2,258
+2015,"ADHD",3,3,75
+2015,"ADHD",3,4,116
+2015,"ADHD",4,1,4953
+2015,"ADHD",4,2,756
+2015,"ADHD",4,3,168
+2015,"ADHD",4,4,470
+2015,"ADHD",5,1,1736
+2015,"ADHD",5,2,655
+2015,"ADHD",5,3,113
+2015,"ADHD",5,4,468
+2015,"Conduct Disorder",1,1,333
+2015,"Conduct Disorder",1,2,1
+2015,"Conduct Disorder",1,4,3
+2015,"Conduct Disorder",2,1,27166
+2015,"Conduct Disorder",2,2,94
+2015,"Conduct Disorder",2,3,20
+2015,"Conduct Disorder",2,4,46
+2015,"Conduct Disorder",3,1,6239
+2015,"Conduct Disorder",3,2,58
+2015,"Conduct Disorder",3,3,14
+2015,"Conduct Disorder",3,4,29
+2015,"Conduct Disorder",4,1,879
+2015,"Conduct Disorder",4,2,65
+2015,"Conduct Disorder",4,3,9
+2015,"Conduct Disorder",4,4,45
+2015,"Conduct Disorder",5,1,125
+2015,"Conduct Disorder",5,2,15
+2015,"Conduct Disorder",5,3,3
+2015,"Conduct Disorder",5,4,13
+2015,"Delirium/Dementia",1,1,65
+2015,"Delirium/Dementia",1,2,12
+2015,"Delirium/Dementia",1,3,1
+2015,"Delirium/Dementia",1,4,17
+2015,"Delirium/Dementia",2,1,520
+2015,"Delirium/Dementia",2,2,275
+2015,"Delirium/Dementia",2,3,31
+2015,"Delirium/Dementia",2,4,520
+2015,"Delirium/Dementia",3,1,395
+2015,"Delirium/Dementia",3,2,194
+2015,"Delirium/Dementia",3,3,35
+2015,"Delirium/Dementia",3,4,326
+2015,"Delirium/Dementia",4,1,1009
+2015,"Delirium/Dementia",4,2,873
+2015,"Delirium/Dementia",4,3,93
+2015,"Delirium/Dementia",4,4,1212
+2015,"Delirium/Dementia",5,1,211
+2015,"Delirium/Dementia",5,2,205
+2015,"Delirium/Dementia",5,3,29
+2015,"Delirium/Dementia",5,4,267
+2015,"Bipolar Disorder",1,1,1552
+2015,"Bipolar Disorder",1,2,163
+2015,"Bipolar Disorder",1,3,69
+2015,"Bipolar Disorder",1,4,203
+2015,"Bipolar Disorder",2,1,33340
+2015,"Bipolar Disorder",2,2,4159
+2015,"Bipolar Disorder",2,3,1979
+2015,"Bipolar Disorder",2,4,5024
+2015,"Bipolar Disorder",3,1,36579
+2015,"Bipolar Disorder",3,2,7342
+2015,"Bipolar Disorder",3,3,4014
+2015,"Bipolar Disorder",3,4,8949
+2015,"Bipolar Disorder",4,1,56765
+2015,"Bipolar Disorder",4,2,20833
+2015,"Bipolar Disorder",4,3,8749
+2015,"Bipolar Disorder",4,4,27581
+2015,"Bipolar Disorder",5,1,24632
+2015,"Bipolar Disorder",5,2,11372
+2015,"Bipolar Disorder",5,3,4547
+2015,"Bipolar Disorder",5,4,17610
+2015,"Depressive Disorder",1,1,2092
+2015,"Depressive Disorder",1,2,426
+2015,"Depressive Disorder",1,3,151
+2015,"Depressive Disorder",1,4,400
+2015,"Depressive Disorder",2,1,50071
+2015,"Depressive Disorder",2,2,9913
+2015,"Depressive Disorder",2,3,4055
+2015,"Depressive Disorder",2,4,10969
+2015,"Depressive Disorder",3,1,62321
+2015,"Depressive Disorder",3,2,13364
+2015,"Depressive Disorder",3,3,6982
+2015,"Depressive Disorder",3,4,15939
+2015,"Depressive Disorder",4,1,83556
+2015,"Depressive Disorder",4,2,40104
+2015,"Depressive Disorder",4,3,15203
+2015,"Depressive Disorder",4,4,47294
+2015,"Depressive Disorder",5,1,36095
+2015,"Depressive Disorder",5,2,19666
+2015,"Depressive Disorder",5,3,6821
+2015,"Depressive Disorder",5,4,26778
+2015,"Oppositional Defiant Disorder",1,1,292
+2015,"Oppositional Defiant Disorder",1,2,1
+2015,"Oppositional Defiant Disorder",1,4,1
+2015,"Oppositional Defiant Disorder",2,1,29961
+2015,"Oppositional Defiant Disorder",2,2,75
+2015,"Oppositional Defiant Disorder",2,3,24
+2015,"Oppositional Defiant Disorder",2,4,37
+2015,"Oppositional Defiant Disorder",3,1,8608
+2015,"Oppositional Defiant Disorder",3,2,42
+2015,"Oppositional Defiant Disorder",3,3,11
+2015,"Oppositional Defiant Disorder",3,4,8
+2015,"Oppositional Defiant Disorder",4,1,890
+2015,"Oppositional Defiant Disorder",4,2,31
+2015,"Oppositional Defiant Disorder",4,3,7
+2015,"Oppositional Defiant Disorder",4,4,10
+2015,"Oppositional Defiant Disorder",5,1,111
+2015,"Oppositional Defiant Disorder",5,2,7
+2015,"Oppositional Defiant Disorder",5,3,5
+2015,"Oppositional Defiant Disorder",5,4,6
+2015,"Pervasive Developmental Disorders",1,1,831
+2015,"Pervasive Developmental Disorders",1,3,3
+2015,"Pervasive Developmental Disorders",1,4,1
+2015,"Pervasive Developmental Disorders",2,1,7073
+2015,"Pervasive Developmental Disorders",2,2,25
+2015,"Pervasive Developmental Disorders",2,3,5
+2015,"Pervasive Developmental Disorders",2,4,11
+2015,"Pervasive Developmental Disorders",3,1,1685
+2015,"Pervasive Developmental Disorders",3,2,17
+2015,"Pervasive Developmental Disorders",3,3,2
+2015,"Pervasive Developmental Disorders",3,4,9
+2015,"Pervasive Developmental Disorders",4,1,2052
+2015,"Pervasive Developmental Disorders",4,2,37
+2015,"Pervasive Developmental Disorders",4,3,10
+2015,"Pervasive Developmental Disorders",4,4,20
+2015,"Pervasive Developmental Disorders",5,1,405
+2015,"Pervasive Developmental Disorders",5,2,28
+2015,"Pervasive Developmental Disorders",5,3,5
+2015,"Pervasive Developmental Disorders",5,4,15
+2015,"Personality Disorders",1,1,75
+2015,"Personality Disorders",1,2,12
+2015,"Personality Disorders",1,3,1
+2015,"Personality Disorders",1,4,12
+2015,"Personality Disorders",2,1,891
+2015,"Personality Disorders",2,2,176
+2015,"Personality Disorders",2,3,67
+2015,"Personality Disorders",2,4,188
+2015,"Personality Disorders",3,1,2038
+2015,"Personality Disorders",3,2,350
+2015,"Personality Disorders",3,3,197
+2015,"Personality Disorders",3,4,344
+2015,"Personality Disorders",4,1,2953
+2015,"Personality Disorders",4,2,899
+2015,"Personality Disorders",4,3,332
+2015,"Personality Disorders",4,4,944
+2015,"Personality Disorders",5,1,982
+2015,"Personality Disorders",5,2,402
+2015,"Personality Disorders",5,3,125
+2015,"Personality Disorders",5,4,523
+2015,"Schizophrenia or other Psychotic Disorders",1,1,2277
+2015,"Schizophrenia or other Psychotic Disorders",1,2,160
+2015,"Schizophrenia or other Psychotic Disorders",1,3,80
+2015,"Schizophrenia or other Psychotic Disorders",1,4,220
+2015,"Schizophrenia or other Psychotic Disorders",2,1,17444
+2015,"Schizophrenia or other Psychotic Disorders",2,2,3059
+2015,"Schizophrenia or other Psychotic Disorders",2,3,1629
+2015,"Schizophrenia or other Psychotic Disorders",2,4,5100
+2015,"Schizophrenia or other Psychotic Disorders",3,1,37009
+2015,"Schizophrenia or other Psychotic Disorders",3,2,4464
+2015,"Schizophrenia or other Psychotic Disorders",3,3,2755
+2015,"Schizophrenia or other Psychotic Disorders",3,4,7920
+2015,"Schizophrenia or other Psychotic Disorders",4,1,68579
+2015,"Schizophrenia or other Psychotic Disorders",4,2,10117
+2015,"Schizophrenia or other Psychotic Disorders",4,3,4799
+2015,"Schizophrenia or other Psychotic Disorders",4,4,18632
+2015,"Schizophrenia or other Psychotic Disorders",5,1,22539
+2015,"Schizophrenia or other Psychotic Disorders",5,2,3511
+2015,"Schizophrenia or other Psychotic Disorders",5,3,1642
+2015,"Schizophrenia or other Psychotic Disorders",5,4,8006
+2015,"Alcohol/Substance Use Disorders",1,1,167
+2015,"Alcohol/Substance Use Disorders",1,2,59
+2015,"Alcohol/Substance Use Disorders",1,3,22
+2015,"Alcohol/Substance Use Disorders",1,4,50
+2015,"Alcohol/Substance Use Disorders",2,1,2392
+2015,"Alcohol/Substance Use Disorders",2,2,795
+2015,"Alcohol/Substance Use Disorders",2,3,305
+2015,"Alcohol/Substance Use Disorders",2,4,638
+2015,"Alcohol/Substance Use Disorders",3,1,5167
+2015,"Alcohol/Substance Use Disorders",3,2,1029
+2015,"Alcohol/Substance Use Disorders",3,3,498
+2015,"Alcohol/Substance Use Disorders",3,4,873
+2015,"Alcohol/Substance Use Disorders",4,1,8569
+2015,"Alcohol/Substance Use Disorders",4,2,3650
+2015,"Alcohol/Substance Use Disorders",4,3,1065
+2015,"Alcohol/Substance Use Disorders",4,4,2635
+2015,"Alcohol/Substance Use Disorders",5,1,2291
+2015,"Alcohol/Substance Use Disorders",5,2,777
+2015,"Alcohol/Substance Use Disorders",5,3,320
+2015,"Alcohol/Substance Use Disorders",5,4,1017
+2015,"Other Disorder/Condition",1,1,1000
+2015,"Other Disorder/Condition",1,2,90
+2015,"Other Disorder/Condition",1,3,21
+2015,"Other Disorder/Condition",1,4,43
+2015,"Other Disorder/Condition",2,1,18277
+2015,"Other Disorder/Condition",2,2,1312
+2015,"Other Disorder/Condition",2,3,394
+2015,"Other Disorder/Condition",2,4,958
+2015,"Other Disorder/Condition",3,1,7580
+2015,"Other Disorder/Condition",3,2,1004
+2015,"Other Disorder/Condition",3,3,432
+2015,"Other Disorder/Condition",3,4,874
+2015,"Other Disorder/Condition",4,1,9917
+2015,"Other Disorder/Condition",4,2,4406
+2015,"Other Disorder/Condition",4,3,1103
+2015,"Other Disorder/Condition",4,4,3107
+2015,"Other Disorder/Condition",5,1,2044
+2015,"Other Disorder/Condition",5,2,1025
+2015,"Other Disorder/Condition",5,3,278
+2015,"Other Disorder/Condition",5,4,1030
+2016,"Missing",1,1,2570
+2016,"Missing",1,2,962
+2016,"Missing",1,3,255
+2016,"Missing",1,4,716
+2016,"Missing",2,1,91335
+2016,"Missing",2,2,13016
+2016,"Missing",2,3,4639
+2016,"Missing",2,4,11805
+2016,"Missing",3,1,55114
+2016,"Missing",3,2,9054
+2016,"Missing",3,3,4159
+2016,"Missing",3,4,9402
+2016,"Missing",4,1,81348
+2016,"Missing",4,2,40433
+2016,"Missing",4,3,11245
+2016,"Missing",4,4,32746
+2016,"Missing",5,1,16537
+2016,"Missing",5,2,7524
+2016,"Missing",5,3,2381
+2016,"Missing",5,4,9250
+2016,"Trauma/Stress-related Disorder",1,1,351
+2016,"Trauma/Stress-related Disorder",1,2,21
+2016,"Trauma/Stress-related Disorder",1,3,7
+2016,"Trauma/Stress-related Disorder",1,4,25
+2016,"Trauma/Stress-related Disorder",2,1,56088
+2016,"Trauma/Stress-related Disorder",2,2,1642
+2016,"Trauma/Stress-related Disorder",2,3,634
+2016,"Trauma/Stress-related Disorder",2,4,1399
+2016,"Trauma/Stress-related Disorder",3,1,22270
+2016,"Trauma/Stress-related Disorder",3,2,2868
+2016,"Trauma/Stress-related Disorder",3,3,1446
+2016,"Trauma/Stress-related Disorder",3,4,2653
+2016,"Trauma/Stress-related Disorder",4,1,21220
+2016,"Trauma/Stress-related Disorder",4,2,8182
+2016,"Trauma/Stress-related Disorder",4,3,3198
+2016,"Trauma/Stress-related Disorder",4,4,8137
+2016,"Trauma/Stress-related Disorder",5,1,9835
+2016,"Trauma/Stress-related Disorder",5,2,5964
+2016,"Trauma/Stress-related Disorder",5,3,2013
+2016,"Trauma/Stress-related Disorder",5,4,6407
+2016,"Anxiety Disorder",1,1,605
+2016,"Anxiety Disorder",1,2,33
+2016,"Anxiety Disorder",1,3,9
+2016,"Anxiety Disorder",1,4,19
+2016,"Anxiety Disorder",2,1,26483
+2016,"Anxiety Disorder",2,2,1707
+2016,"Anxiety Disorder",2,3,533
+2016,"Anxiety Disorder",2,4,1475
+2016,"Anxiety Disorder",3,1,16086
+2016,"Anxiety Disorder",3,2,2824
+2016,"Anxiety Disorder",3,3,1101
+2016,"Anxiety Disorder",3,4,2588
+2016,"Anxiety Disorder",4,1,20760
+2016,"Anxiety Disorder",4,2,8182
+2016,"Anxiety Disorder",4,3,2454
+2016,"Anxiety Disorder",4,4,7677
+2016,"Anxiety Disorder",5,1,11226
+2016,"Anxiety Disorder",5,2,6033
+2016,"Anxiety Disorder",5,3,1431
+2016,"Anxiety Disorder",5,4,5427
+2016,"ADHD",1,1,684
+2016,"ADHD",1,2,8
+2016,"ADHD",1,4,1
+2016,"ADHD",2,1,94639
+2016,"ADHD",2,2,403
+2016,"ADHD",2,3,103
+2016,"ADHD",2,4,205
+2016,"ADHD",3,1,14466
+2016,"ADHD",3,2,238
+2016,"ADHD",3,3,70
+2016,"ADHD",3,4,114
+2016,"ADHD",4,1,4561
+2016,"ADHD",4,2,669
+2016,"ADHD",4,3,158
+2016,"ADHD",4,4,487
+2016,"ADHD",5,1,2012
+2016,"ADHD",5,2,718
+2016,"ADHD",5,3,123
+2016,"ADHD",5,4,594
+2016,"Conduct Disorder",1,1,272
+2016,"Conduct Disorder",1,2,3
+2016,"Conduct Disorder",1,4,1
+2016,"Conduct Disorder",2,1,18358
+2016,"Conduct Disorder",2,2,76
+2016,"Conduct Disorder",2,3,20
+2016,"Conduct Disorder",2,4,40
+2016,"Conduct Disorder",3,1,4401
+2016,"Conduct Disorder",3,2,55
+2016,"Conduct Disorder",3,3,17
+2016,"Conduct Disorder",3,4,34
+2016,"Conduct Disorder",4,1,976
+2016,"Conduct Disorder",4,2,106
+2016,"Conduct Disorder",4,3,25
+2016,"Conduct Disorder",4,4,54
+2016,"Conduct Disorder",5,1,149
+2016,"Conduct Disorder",5,2,44
+2016,"Conduct Disorder",5,3,15
+2016,"Conduct Disorder",5,4,23
+2016,"Delirium/Dementia",1,1,30
+2016,"Delirium/Dementia",1,2,2
+2016,"Delirium/Dementia",1,4,5
+2016,"Delirium/Dementia",2,1,217
+2016,"Delirium/Dementia",2,2,92
+2016,"Delirium/Dementia",2,3,13
+2016,"Delirium/Dementia",2,4,143
+2016,"Delirium/Dementia",3,1,230
+2016,"Delirium/Dementia",3,2,75
+2016,"Delirium/Dementia",3,3,25
+2016,"Delirium/Dementia",3,4,135
+2016,"Delirium/Dementia",4,1,562
+2016,"Delirium/Dementia",4,2,252
+2016,"Delirium/Dementia",4,3,50
+2016,"Delirium/Dementia",4,4,412
+2016,"Delirium/Dementia",5,1,153
+2016,"Delirium/Dementia",5,2,105
+2016,"Delirium/Dementia",5,3,16
+2016,"Delirium/Dementia",5,4,199
+2016,"Bipolar Disorder",1,1,798
+2016,"Bipolar Disorder",1,2,74
+2016,"Bipolar Disorder",1,3,37
+2016,"Bipolar Disorder",1,4,96
+2016,"Bipolar Disorder",2,1,16544
+2016,"Bipolar Disorder",2,2,2936
+2016,"Bipolar Disorder",2,3,1413
+2016,"Bipolar Disorder",2,4,3403
+2016,"Bipolar Disorder",3,1,25129
+2016,"Bipolar Disorder",3,2,5806
+2016,"Bipolar Disorder",3,3,3359
+2016,"Bipolar Disorder",3,4,7292
+2016,"Bipolar Disorder",4,1,46088
+2016,"Bipolar Disorder",4,2,16676
+2016,"Bipolar Disorder",4,3,7804
+2016,"Bipolar Disorder",4,4,23696
+2016,"Bipolar Disorder",5,1,23001
+2016,"Bipolar Disorder",5,2,10326
+2016,"Bipolar Disorder",5,3,4253
+2016,"Bipolar Disorder",5,4,16585
+2016,"Depressive Disorder",1,1,1149
+2016,"Depressive Disorder",1,2,144
+2016,"Depressive Disorder",1,3,75
+2016,"Depressive Disorder",1,4,183
+2016,"Depressive Disorder",2,1,40722
+2016,"Depressive Disorder",2,2,6857
+2016,"Depressive Disorder",2,3,2988
+2016,"Depressive Disorder",2,4,7674
+2016,"Depressive Disorder",3,1,55544
+2016,"Depressive Disorder",3,2,11289
+2016,"Depressive Disorder",3,3,6085
+2016,"Depressive Disorder",3,4,13689
+2016,"Depressive Disorder",4,1,76599
+2016,"Depressive Disorder",4,2,31831
+2016,"Depressive Disorder",4,3,13131
+2016,"Depressive Disorder",4,4,40402
+2016,"Depressive Disorder",5,1,36234
+2016,"Depressive Disorder",5,2,18838
+2016,"Depressive Disorder",5,3,6714
+2016,"Depressive Disorder",5,4,26128
+2016,"Oppositional Defiant Disorder",1,1,207
+2016,"Oppositional Defiant Disorder",2,1,22265
+2016,"Oppositional Defiant Disorder",2,2,79
+2016,"Oppositional Defiant Disorder",2,3,30
+2016,"Oppositional Defiant Disorder",2,4,36
+2016,"Oppositional Defiant Disorder",3,1,6224
+2016,"Oppositional Defiant Disorder",3,2,34
+2016,"Oppositional Defiant Disorder",3,3,11
+2016,"Oppositional Defiant Disorder",3,4,14
+2016,"Oppositional Defiant Disorder",4,1,658
+2016,"Oppositional Defiant Disorder",4,2,20
+2016,"Oppositional Defiant Disorder",4,3,4
+2016,"Oppositional Defiant Disorder",4,4,6
+2016,"Oppositional Defiant Disorder",5,1,57
+2016,"Oppositional Defiant Disorder",5,2,5
+2016,"Oppositional Defiant Disorder",5,3,4
+2016,"Oppositional Defiant Disorder",5,4,4
+2016,"Pervasive Developmental Disorders",1,1,863
+2016,"Pervasive Developmental Disorders",1,2,1
+2016,"Pervasive Developmental Disorders",1,4,3
+2016,"Pervasive Developmental Disorders",2,1,5823
+2016,"Pervasive Developmental Disorders",2,2,17
+2016,"Pervasive Developmental Disorders",2,3,7
+2016,"Pervasive Developmental Disorders",2,4,13
+2016,"Pervasive Developmental Disorders",3,1,1348
+2016,"Pervasive Developmental Disorders",3,2,10
+2016,"Pervasive Developmental Disorders",3,3,6
+2016,"Pervasive Developmental Disorders",3,4,4
+2016,"Pervasive Developmental Disorders",4,1,1741
+2016,"Pervasive Developmental Disorders",4,2,20
+2016,"Pervasive Developmental Disorders",4,3,7
+2016,"Pervasive Developmental Disorders",4,4,17
+2016,"Pervasive Developmental Disorders",5,1,263
+2016,"Pervasive Developmental Disorders",5,2,16
+2016,"Pervasive Developmental Disorders",5,3,6
+2016,"Pervasive Developmental Disorders",5,4,16
+2016,"Personality Disorders",1,1,46
+2016,"Personality Disorders",1,2,4
+2016,"Personality Disorders",1,3,1
+2016,"Personality Disorders",1,4,2
+2016,"Personality Disorders",2,1,695
+2016,"Personality Disorders",2,2,171
+2016,"Personality Disorders",2,3,86
+2016,"Personality Disorders",2,4,204
+2016,"Personality Disorders",3,1,2094
+2016,"Personality Disorders",3,2,402
+2016,"Personality Disorders",3,3,195
+2016,"Personality Disorders",3,4,346
+2016,"Personality Disorders",4,1,2677
+2016,"Personality Disorders",4,2,790
+2016,"Personality Disorders",4,3,333
+2016,"Personality Disorders",4,4,874
+2016,"Personality Disorders",5,1,1163
+2016,"Personality Disorders",5,2,437
+2016,"Personality Disorders",5,3,166
+2016,"Personality Disorders",5,4,705
+2016,"Schizophrenia or other Psychotic Disorders",1,1,1575
+2016,"Schizophrenia or other Psychotic Disorders",1,2,102
+2016,"Schizophrenia or other Psychotic Disorders",1,3,52
+2016,"Schizophrenia or other Psychotic Disorders",1,4,150
+2016,"Schizophrenia or other Psychotic Disorders",2,1,14441
+2016,"Schizophrenia or other Psychotic Disorders",2,2,2510
+2016,"Schizophrenia or other Psychotic Disorders",2,3,1315
+2016,"Schizophrenia or other Psychotic Disorders",2,4,3944
+2016,"Schizophrenia or other Psychotic Disorders",3,1,34891
+2016,"Schizophrenia or other Psychotic Disorders",3,2,4166
+2016,"Schizophrenia or other Psychotic Disorders",3,3,2629
+2016,"Schizophrenia or other Psychotic Disorders",3,4,7154
+2016,"Schizophrenia or other Psychotic Disorders",4,1,64678
+2016,"Schizophrenia or other Psychotic Disorders",4,2,9232
+2016,"Schizophrenia or other Psychotic Disorders",4,3,4614
+2016,"Schizophrenia or other Psychotic Disorders",4,4,16788
+2016,"Schizophrenia or other Psychotic Disorders",5,1,23782
+2016,"Schizophrenia or other Psychotic Disorders",5,2,3807
+2016,"Schizophrenia or other Psychotic Disorders",5,3,1818
+2016,"Schizophrenia or other Psychotic Disorders",5,4,8252
+2016,"Alcohol/Substance Use Disorders",1,1,28
+2016,"Alcohol/Substance Use Disorders",1,3,2
+2016,"Alcohol/Substance Use Disorders",1,4,6
+2016,"Alcohol/Substance Use Disorders",2,1,931
+2016,"Alcohol/Substance Use Disorders",2,2,214
+2016,"Alcohol/Substance Use Disorders",2,3,79
+2016,"Alcohol/Substance Use Disorders",2,4,234
+2016,"Alcohol/Substance Use Disorders",3,1,2997
+2016,"Alcohol/Substance Use Disorders",3,2,517
+2016,"Alcohol/Substance Use Disorders",3,3,319
+2016,"Alcohol/Substance Use Disorders",3,4,598
+2016,"Alcohol/Substance Use Disorders",4,1,5195
+2016,"Alcohol/Substance Use Disorders",4,2,1342
+2016,"Alcohol/Substance Use Disorders",4,3,590
+2016,"Alcohol/Substance Use Disorders",4,4,1693
+2016,"Alcohol/Substance Use Disorders",5,1,2679
+2016,"Alcohol/Substance Use Disorders",5,2,898
+2016,"Alcohol/Substance Use Disorders",5,3,360
+2016,"Alcohol/Substance Use Disorders",5,4,1378
+2016,"Other Disorder/Condition",1,1,819
+2016,"Other Disorder/Condition",1,2,26
+2016,"Other Disorder/Condition",1,3,10
+2016,"Other Disorder/Condition",1,4,21
+2016,"Other Disorder/Condition",2,1,20372
+2016,"Other Disorder/Condition",2,2,463
+2016,"Other Disorder/Condition",2,3,159
+2016,"Other Disorder/Condition",2,4,464
+2016,"Other Disorder/Condition",3,1,11470
+2016,"Other Disorder/Condition",3,2,1005
+2016,"Other Disorder/Condition",3,3,423
+2016,"Other Disorder/Condition",3,4,1073
+2016,"Other Disorder/Condition",4,1,11232
+2016,"Other Disorder/Condition",4,2,2986
+2016,"Other Disorder/Condition",4,3,970
+2016,"Other Disorder/Condition",4,4,3457
+2016,"Other Disorder/Condition",5,1,4264
+2016,"Other Disorder/Condition",5,2,2039
+2016,"Other Disorder/Condition",5,3,581
+2016,"Other Disorder/Condition",5,4,2371
+2017,"Missing",1,1,2040
+2017,"Missing",1,2,73
+2017,"Missing",1,3,41
+2017,"Missing",1,4,113
+2017,"Missing",2,1,39356
+2017,"Missing",2,2,3114
+2017,"Missing",2,3,1156
+2017,"Missing",2,4,3156
+2017,"Missing",3,1,31210
+2017,"Missing",3,2,4401
+2017,"Missing",3,3,2087
+2017,"Missing",3,4,4423
+2017,"Missing",4,1,45477
+2017,"Missing",4,2,13238
+2017,"Missing",4,3,4658
+2017,"Missing",4,4,13055
+2017,"Missing",5,1,18731
+2017,"Missing",5,2,7354
+2017,"Missing",5,3,2236
+2017,"Missing",5,4,7245
+2017,"Trauma/Stress-related Disorder",1,1,585
+2017,"Trauma/Stress-related Disorder",1,2,49
+2017,"Trauma/Stress-related Disorder",1,3,20
+2017,"Trauma/Stress-related Disorder",1,4,52
+2017,"Trauma/Stress-related Disorder",2,1,80495
+2017,"Trauma/Stress-related Disorder",2,2,2282
+2017,"Trauma/Stress-related Disorder",2,3,869
+2017,"Trauma/Stress-related Disorder",2,4,1986
+2017,"Trauma/Stress-related Disorder",3,1,33009
+2017,"Trauma/Stress-related Disorder",3,2,4170
+2017,"Trauma/Stress-related Disorder",3,3,2025
+2017,"Trauma/Stress-related Disorder",3,4,3855
+2017,"Trauma/Stress-related Disorder",4,1,35884
+2017,"Trauma/Stress-related Disorder",4,2,14494
+2017,"Trauma/Stress-related Disorder",4,3,5214
+2017,"Trauma/Stress-related Disorder",4,4,12803
+2017,"Trauma/Stress-related Disorder",5,1,17551
+2017,"Trauma/Stress-related Disorder",5,2,10459
+2017,"Trauma/Stress-related Disorder",5,3,3246
+2017,"Trauma/Stress-related Disorder",5,4,10204
+2017,"Anxiety Disorder",1,1,1121
+2017,"Anxiety Disorder",1,2,55
+2017,"Anxiety Disorder",1,3,9
+2017,"Anxiety Disorder",1,4,44
+2017,"Anxiety Disorder",2,1,34666
+2017,"Anxiety Disorder",2,2,1948
+2017,"Anxiety Disorder",2,3,679
+2017,"Anxiety Disorder",2,4,1791
+2017,"Anxiety Disorder",3,1,21367
+2017,"Anxiety Disorder",3,2,3609
+2017,"Anxiety Disorder",3,3,1361
+2017,"Anxiety Disorder",3,4,3212
+2017,"Anxiety Disorder",4,1,30287
+2017,"Anxiety Disorder",4,2,11586
+2017,"Anxiety Disorder",4,3,3190
+2017,"Anxiety Disorder",4,4,10613
+2017,"Anxiety Disorder",5,1,17544
+2017,"Anxiety Disorder",5,2,8759
+2017,"Anxiety Disorder",5,3,1907
+2017,"Anxiety Disorder",5,4,7667
+2017,"ADHD",1,1,838
+2017,"ADHD",1,2,3
+2017,"ADHD",1,4,4
+2017,"ADHD",2,1,106488
+2017,"ADHD",2,2,235
+2017,"ADHD",2,3,58
+2017,"ADHD",2,4,133
+2017,"ADHD",3,1,17707
+2017,"ADHD",3,2,245
+2017,"ADHD",3,3,112
+2017,"ADHD",3,4,144
+2017,"ADHD",4,1,6165
+2017,"ADHD",4,2,817
+2017,"ADHD",4,3,187
+2017,"ADHD",4,4,605
+2017,"ADHD",5,1,2580
+2017,"ADHD",5,2,929
+2017,"ADHD",5,3,141
+2017,"ADHD",5,4,699
+2017,"Conduct Disorder",1,1,367
+2017,"Conduct Disorder",1,2,2
+2017,"Conduct Disorder",1,3,1
+2017,"Conduct Disorder",1,4,3
+2017,"Conduct Disorder",2,1,18449
+2017,"Conduct Disorder",2,2,43
+2017,"Conduct Disorder",2,3,14
+2017,"Conduct Disorder",2,4,25
+2017,"Conduct Disorder",3,1,5604
+2017,"Conduct Disorder",3,2,72
+2017,"Conduct Disorder",3,3,32
+2017,"Conduct Disorder",3,4,45
+2017,"Conduct Disorder",4,1,1414
+2017,"Conduct Disorder",4,2,167
+2017,"Conduct Disorder",4,3,39
+2017,"Conduct Disorder",4,4,108
+2017,"Conduct Disorder",5,1,205
+2017,"Conduct Disorder",5,2,52
+2017,"Conduct Disorder",5,3,15
+2017,"Conduct Disorder",5,4,42
+2017,"Delirium/Dementia",1,1,76
+2017,"Delirium/Dementia",1,2,1
+2017,"Delirium/Dementia",1,4,3
+2017,"Delirium/Dementia",2,1,495
+2017,"Delirium/Dementia",2,2,152
+2017,"Delirium/Dementia",2,3,24
+2017,"Delirium/Dementia",2,4,293
+2017,"Delirium/Dementia",3,1,351
+2017,"Delirium/Dementia",3,2,123
+2017,"Delirium/Dementia",3,3,35
+2017,"Delirium/Dementia",3,4,237
+2017,"Delirium/Dementia",4,1,976
+2017,"Delirium/Dementia",4,2,561
+2017,"Delirium/Dementia",4,3,59
+2017,"Delirium/Dementia",4,4,782
+2017,"Delirium/Dementia",5,1,286
+2017,"Delirium/Dementia",5,2,236
+2017,"Delirium/Dementia",5,3,22
+2017,"Delirium/Dementia",5,4,291
+2017,"Bipolar Disorder",1,1,1465
+2017,"Bipolar Disorder",1,2,91
+2017,"Bipolar Disorder",1,3,59
+2017,"Bipolar Disorder",1,4,124
+2017,"Bipolar Disorder",2,1,14427
+2017,"Bipolar Disorder",2,2,2939
+2017,"Bipolar Disorder",2,3,1442
+2017,"Bipolar Disorder",2,4,3901
+2017,"Bipolar Disorder",3,1,30024
+2017,"Bipolar Disorder",3,2,6472
+2017,"Bipolar Disorder",3,3,3842
+2017,"Bipolar Disorder",3,4,8695
+2017,"Bipolar Disorder",4,1,62171
+2017,"Bipolar Disorder",4,2,19704
+2017,"Bipolar Disorder",4,3,9091
+2017,"Bipolar Disorder",4,4,28689
+2017,"Bipolar Disorder",5,1,32692
+2017,"Bipolar Disorder",5,2,12512
+2017,"Bipolar Disorder",5,3,5184
+2017,"Bipolar Disorder",5,4,20746
+2017,"Depressive Disorder",1,1,2059
+2017,"Depressive Disorder",1,2,196
+2017,"Depressive Disorder",1,3,93
+2017,"Depressive Disorder",1,4,235
+2017,"Depressive Disorder",2,1,52017
+2017,"Depressive Disorder",2,2,8005
+2017,"Depressive Disorder",2,3,3544
+2017,"Depressive Disorder",2,4,9146
+2017,"Depressive Disorder",3,1,75733
+2017,"Depressive Disorder",3,2,13247
+2017,"Depressive Disorder",3,3,7254
+2017,"Depressive Disorder",3,4,16531
+2017,"Depressive Disorder",4,1,109119
+2017,"Depressive Disorder",4,2,40573
+2017,"Depressive Disorder",4,3,16333
+2017,"Depressive Disorder",4,4,51071
+2017,"Depressive Disorder",5,1,54804
+2017,"Depressive Disorder",5,2,25373
+2017,"Depressive Disorder",5,3,8534
+2017,"Depressive Disorder",5,4,33794
+2017,"Oppositional Defiant Disorder",1,1,222
+2017,"Oppositional Defiant Disorder",1,2,2
+2017,"Oppositional Defiant Disorder",2,1,28883
+2017,"Oppositional Defiant Disorder",2,2,29
+2017,"Oppositional Defiant Disorder",2,3,7
+2017,"Oppositional Defiant Disorder",2,4,12
+2017,"Oppositional Defiant Disorder",3,1,8383
+2017,"Oppositional Defiant Disorder",3,2,37
+2017,"Oppositional Defiant Disorder",3,3,17
+2017,"Oppositional Defiant Disorder",3,4,13
+2017,"Oppositional Defiant Disorder",4,1,865
+2017,"Oppositional Defiant Disorder",4,2,27
+2017,"Oppositional Defiant Disorder",4,3,9
+2017,"Oppositional Defiant Disorder",4,4,9
+2017,"Oppositional Defiant Disorder",5,1,74
+2017,"Oppositional Defiant Disorder",5,2,6
+2017,"Oppositional Defiant Disorder",5,3,3
+2017,"Oppositional Defiant Disorder",5,4,7
+2017,"Pervasive Developmental Disorders",1,1,2854
+2017,"Pervasive Developmental Disorders",1,2,2
+2017,"Pervasive Developmental Disorders",1,3,1
+2017,"Pervasive Developmental Disorders",1,4,1
+2017,"Pervasive Developmental Disorders",2,1,6364
+2017,"Pervasive Developmental Disorders",2,2,7
+2017,"Pervasive Developmental Disorders",2,3,1
+2017,"Pervasive Developmental Disorders",2,4,3
+2017,"Pervasive Developmental Disorders",3,1,1903
+2017,"Pervasive Developmental Disorders",3,2,12
+2017,"Pervasive Developmental Disorders",3,3,5
+2017,"Pervasive Developmental Disorders",3,4,9
+2017,"Pervasive Developmental Disorders",4,1,3489
+2017,"Pervasive Developmental Disorders",4,2,34
+2017,"Pervasive Developmental Disorders",4,3,10
+2017,"Pervasive Developmental Disorders",4,4,26
+2017,"Pervasive Developmental Disorders",5,1,468
+2017,"Pervasive Developmental Disorders",5,2,28
+2017,"Pervasive Developmental Disorders",5,3,5
+2017,"Pervasive Developmental Disorders",5,4,20
+2017,"Personality Disorders",1,1,79
+2017,"Personality Disorders",1,2,4
+2017,"Personality Disorders",1,3,3
+2017,"Personality Disorders",1,4,7
+2017,"Personality Disorders",2,1,884
+2017,"Personality Disorders",2,2,207
+2017,"Personality Disorders",2,3,84
+2017,"Personality Disorders",2,4,221
+2017,"Personality Disorders",3,1,2638
+2017,"Personality Disorders",3,2,429
+2017,"Personality Disorders",3,3,226
+2017,"Personality Disorders",3,4,418
+2017,"Personality Disorders",4,1,4051
+2017,"Personality Disorders",4,2,1168
+2017,"Personality Disorders",4,3,411
+2017,"Personality Disorders",4,4,1193
+2017,"Personality Disorders",5,1,1911
+2017,"Personality Disorders",5,2,653
+2017,"Personality Disorders",5,3,259
+2017,"Personality Disorders",5,4,890
+2017,"Schizophrenia or other Psychotic Disorders",1,1,2867
+2017,"Schizophrenia or other Psychotic Disorders",1,2,132
+2017,"Schizophrenia or other Psychotic Disorders",1,3,55
+2017,"Schizophrenia or other Psychotic Disorders",1,4,200
+2017,"Schizophrenia or other Psychotic Disorders",2,1,18705
+2017,"Schizophrenia or other Psychotic Disorders",2,2,3040
+2017,"Schizophrenia or other Psychotic Disorders",2,3,1622
+2017,"Schizophrenia or other Psychotic Disorders",2,4,4734
+2017,"Schizophrenia or other Psychotic Disorders",3,1,47157
+2017,"Schizophrenia or other Psychotic Disorders",3,2,4969
+2017,"Schizophrenia or other Psychotic Disorders",3,3,3207
+2017,"Schizophrenia or other Psychotic Disorders",3,4,8999
+2017,"Schizophrenia or other Psychotic Disorders",4,1,92529
+2017,"Schizophrenia or other Psychotic Disorders",4,2,11350
+2017,"Schizophrenia or other Psychotic Disorders",4,3,5845
+2017,"Schizophrenia or other Psychotic Disorders",4,4,22307
+2017,"Schizophrenia or other Psychotic Disorders",5,1,35372
+2017,"Schizophrenia or other Psychotic Disorders",5,2,4832
+2017,"Schizophrenia or other Psychotic Disorders",5,3,2315
+2017,"Schizophrenia or other Psychotic Disorders",5,4,11050
+2017,"Alcohol/Substance Use Disorders",1,1,25
+2017,"Alcohol/Substance Use Disorders",1,2,2
+2017,"Alcohol/Substance Use Disorders",1,4,4
+2017,"Alcohol/Substance Use Disorders",2,1,2239
+2017,"Alcohol/Substance Use Disorders",2,2,652
+2017,"Alcohol/Substance Use Disorders",2,3,355
+2017,"Alcohol/Substance Use Disorders",2,4,668
+2017,"Alcohol/Substance Use Disorders",3,1,7606
+2017,"Alcohol/Substance Use Disorders",3,2,1318
+2017,"Alcohol/Substance Use Disorders",3,3,702
+2017,"Alcohol/Substance Use Disorders",3,4,1171
+2017,"Alcohol/Substance Use Disorders",4,1,13149
+2017,"Alcohol/Substance Use Disorders",4,2,4239
+2017,"Alcohol/Substance Use Disorders",4,3,1326
+2017,"Alcohol/Substance Use Disorders",4,4,3271
+2017,"Alcohol/Substance Use Disorders",5,1,5489
+2017,"Alcohol/Substance Use Disorders",5,2,1763
+2017,"Alcohol/Substance Use Disorders",5,3,662
+2017,"Alcohol/Substance Use Disorders",5,4,2039
+2017,"Other Disorder/Condition",1,1,9875
+2017,"Other Disorder/Condition",1,2,84
+2017,"Other Disorder/Condition",1,3,25
+2017,"Other Disorder/Condition",1,4,104
+2017,"Other Disorder/Condition",2,1,39103
+2017,"Other Disorder/Condition",2,2,1278
+2017,"Other Disorder/Condition",2,3,440
+2017,"Other Disorder/Condition",2,4,1322
+2017,"Other Disorder/Condition",3,1,22757
+2017,"Other Disorder/Condition",3,2,2267
+2017,"Other Disorder/Condition",3,3,931
+2017,"Other Disorder/Condition",3,4,2182
+2017,"Other Disorder/Condition",4,1,31294
+2017,"Other Disorder/Condition",4,2,7175
+2017,"Other Disorder/Condition",4,3,2159
+2017,"Other Disorder/Condition",4,4,6870
+2017,"Other Disorder/Condition",5,1,9508
+2017,"Other Disorder/Condition",5,2,4261
+2017,"Other Disorder/Condition",5,3,1095
+2017,"Other Disorder/Condition",5,4,4144
+2018,"Missing",1,1,937
+2018,"Missing",1,2,40
+2018,"Missing",1,3,22
+2018,"Missing",1,4,71
+2018,"Missing",2,1,38503
+2018,"Missing",2,2,942
+2018,"Missing",2,3,518
+2018,"Missing",2,4,1299
+2018,"Missing",3,1,32820
+2018,"Missing",3,2,2299
+2018,"Missing",3,3,1386
+2018,"Missing",3,4,2864
+2018,"Missing",4,1,55468
+2018,"Missing",4,2,6826
+2018,"Missing",4,3,3008
+2018,"Missing",4,4,8505
+2018,"Missing",5,1,23999
+2018,"Missing",5,2,3574
+2018,"Missing",5,3,1355
+2018,"Missing",5,4,4523
+2018,"Trauma/Stress-related Disorder",1,1,861
+2018,"Trauma/Stress-related Disorder",1,2,90
+2018,"Trauma/Stress-related Disorder",1,3,19
+2018,"Trauma/Stress-related Disorder",1,4,69
+2018,"Trauma/Stress-related Disorder",2,1,108638
+2018,"Trauma/Stress-related Disorder",2,2,1937
+2018,"Trauma/Stress-related Disorder",2,3,694
+2018,"Trauma/Stress-related Disorder",2,4,1941
+2018,"Trauma/Stress-related Disorder",3,1,41750
+2018,"Trauma/Stress-related Disorder",3,2,3756
+2018,"Trauma/Stress-related Disorder",3,3,1782
+2018,"Trauma/Stress-related Disorder",3,4,3663
+2018,"Trauma/Stress-related Disorder",4,1,50053
+2018,"Trauma/Stress-related Disorder",4,2,12809
+2018,"Trauma/Stress-related Disorder",4,3,4761
+2018,"Trauma/Stress-related Disorder",4,4,12836
+2018,"Trauma/Stress-related Disorder",5,1,26077
+2018,"Trauma/Stress-related Disorder",5,2,9469
+2018,"Trauma/Stress-related Disorder",5,3,3146
+2018,"Trauma/Stress-related Disorder",5,4,10988
+2018,"Anxiety Disorder",1,1,1376
+2018,"Anxiety Disorder",1,2,52
+2018,"Anxiety Disorder",1,3,16
+2018,"Anxiety Disorder",1,4,50
+2018,"Anxiety Disorder",2,1,45448
+2018,"Anxiety Disorder",2,2,1916
+2018,"Anxiety Disorder",2,3,609
+2018,"Anxiety Disorder",2,4,1820
+2018,"Anxiety Disorder",3,1,28512
+2018,"Anxiety Disorder",3,2,3573
+2018,"Anxiety Disorder",3,3,1285
+2018,"Anxiety Disorder",3,4,3263
+2018,"Anxiety Disorder",4,1,44663
+2018,"Anxiety Disorder",4,2,12012
+2018,"Anxiety Disorder",4,3,3537
+2018,"Anxiety Disorder",4,4,11601
+2018,"Anxiety Disorder",5,1,25018
+2018,"Anxiety Disorder",5,2,9143
+2018,"Anxiety Disorder",5,3,2093
+2018,"Anxiety Disorder",5,4,8801
+2018,"ADHD",1,1,1145
+2018,"ADHD",1,2,4
+2018,"ADHD",1,3,2
+2018,"ADHD",1,4,5
+2018,"ADHD",2,1,136948
+2018,"ADHD",2,2,203
+2018,"ADHD",2,3,37
+2018,"ADHD",2,4,115
+2018,"ADHD",3,1,21143
+2018,"ADHD",3,2,291
+2018,"ADHD",3,3,127
+2018,"ADHD",3,4,158
+2018,"ADHD",4,1,8908
+2018,"ADHD",4,2,1090
+2018,"ADHD",4,3,252
+2018,"ADHD",4,4,777
+2018,"ADHD",5,1,3749
+2018,"ADHD",5,2,1105
+2018,"ADHD",5,3,157
+2018,"ADHD",5,4,858
+2018,"Conduct Disorder",1,1,354
+2018,"Conduct Disorder",1,2,1
+2018,"Conduct Disorder",1,4,1
+2018,"Conduct Disorder",2,1,21529
+2018,"Conduct Disorder",2,2,33
+2018,"Conduct Disorder",2,3,5
+2018,"Conduct Disorder",2,4,15
+2018,"Conduct Disorder",3,1,5835
+2018,"Conduct Disorder",3,2,62
+2018,"Conduct Disorder",3,3,19
+2018,"Conduct Disorder",3,4,36
+2018,"Conduct Disorder",4,1,1659
+2018,"Conduct Disorder",4,2,164
+2018,"Conduct Disorder",4,3,38
+2018,"Conduct Disorder",4,4,117
+2018,"Conduct Disorder",5,1,200
+2018,"Conduct Disorder",5,2,60
+2018,"Conduct Disorder",5,3,17
+2018,"Conduct Disorder",5,4,50
+2018,"Delirium/Dementia",1,1,74
+2018,"Delirium/Dementia",1,2,1
+2018,"Delirium/Dementia",1,4,3
+2018,"Delirium/Dementia",2,1,809
+2018,"Delirium/Dementia",2,2,108
+2018,"Delirium/Dementia",2,3,14
+2018,"Delirium/Dementia",2,4,236
+2018,"Delirium/Dementia",3,1,617
+2018,"Delirium/Dementia",3,2,85
+2018,"Delirium/Dementia",3,3,26
+2018,"Delirium/Dementia",3,4,195
+2018,"Delirium/Dementia",4,1,1722
+2018,"Delirium/Dementia",4,2,324
+2018,"Delirium/Dementia",4,3,55
+2018,"Delirium/Dementia",4,4,522
+2018,"Delirium/Dementia",5,1,557
+2018,"Delirium/Dementia",5,2,141
+2018,"Delirium/Dementia",5,3,18
+2018,"Delirium/Dementia",5,4,241
+2018,"Bipolar Disorder",1,1,1736
+2018,"Bipolar Disorder",1,2,115
+2018,"Bipolar Disorder",1,3,61
+2018,"Bipolar Disorder",1,4,123
+2018,"Bipolar Disorder",2,1,14991
+2018,"Bipolar Disorder",2,2,2762
+2018,"Bipolar Disorder",2,3,1372
+2018,"Bipolar Disorder",2,4,3734
+2018,"Bipolar Disorder",3,1,33337
+2018,"Bipolar Disorder",3,2,6267
+2018,"Bipolar Disorder",3,3,3581
+2018,"Bipolar Disorder",3,4,8419
+2018,"Bipolar Disorder",4,1,77721
+2018,"Bipolar Disorder",4,2,20374
+2018,"Bipolar Disorder",4,3,9154
+2018,"Bipolar Disorder",4,4,29537
+2018,"Bipolar Disorder",5,1,39685
+2018,"Bipolar Disorder",5,2,12935
+2018,"Bipolar Disorder",5,3,5107
+2018,"Bipolar Disorder",5,4,21380
+2018,"Depressive Disorder",1,1,2859
+2018,"Depressive Disorder",1,2,266
+2018,"Depressive Disorder",1,3,134
+2018,"Depressive Disorder",1,4,301
+2018,"Depressive Disorder",2,1,65841
+2018,"Depressive Disorder",2,2,7338
+2018,"Depressive Disorder",2,3,3034
+2018,"Depressive Disorder",2,4,8464
+2018,"Depressive Disorder",3,1,92940
+2018,"Depressive Disorder",3,2,12659
+2018,"Depressive Disorder",3,3,6467
+2018,"Depressive Disorder",3,4,16006
+2018,"Depressive Disorder",4,1,148200
+2018,"Depressive Disorder",4,2,40339
+2018,"Depressive Disorder",4,3,15996
+2018,"Depressive Disorder",4,4,51846
+2018,"Depressive Disorder",5,1,71915
+2018,"Depressive Disorder",5,2,24941
+2018,"Depressive Disorder",5,3,8253
+2018,"Depressive Disorder",5,4,34675
+2018,"Oppositional Defiant Disorder",1,1,295
+2018,"Oppositional Defiant Disorder",1,3,1
+2018,"Oppositional Defiant Disorder",2,1,34535
+2018,"Oppositional Defiant Disorder",2,2,31
+2018,"Oppositional Defiant Disorder",2,3,1
+2018,"Oppositional Defiant Disorder",2,4,3
+2018,"Oppositional Defiant Disorder",3,1,8904
+2018,"Oppositional Defiant Disorder",3,2,38
+2018,"Oppositional Defiant Disorder",3,3,13
+2018,"Oppositional Defiant Disorder",3,4,3
+2018,"Oppositional Defiant Disorder",4,1,958
+2018,"Oppositional Defiant Disorder",4,2,18
+2018,"Oppositional Defiant Disorder",4,3,7
+2018,"Oppositional Defiant Disorder",4,4,8
+2018,"Oppositional Defiant Disorder",5,1,70
+2018,"Oppositional Defiant Disorder",5,2,4
+2018,"Oppositional Defiant Disorder",5,3,2
+2018,"Oppositional Defiant Disorder",5,4,5
+2018,"Pervasive Developmental Disorders",1,1,3482
+2018,"Pervasive Developmental Disorders",1,2,2
+2018,"Pervasive Developmental Disorders",1,4,2
+2018,"Pervasive Developmental Disorders",2,1,11775
+2018,"Pervasive Developmental Disorders",2,2,11
+2018,"Pervasive Developmental Disorders",2,3,1
+2018,"Pervasive Developmental Disorders",2,4,6
+2018,"Pervasive Developmental Disorders",3,1,2813
+2018,"Pervasive Developmental Disorders",3,2,17
+2018,"Pervasive Developmental Disorders",3,3,3
+2018,"Pervasive Developmental Disorders",3,4,1
+2018,"Pervasive Developmental Disorders",4,1,4305
+2018,"Pervasive Developmental Disorders",4,2,42
+2018,"Pervasive Developmental Disorders",4,3,8
+2018,"Pervasive Developmental Disorders",4,4,32
+2018,"Pervasive Developmental Disorders",5,1,579
+2018,"Pervasive Developmental Disorders",5,2,21
+2018,"Pervasive Developmental Disorders",5,3,10
+2018,"Pervasive Developmental Disorders",5,4,11
+2018,"Personality Disorders",1,1,98
+2018,"Personality Disorders",1,2,5
+2018,"Personality Disorders",1,4,10
+2018,"Personality Disorders",2,1,926
+2018,"Personality Disorders",2,2,173
+2018,"Personality Disorders",2,3,63
+2018,"Personality Disorders",2,4,178
+2018,"Personality Disorders",3,1,2802
+2018,"Personality Disorders",3,2,395
+2018,"Personality Disorders",3,3,203
+2018,"Personality Disorders",3,4,384
+2018,"Personality Disorders",4,1,5053
+2018,"Personality Disorders",4,2,1001
+2018,"Personality Disorders",4,3,373
+2018,"Personality Disorders",4,4,1157
+2018,"Personality Disorders",5,1,2419
+2018,"Personality Disorders",5,2,592
+2018,"Personality Disorders",5,3,220
+2018,"Personality Disorders",5,4,859
+2018,"Schizophrenia or other Psychotic Disorders",1,1,3246
+2018,"Schizophrenia or other Psychotic Disorders",1,2,134
+2018,"Schizophrenia or other Psychotic Disorders",1,3,69
+2018,"Schizophrenia or other Psychotic Disorders",1,4,214
+2018,"Schizophrenia or other Psychotic Disorders",2,1,20085
+2018,"Schizophrenia or other Psychotic Disorders",2,2,2743
+2018,"Schizophrenia or other Psychotic Disorders",2,3,1430
+2018,"Schizophrenia or other Psychotic Disorders",2,4,4398
+2018,"Schizophrenia or other Psychotic Disorders",3,1,52217
+2018,"Schizophrenia or other Psychotic Disorders",3,2,4659
+2018,"Schizophrenia or other Psychotic Disorders",3,3,2961
+2018,"Schizophrenia or other Psychotic Disorders",3,4,8560
+2018,"Schizophrenia or other Psychotic Disorders",4,1,110115
+2018,"Schizophrenia or other Psychotic Disorders",4,2,11221
+2018,"Schizophrenia or other Psychotic Disorders",4,3,5974
+2018,"Schizophrenia or other Psychotic Disorders",4,4,21912
+2018,"Schizophrenia or other Psychotic Disorders",5,1,40990
+2018,"Schizophrenia or other Psychotic Disorders",5,2,4769
+2018,"Schizophrenia or other Psychotic Disorders",5,3,2339
+2018,"Schizophrenia or other Psychotic Disorders",5,4,11070
+2018,"Alcohol/Substance Use Disorders",1,1,42
+2018,"Alcohol/Substance Use Disorders",1,2,4
+2018,"Alcohol/Substance Use Disorders",1,3,3
+2018,"Alcohol/Substance Use Disorders",1,4,7
+2018,"Alcohol/Substance Use Disorders",2,1,3511
+2018,"Alcohol/Substance Use Disorders",2,2,599
+2018,"Alcohol/Substance Use Disorders",2,3,311
+2018,"Alcohol/Substance Use Disorders",2,4,693
+2018,"Alcohol/Substance Use Disorders",3,1,10081
+2018,"Alcohol/Substance Use Disorders",3,2,1119
+2018,"Alcohol/Substance Use Disorders",3,3,577
+2018,"Alcohol/Substance Use Disorders",3,4,1142
+2018,"Alcohol/Substance Use Disorders",4,1,19728
+2018,"Alcohol/Substance Use Disorders",4,2,2769
+2018,"Alcohol/Substance Use Disorders",4,3,1252
+2018,"Alcohol/Substance Use Disorders",4,4,3356
+2018,"Alcohol/Substance Use Disorders",5,1,8463
+2018,"Alcohol/Substance Use Disorders",5,2,1572
+2018,"Alcohol/Substance Use Disorders",5,3,680
+2018,"Alcohol/Substance Use Disorders",5,4,2281
+2018,"Other Disorder/Condition",1,1,10853
+2018,"Other Disorder/Condition",1,2,114
+2018,"Other Disorder/Condition",1,3,36
+2018,"Other Disorder/Condition",1,4,103
+2018,"Other Disorder/Condition",2,1,58032
+2018,"Other Disorder/Condition",2,2,970
+2018,"Other Disorder/Condition",2,3,326
+2018,"Other Disorder/Condition",2,4,1147
+2018,"Other Disorder/Condition",3,1,28529
+2018,"Other Disorder/Condition",3,2,1948
+2018,"Other Disorder/Condition",3,3,768
+2018,"Other Disorder/Condition",3,4,1991
+2018,"Other Disorder/Condition",4,1,41686
+2018,"Other Disorder/Condition",4,2,5920
+2018,"Other Disorder/Condition",4,3,1828
+2018,"Other Disorder/Condition",4,4,6580
+2018,"Other Disorder/Condition",5,1,13782
+2018,"Other Disorder/Condition",5,2,3565
+2018,"Other Disorder/Condition",5,3,1024
+2018,"Other Disorder/Condition",5,4,4299
+2019,"Missing",1,1,953
+2019,"Missing",1,2,46
+2019,"Missing",1,3,31
+2019,"Missing",1,4,67
+2019,"Missing",2,1,40762
+2019,"Missing",2,2,1659
+2019,"Missing",2,3,854
+2019,"Missing",2,4,2022
+2019,"Missing",3,1,31620
+2019,"Missing",3,2,3744
+2019,"Missing",3,3,2005
+2019,"Missing",3,4,4030
+2019,"Missing",4,1,48978
+2019,"Missing",4,2,12539
+2019,"Missing",4,3,4715
+2019,"Missing",4,4,13438
+2019,"Missing",5,1,19262
+2019,"Missing",5,2,7305
+2019,"Missing",5,3,2188
+2019,"Missing",5,4,7216
+2019,"Trauma/Stress-related Disorder",1,1,914
+2019,"Trauma/Stress-related Disorder",1,2,98
+2019,"Trauma/Stress-related Disorder",1,3,34
+2019,"Trauma/Stress-related Disorder",1,4,59
+2019,"Trauma/Stress-related Disorder",2,1,113734
+2019,"Trauma/Stress-related Disorder",2,2,2377
+2019,"Trauma/Stress-related Disorder",2,3,855
+2019,"Trauma/Stress-related Disorder",2,4,2104
+2019,"Trauma/Stress-related Disorder",3,1,41375
+2019,"Trauma/Stress-related Disorder",3,2,4487
+2019,"Trauma/Stress-related Disorder",3,3,2078
+2019,"Trauma/Stress-related Disorder",3,4,4001
+2019,"Trauma/Stress-related Disorder",4,1,46065
+2019,"Trauma/Stress-related Disorder",4,2,17095
+2019,"Trauma/Stress-related Disorder",4,3,6060
+2019,"Trauma/Stress-related Disorder",4,4,14924
+2019,"Trauma/Stress-related Disorder",5,1,22390
+2019,"Trauma/Stress-related Disorder",5,2,13006
+2019,"Trauma/Stress-related Disorder",5,3,3954
+2019,"Trauma/Stress-related Disorder",5,4,12794
+2019,"Anxiety Disorder",1,1,1399
+2019,"Anxiety Disorder",1,2,57
+2019,"Anxiety Disorder",1,3,15
+2019,"Anxiety Disorder",1,4,47
+2019,"Anxiety Disorder",2,1,48405
+2019,"Anxiety Disorder",2,2,2045
+2019,"Anxiety Disorder",2,3,629
+2019,"Anxiety Disorder",2,4,1832
+2019,"Anxiety Disorder",3,1,28815
+2019,"Anxiety Disorder",3,2,3707
+2019,"Anxiety Disorder",3,3,1334
+2019,"Anxiety Disorder",3,4,3412
+2019,"Anxiety Disorder",4,1,42161
+2019,"Anxiety Disorder",4,2,14238
+2019,"Anxiety Disorder",4,3,3790
+2019,"Anxiety Disorder",4,4,12355
+2019,"Anxiety Disorder",5,1,23608
+2019,"Anxiety Disorder",5,2,11211
+2019,"Anxiety Disorder",5,3,2207
+2019,"Anxiety Disorder",5,4,9390
+2019,"ADHD",1,1,1141
+2019,"ADHD",1,2,4
+2019,"ADHD",1,3,2
+2019,"ADHD",1,4,4
+2019,"ADHD",2,1,123348
+2019,"ADHD",2,2,136
+2019,"ADHD",2,3,42
+2019,"ADHD",2,4,87
+2019,"ADHD",3,1,19704
+2019,"ADHD",3,2,238
+2019,"ADHD",3,3,93
+2019,"ADHD",3,4,162
+2019,"ADHD",4,1,8133
+2019,"ADHD",4,2,1017
+2019,"ADHD",4,3,206
+2019,"ADHD",4,4,684
+2019,"ADHD",5,1,3204
+2019,"ADHD",5,2,1123
+2019,"ADHD",5,3,176
+2019,"ADHD",5,4,795
+2019,"Conduct Disorder",1,1,406
+2019,"Conduct Disorder",1,2,2
+2019,"Conduct Disorder",1,4,1
+2019,"Conduct Disorder",2,1,20175
+2019,"Conduct Disorder",2,2,27
+2019,"Conduct Disorder",2,3,14
+2019,"Conduct Disorder",2,4,20
+2019,"Conduct Disorder",3,1,5459
+2019,"Conduct Disorder",3,2,71
+2019,"Conduct Disorder",3,3,15
+2019,"Conduct Disorder",3,4,44
+2019,"Conduct Disorder",4,1,1555
+2019,"Conduct Disorder",4,2,162
+2019,"Conduct Disorder",4,3,45
+2019,"Conduct Disorder",4,4,92
+2019,"Conduct Disorder",5,1,173
+2019,"Conduct Disorder",5,2,68
+2019,"Conduct Disorder",5,3,17
+2019,"Conduct Disorder",5,4,51
+2019,"Delirium/Dementia",1,1,85
+2019,"Delirium/Dementia",1,2,2
+2019,"Delirium/Dementia",1,3,1
+2019,"Delirium/Dementia",1,4,2
+2019,"Delirium/Dementia",2,1,404
+2019,"Delirium/Dementia",2,2,159
+2019,"Delirium/Dementia",2,3,25
+2019,"Delirium/Dementia",2,4,330
+2019,"Delirium/Dementia",3,1,378
+2019,"Delirium/Dementia",3,2,149
+2019,"Delirium/Dementia",3,3,33
+2019,"Delirium/Dementia",3,4,278
+2019,"Delirium/Dementia",4,1,896
+2019,"Delirium/Dementia",4,2,629
+2019,"Delirium/Dementia",4,3,78
+2019,"Delirium/Dementia",4,4,902
+2019,"Delirium/Dementia",5,1,233
+2019,"Delirium/Dementia",5,2,298
+2019,"Delirium/Dementia",5,3,28
+2019,"Delirium/Dementia",5,4,350
+2019,"Bipolar Disorder",1,1,1764
+2019,"Bipolar Disorder",1,2,136
+2019,"Bipolar Disorder",1,3,72
+2019,"Bipolar Disorder",1,4,162
+2019,"Bipolar Disorder",2,1,12945
+2019,"Bipolar Disorder",2,2,2615
+2019,"Bipolar Disorder",2,3,1312
+2019,"Bipolar Disorder",2,4,3503
+2019,"Bipolar Disorder",3,1,30308
+2019,"Bipolar Disorder",3,2,6241
+2019,"Bipolar Disorder",3,3,3649
+2019,"Bipolar Disorder",3,4,8891
+2019,"Bipolar Disorder",4,1,72202
+2019,"Bipolar Disorder",4,2,20777
+2019,"Bipolar Disorder",4,3,9396
+2019,"Bipolar Disorder",4,4,29532
+2019,"Bipolar Disorder",5,1,36305
+2019,"Bipolar Disorder",5,2,13804
+2019,"Bipolar Disorder",5,3,5534
+2019,"Bipolar Disorder",5,4,21882
+2019,"Depressive Disorder",1,1,2862
+2019,"Depressive Disorder",1,2,331
+2019,"Depressive Disorder",1,3,137
+2019,"Depressive Disorder",1,4,332
+2019,"Depressive Disorder",2,1,70501
+2019,"Depressive Disorder",2,2,7613
+2019,"Depressive Disorder",2,3,3207
+2019,"Depressive Disorder",2,4,8500
+2019,"Depressive Disorder",3,1,88521
+2019,"Depressive Disorder",3,2,13275
+2019,"Depressive Disorder",3,3,7050
+2019,"Depressive Disorder",3,4,17124
+2019,"Depressive Disorder",4,1,135947
+2019,"Depressive Disorder",4,2,45283
+2019,"Depressive Disorder",4,3,17446
+2019,"Depressive Disorder",4,4,54311
+2019,"Depressive Disorder",5,1,64178
+2019,"Depressive Disorder",5,2,28889
+2019,"Depressive Disorder",5,3,9050
+2019,"Depressive Disorder",5,4,36166
+2019,"Oppositional Defiant Disorder",1,1,286
+2019,"Oppositional Defiant Disorder",1,3,1
+2019,"Oppositional Defiant Disorder",2,1,31829
+2019,"Oppositional Defiant Disorder",2,2,23
+2019,"Oppositional Defiant Disorder",2,3,12
+2019,"Oppositional Defiant Disorder",2,4,12
+2019,"Oppositional Defiant Disorder",3,1,8113
+2019,"Oppositional Defiant Disorder",3,2,33
+2019,"Oppositional Defiant Disorder",3,3,15
+2019,"Oppositional Defiant Disorder",3,4,10
+2019,"Oppositional Defiant Disorder",4,1,906
+2019,"Oppositional Defiant Disorder",4,2,23
+2019,"Oppositional Defiant Disorder",4,3,10
+2019,"Oppositional Defiant Disorder",4,4,13
+2019,"Oppositional Defiant Disorder",5,1,75
+2019,"Oppositional Defiant Disorder",5,2,7
+2019,"Oppositional Defiant Disorder",5,3,1
+2019,"Oppositional Defiant Disorder",5,4,6
+2019,"Pervasive Developmental Disorders",1,1,3740
+2019,"Pervasive Developmental Disorders",1,2,1
+2019,"Pervasive Developmental Disorders",1,4,9
+2019,"Pervasive Developmental Disorders",2,1,11232
+2019,"Pervasive Developmental Disorders",2,2,5
+2019,"Pervasive Developmental Disorders",2,4,6
+2019,"Pervasive Developmental Disorders",3,1,2758
+2019,"Pervasive Developmental Disorders",3,2,11
+2019,"Pervasive Developmental Disorders",3,3,4
+2019,"Pervasive Developmental Disorders",3,4,21
+2019,"Pervasive Developmental Disorders",4,1,4323
+2019,"Pervasive Developmental Disorders",4,2,46
+2019,"Pervasive Developmental Disorders",4,3,11
+2019,"Pervasive Developmental Disorders",4,4,32
+2019,"Pervasive Developmental Disorders",5,1,599
+2019,"Pervasive Developmental Disorders",5,2,34
+2019,"Pervasive Developmental Disorders",5,3,5
+2019,"Pervasive Developmental Disorders",5,4,14
+2019,"Personality Disorders",1,1,101
+2019,"Personality Disorders",1,2,5
+2019,"Personality Disorders",1,3,3
+2019,"Personality Disorders",1,4,12
+2019,"Personality Disorders",2,1,850
+2019,"Personality Disorders",2,2,170
+2019,"Personality Disorders",2,3,73
+2019,"Personality Disorders",2,4,209
+2019,"Personality Disorders",3,1,2712
+2019,"Personality Disorders",3,2,467
+2019,"Personality Disorders",3,3,220
+2019,"Personality Disorders",3,4,412
+2019,"Personality Disorders",4,1,4842
+2019,"Personality Disorders",4,2,1342
+2019,"Personality Disorders",4,3,525
+2019,"Personality Disorders",4,4,1358
+2019,"Personality Disorders",5,1,2331
+2019,"Personality Disorders",5,2,784
+2019,"Personality Disorders",5,3,291
+2019,"Personality Disorders",5,4,1057
+2019,"Schizophrenia or other Psychotic Disorders",1,1,3193
+2019,"Schizophrenia or other Psychotic Disorders",1,2,122
+2019,"Schizophrenia or other Psychotic Disorders",1,3,69
+2019,"Schizophrenia or other Psychotic Disorders",1,4,198
+2019,"Schizophrenia or other Psychotic Disorders",2,1,17655
+2019,"Schizophrenia or other Psychotic Disorders",2,2,2838
+2019,"Schizophrenia or other Psychotic Disorders",2,3,1564
+2019,"Schizophrenia or other Psychotic Disorders",2,4,4574
+2019,"Schizophrenia or other Psychotic Disorders",3,1,47931
+2019,"Schizophrenia or other Psychotic Disorders",3,2,4926
+2019,"Schizophrenia or other Psychotic Disorders",3,3,3260
+2019,"Schizophrenia or other Psychotic Disorders",3,4,9112
+2019,"Schizophrenia or other Psychotic Disorders",4,1,102094
+2019,"Schizophrenia or other Psychotic Disorders",4,2,11826
+2019,"Schizophrenia or other Psychotic Disorders",4,3,6450
+2019,"Schizophrenia or other Psychotic Disorders",4,4,22984
+2019,"Schizophrenia or other Psychotic Disorders",5,1,37997
+2019,"Schizophrenia or other Psychotic Disorders",5,2,5223
+2019,"Schizophrenia or other Psychotic Disorders",5,3,2476
+2019,"Schizophrenia or other Psychotic Disorders",5,4,11952
+2019,"Alcohol/Substance Use Disorders",1,1,50
+2019,"Alcohol/Substance Use Disorders",1,2,8
+2019,"Alcohol/Substance Use Disorders",1,3,2
+2019,"Alcohol/Substance Use Disorders",1,4,7
+2019,"Alcohol/Substance Use Disorders",2,1,3508
+2019,"Alcohol/Substance Use Disorders",2,2,896
+2019,"Alcohol/Substance Use Disorders",2,3,430
+2019,"Alcohol/Substance Use Disorders",2,4,886
+2019,"Alcohol/Substance Use Disorders",3,1,9586
+2019,"Alcohol/Substance Use Disorders",3,2,2080
+2019,"Alcohol/Substance Use Disorders",3,3,1006
+2019,"Alcohol/Substance Use Disorders",3,4,1779
+2019,"Alcohol/Substance Use Disorders",4,1,17795
+2019,"Alcohol/Substance Use Disorders",4,2,6134
+2019,"Alcohol/Substance Use Disorders",4,3,2154
+2019,"Alcohol/Substance Use Disorders",4,4,5051
+2019,"Alcohol/Substance Use Disorders",5,1,7384
+2019,"Alcohol/Substance Use Disorders",5,2,2814
+2019,"Alcohol/Substance Use Disorders",5,3,998
+2019,"Alcohol/Substance Use Disorders",5,4,3175
+2019,"Other Disorder/Condition",1,1,11862
+2019,"Other Disorder/Condition",1,2,126
+2019,"Other Disorder/Condition",1,3,42
+2019,"Other Disorder/Condition",1,4,119
+2019,"Other Disorder/Condition",2,1,55199
+2019,"Other Disorder/Condition",2,2,1245
+2019,"Other Disorder/Condition",2,3,430
+2019,"Other Disorder/Condition",2,4,1247
+2019,"Other Disorder/Condition",3,1,26310
+2019,"Other Disorder/Condition",3,2,2200
+2019,"Other Disorder/Condition",3,3,909
+2019,"Other Disorder/Condition",3,4,2134
+2019,"Other Disorder/Condition",4,1,36819
+2019,"Other Disorder/Condition",4,2,8024
+2019,"Other Disorder/Condition",4,3,2291
+2019,"Other Disorder/Condition",4,4,7453
+2019,"Other Disorder/Condition",5,1,10780
+2019,"Other Disorder/Condition",5,2,4856
+2019,"Other Disorder/Condition",5,3,1186
+2019,"Other Disorder/Condition",5,4,4739
+2020,"Missing",1,1,968
+2020,"Missing",1,2,49
+2020,"Missing",1,3,14
+2020,"Missing",1,4,78
+2020,"Missing",2,1,42627
+2020,"Missing",2,2,1788
+2020,"Missing",2,3,846
+2020,"Missing",2,4,2019
+2020,"Missing",3,1,32437
+2020,"Missing",3,2,3721
+2020,"Missing",3,3,2023
+2020,"Missing",3,4,4451
+2020,"Missing",4,1,53248
+2020,"Missing",4,2,14134
+2020,"Missing",4,3,5167
+2020,"Missing",4,4,15119
+2020,"Missing",5,1,19029
+2020,"Missing",5,2,8090
+2020,"Missing",5,3,2308
+2020,"Missing",5,4,8218
+2020,"Trauma/Stress-related Disorder",1,1,938
+2020,"Trauma/Stress-related Disorder",1,2,85
+2020,"Trauma/Stress-related Disorder",1,3,32
+2020,"Trauma/Stress-related Disorder",1,4,69
+2020,"Trauma/Stress-related Disorder",2,1,125418
+2020,"Trauma/Stress-related Disorder",2,2,2127
+2020,"Trauma/Stress-related Disorder",2,3,868
+2020,"Trauma/Stress-related Disorder",2,4,1912
+2020,"Trauma/Stress-related Disorder",3,1,44074
+2020,"Trauma/Stress-related Disorder",3,2,4711
+2020,"Trauma/Stress-related Disorder",3,3,2138
+2020,"Trauma/Stress-related Disorder",3,4,4168
+2020,"Trauma/Stress-related Disorder",4,1,49246
+2020,"Trauma/Stress-related Disorder",4,2,17491
+2020,"Trauma/Stress-related Disorder",4,3,6235
+2020,"Trauma/Stress-related Disorder",4,4,15433
+2020,"Trauma/Stress-related Disorder",5,1,23897
+2020,"Trauma/Stress-related Disorder",5,2,13411
+2020,"Trauma/Stress-related Disorder",5,3,4027
+2020,"Trauma/Stress-related Disorder",5,4,13116
+2020,"Anxiety Disorder",1,1,1316
+2020,"Anxiety Disorder",1,2,69
+2020,"Anxiety Disorder",1,3,15
+2020,"Anxiety Disorder",1,4,57
+2020,"Anxiety Disorder",2,1,53154
+2020,"Anxiety Disorder",2,2,1813
+2020,"Anxiety Disorder",2,3,608
+2020,"Anxiety Disorder",2,4,1549
+2020,"Anxiety Disorder",3,1,30349
+2020,"Anxiety Disorder",3,2,3855
+2020,"Anxiety Disorder",3,3,1436
+2020,"Anxiety Disorder",3,4,3573
+2020,"Anxiety Disorder",4,1,41395
+2020,"Anxiety Disorder",4,2,14303
+2020,"Anxiety Disorder",4,3,3895
+2020,"Anxiety Disorder",4,4,12580
+2020,"Anxiety Disorder",5,1,24503
+2020,"Anxiety Disorder",5,2,11817
+2020,"Anxiety Disorder",5,3,2348
+2020,"Anxiety Disorder",5,4,9806
+2020,"ADHD",1,1,942
+2020,"ADHD",1,3,2
+2020,"ADHD",1,4,1
+2020,"ADHD",2,1,130560
+2020,"ADHD",2,2,138
+2020,"ADHD",2,3,37
+2020,"ADHD",2,4,89
+2020,"ADHD",3,1,18805
+2020,"ADHD",3,2,224
+2020,"ADHD",3,3,109
+2020,"ADHD",3,4,176
+2020,"ADHD",4,1,7289
+2020,"ADHD",4,2,1015
+2020,"ADHD",4,3,231
+2020,"ADHD",4,4,683
+2020,"ADHD",5,1,3352
+2020,"ADHD",5,2,1228
+2020,"ADHD",5,3,177
+2020,"ADHD",5,4,862
+2020,"Conduct Disorder",1,1,333
+2020,"Conduct Disorder",1,2,2
+2020,"Conduct Disorder",2,1,21549
+2020,"Conduct Disorder",2,2,28
+2020,"Conduct Disorder",2,3,9
+2020,"Conduct Disorder",2,4,17
+2020,"Conduct Disorder",3,1,5179
+2020,"Conduct Disorder",3,2,70
+2020,"Conduct Disorder",3,3,16
+2020,"Conduct Disorder",3,4,42
+2020,"Conduct Disorder",4,1,1602
+2020,"Conduct Disorder",4,2,163
+2020,"Conduct Disorder",4,3,40
+2020,"Conduct Disorder",4,4,100
+2020,"Conduct Disorder",5,1,198
+2020,"Conduct Disorder",5,2,60
+2020,"Conduct Disorder",5,3,14
+2020,"Conduct Disorder",5,4,29
+2020,"Delirium/Dementia",1,1,102
+2020,"Delirium/Dementia",1,2,1
+2020,"Delirium/Dementia",1,3,1
+2020,"Delirium/Dementia",2,1,515
+2020,"Delirium/Dementia",2,2,155
+2020,"Delirium/Dementia",2,3,26
+2020,"Delirium/Dementia",2,4,293
+2020,"Delirium/Dementia",3,1,497
+2020,"Delirium/Dementia",3,2,119
+2020,"Delirium/Dementia",3,3,32
+2020,"Delirium/Dementia",3,4,245
+2020,"Delirium/Dementia",4,1,862
+2020,"Delirium/Dementia",4,2,605
+2020,"Delirium/Dementia",4,3,72
+2020,"Delirium/Dementia",4,4,830
+2020,"Delirium/Dementia",5,1,228
+2020,"Delirium/Dementia",5,2,294
+2020,"Delirium/Dementia",5,3,29
+2020,"Delirium/Dementia",5,4,356
+2020,"Bipolar Disorder",1,1,1712
+2020,"Bipolar Disorder",1,2,145
+2020,"Bipolar Disorder",1,3,81
+2020,"Bipolar Disorder",1,4,194
+2020,"Bipolar Disorder",2,1,12372
+2020,"Bipolar Disorder",2,2,2321
+2020,"Bipolar Disorder",2,3,1248
+2020,"Bipolar Disorder",2,4,3220
+2020,"Bipolar Disorder",3,1,30178
+2020,"Bipolar Disorder",3,2,6423
+2020,"Bipolar Disorder",3,3,3736
+2020,"Bipolar Disorder",3,4,9033
+2020,"Bipolar Disorder",4,1,71492
+2020,"Bipolar Disorder",4,2,21668
+2020,"Bipolar Disorder",4,3,9788
+2020,"Bipolar Disorder",4,4,30147
+2020,"Bipolar Disorder",5,1,37840
+2020,"Bipolar Disorder",5,2,14424
+2020,"Bipolar Disorder",5,3,5705
+2020,"Bipolar Disorder",5,4,22239
+2020,"Depressive Disorder",1,1,3005
+2020,"Depressive Disorder",1,2,344
+2020,"Depressive Disorder",1,3,160
+2020,"Depressive Disorder",1,4,370
+2020,"Depressive Disorder",2,1,69077
+2020,"Depressive Disorder",2,2,7026
+2020,"Depressive Disorder",2,3,3119
+2020,"Depressive Disorder",2,4,7884
+2020,"Depressive Disorder",3,1,88171
+2020,"Depressive Disorder",3,2,13358
+2020,"Depressive Disorder",3,3,7110
+2020,"Depressive Disorder",3,4,17181
+2020,"Depressive Disorder",4,1,133630
+2020,"Depressive Disorder",4,2,45051
+2020,"Depressive Disorder",4,3,17949
+2020,"Depressive Disorder",4,4,53273
+2020,"Depressive Disorder",5,1,65902
+2020,"Depressive Disorder",5,2,29568
+2020,"Depressive Disorder",5,3,9093
+2020,"Depressive Disorder",5,4,36006
+2020,"Oppositional Defiant Disorder",1,1,284
+2020,"Oppositional Defiant Disorder",1,3,1
+2020,"Oppositional Defiant Disorder",2,1,32682
+2020,"Oppositional Defiant Disorder",2,2,23
+2020,"Oppositional Defiant Disorder",2,3,8
+2020,"Oppositional Defiant Disorder",2,4,13
+2020,"Oppositional Defiant Disorder",3,1,7428
+2020,"Oppositional Defiant Disorder",3,2,32
+2020,"Oppositional Defiant Disorder",3,3,11
+2020,"Oppositional Defiant Disorder",3,4,17
+2020,"Oppositional Defiant Disorder",4,1,793
+2020,"Oppositional Defiant Disorder",4,2,23
+2020,"Oppositional Defiant Disorder",4,3,1
+2020,"Oppositional Defiant Disorder",4,4,11
+2020,"Oppositional Defiant Disorder",5,1,66
+2020,"Oppositional Defiant Disorder",5,2,8
+2020,"Oppositional Defiant Disorder",5,3,4
+2020,"Oppositional Defiant Disorder",5,4,7
+2020,"Pervasive Developmental Disorders",1,1,3731
+2020,"Pervasive Developmental Disorders",1,2,2
+2020,"Pervasive Developmental Disorders",1,4,6
+2020,"Pervasive Developmental Disorders",2,1,13488
+2020,"Pervasive Developmental Disorders",2,2,7
+2020,"Pervasive Developmental Disorders",2,4,9
+2020,"Pervasive Developmental Disorders",3,1,3054
+2020,"Pervasive Developmental Disorders",3,2,17
+2020,"Pervasive Developmental Disorders",3,3,3
+2020,"Pervasive Developmental Disorders",3,4,32
+2020,"Pervasive Developmental Disorders",4,1,4710
+2020,"Pervasive Developmental Disorders",4,2,47
+2020,"Pervasive Developmental Disorders",4,3,8
+2020,"Pervasive Developmental Disorders",4,4,36
+2020,"Pervasive Developmental Disorders",5,1,655
+2020,"Pervasive Developmental Disorders",5,2,43
+2020,"Pervasive Developmental Disorders",5,3,6
+2020,"Pervasive Developmental Disorders",5,4,22
+2020,"Personality Disorders",1,1,118
+2020,"Personality Disorders",1,2,6
+2020,"Personality Disorders",1,3,4
+2020,"Personality Disorders",1,4,7
+2020,"Personality Disorders",2,1,788
+2020,"Personality Disorders",2,2,146
+2020,"Personality Disorders",2,3,61
+2020,"Personality Disorders",2,4,173
+2020,"Personality Disorders",3,1,2671
+2020,"Personality Disorders",3,2,476
+2020,"Personality Disorders",3,3,225
+2020,"Personality Disorders",3,4,427
+2020,"Personality Disorders",4,1,4864
+2020,"Personality Disorders",4,2,1302
+2020,"Personality Disorders",4,3,531
+2020,"Personality Disorders",4,4,1389
+2020,"Personality Disorders",5,1,2419
+2020,"Personality Disorders",5,2,799
+2020,"Personality Disorders",5,3,282
+2020,"Personality Disorders",5,4,1073
+2020,"Schizophrenia or other Psychotic Disorders",1,1,3259
+2020,"Schizophrenia or other Psychotic Disorders",1,2,152
+2020,"Schizophrenia or other Psychotic Disorders",1,3,72
+2020,"Schizophrenia or other Psychotic Disorders",1,4,201
+2020,"Schizophrenia or other Psychotic Disorders",2,1,18544
+2020,"Schizophrenia or other Psychotic Disorders",2,2,2820
+2020,"Schizophrenia or other Psychotic Disorders",2,3,1604
+2020,"Schizophrenia or other Psychotic Disorders",2,4,4437
+2020,"Schizophrenia or other Psychotic Disorders",3,1,53265
+2020,"Schizophrenia or other Psychotic Disorders",3,2,5373
+2020,"Schizophrenia or other Psychotic Disorders",3,3,3609
+2020,"Schizophrenia or other Psychotic Disorders",3,4,9714
+2020,"Schizophrenia or other Psychotic Disorders",4,1,109803
+2020,"Schizophrenia or other Psychotic Disorders",4,2,12725
+2020,"Schizophrenia or other Psychotic Disorders",4,3,7011
+2020,"Schizophrenia or other Psychotic Disorders",4,4,23722
+2020,"Schizophrenia or other Psychotic Disorders",5,1,40881
+2020,"Schizophrenia or other Psychotic Disorders",5,2,5543
+2020,"Schizophrenia or other Psychotic Disorders",5,3,2744
+2020,"Schizophrenia or other Psychotic Disorders",5,4,12284
+2020,"Alcohol/Substance Use Disorders",1,1,43
+2020,"Alcohol/Substance Use Disorders",1,2,8
+2020,"Alcohol/Substance Use Disorders",1,3,5
+2020,"Alcohol/Substance Use Disorders",1,4,6
+2020,"Alcohol/Substance Use Disorders",2,1,3218
+2020,"Alcohol/Substance Use Disorders",2,2,751
+2020,"Alcohol/Substance Use Disorders",2,3,430
+2020,"Alcohol/Substance Use Disorders",2,4,743
+2020,"Alcohol/Substance Use Disorders",3,1,11331
+2020,"Alcohol/Substance Use Disorders",3,2,2265
+2020,"Alcohol/Substance Use Disorders",3,3,1142
+2020,"Alcohol/Substance Use Disorders",3,4,2008
+2020,"Alcohol/Substance Use Disorders",4,1,21378
+2020,"Alcohol/Substance Use Disorders",4,2,6800
+2020,"Alcohol/Substance Use Disorders",4,3,2433
+2020,"Alcohol/Substance Use Disorders",4,4,5767
+2020,"Alcohol/Substance Use Disorders",5,1,8460
+2020,"Alcohol/Substance Use Disorders",5,2,2984
+2020,"Alcohol/Substance Use Disorders",5,3,1105
+2020,"Alcohol/Substance Use Disorders",5,4,3469
+2020,"Other Disorder/Condition",1,1,11560
+2020,"Other Disorder/Condition",1,2,116
+2020,"Other Disorder/Condition",1,3,31
+2020,"Other Disorder/Condition",1,4,126
+2020,"Other Disorder/Condition",2,1,68537
+2020,"Other Disorder/Condition",2,2,1122
+2020,"Other Disorder/Condition",2,3,383
+2020,"Other Disorder/Condition",2,4,1093
+2020,"Other Disorder/Condition",3,1,26858
+2020,"Other Disorder/Condition",3,2,2179
+2020,"Other Disorder/Condition",3,3,930
+2020,"Other Disorder/Condition",3,4,2159
+2020,"Other Disorder/Condition",4,1,38635
+2020,"Other Disorder/Condition",4,2,8112
+2020,"Other Disorder/Condition",4,3,2418
+2020,"Other Disorder/Condition",4,4,7392
+2020,"Other Disorder/Condition",5,1,11502
+2020,"Other Disorder/Condition",5,2,4732
+2020,"Other Disorder/Condition",5,3,1114
+2020,"Other Disorder/Condition",5,4,4683
+2021,"Missing",1,1,954
+2021,"Missing",1,2,21
+2021,"Missing",1,3,10
+2021,"Missing",1,4,49
+2021,"Missing",2,1,36612
+2021,"Missing",2,2,1521
+2021,"Missing",2,3,737
+2021,"Missing",2,4,1829
+2021,"Missing",3,1,29261
+2021,"Missing",3,2,3192
+2021,"Missing",3,3,1717
+2021,"Missing",3,4,3703
+2021,"Missing",4,1,41711
+2021,"Missing",4,2,12081
+2021,"Missing",4,3,4412
+2021,"Missing",4,4,12069
+2021,"Missing",5,1,17210
+2021,"Missing",5,2,7440
+2021,"Missing",5,3,2032
+2021,"Missing",5,4,7012
+2021,"Trauma/Stress-related Disorder",1,1,890
+2021,"Trauma/Stress-related Disorder",1,2,83
+2021,"Trauma/Stress-related Disorder",1,3,33
+2021,"Trauma/Stress-related Disorder",1,4,55
+2021,"Trauma/Stress-related Disorder",2,1,113879
+2021,"Trauma/Stress-related Disorder",2,2,1845
+2021,"Trauma/Stress-related Disorder",2,3,723
+2021,"Trauma/Stress-related Disorder",2,4,1646
+2021,"Trauma/Stress-related Disorder",3,1,41638
+2021,"Trauma/Stress-related Disorder",3,2,4275
+2021,"Trauma/Stress-related Disorder",3,3,2031
+2021,"Trauma/Stress-related Disorder",3,4,3944
+2021,"Trauma/Stress-related Disorder",4,1,45986
+2021,"Trauma/Stress-related Disorder",4,2,16334
+2021,"Trauma/Stress-related Disorder",4,3,5701
+2021,"Trauma/Stress-related Disorder",4,4,14671
+2021,"Trauma/Stress-related Disorder",5,1,24669
+2021,"Trauma/Stress-related Disorder",5,2,13302
+2021,"Trauma/Stress-related Disorder",5,3,3901
+2021,"Trauma/Stress-related Disorder",5,4,12965
+2021,"Anxiety Disorder",1,1,1295
+2021,"Anxiety Disorder",1,2,66
+2021,"Anxiety Disorder",1,3,18
+2021,"Anxiety Disorder",1,4,49
+2021,"Anxiety Disorder",2,1,51837
+2021,"Anxiety Disorder",2,2,1595
+2021,"Anxiety Disorder",2,3,528
+2021,"Anxiety Disorder",2,4,1434
+2021,"Anxiety Disorder",3,1,31449
+2021,"Anxiety Disorder",3,2,3777
+2021,"Anxiety Disorder",3,3,1352
+2021,"Anxiety Disorder",3,4,3495
+2021,"Anxiety Disorder",4,1,45216
+2021,"Anxiety Disorder",4,2,14647
+2021,"Anxiety Disorder",4,3,3818
+2021,"Anxiety Disorder",4,4,12560
+2021,"Anxiety Disorder",5,1,27661
+2021,"Anxiety Disorder",5,2,12362
+2021,"Anxiety Disorder",5,3,2408
+2021,"Anxiety Disorder",5,4,10026
+2021,"ADHD",1,1,862
+2021,"ADHD",1,3,1
+2021,"ADHD",1,4,1
+2021,"ADHD",2,1,112575
+2021,"ADHD",2,2,99
+2021,"ADHD",2,3,41
+2021,"ADHD",2,4,65
+2021,"ADHD",3,1,19288
+2021,"ADHD",3,2,241
+2021,"ADHD",3,3,128
+2021,"ADHD",3,4,190
+2021,"ADHD",4,1,8270
+2021,"ADHD",4,2,1078
+2021,"ADHD",4,3,254
+2021,"ADHD",4,4,715
+2021,"ADHD",5,1,3772
+2021,"ADHD",5,2,1292
+2021,"ADHD",5,3,192
+2021,"ADHD",5,4,859
+2021,"Conduct Disorder",1,1,323
+2021,"Conduct Disorder",1,2,2
+2021,"Conduct Disorder",2,1,16944
+2021,"Conduct Disorder",2,2,19
+2021,"Conduct Disorder",2,3,8
+2021,"Conduct Disorder",2,4,9
+2021,"Conduct Disorder",3,1,4555
+2021,"Conduct Disorder",3,2,46
+2021,"Conduct Disorder",3,3,20
+2021,"Conduct Disorder",3,4,42
+2021,"Conduct Disorder",4,1,1470
+2021,"Conduct Disorder",4,2,131
+2021,"Conduct Disorder",4,3,32
+2021,"Conduct Disorder",4,4,78
+2021,"Conduct Disorder",5,1,157
+2021,"Conduct Disorder",5,2,50
+2021,"Conduct Disorder",5,3,12
+2021,"Conduct Disorder",5,4,27
+2021,"Delirium/Dementia",1,1,100
+2021,"Delirium/Dementia",1,4,2
+2021,"Delirium/Dementia",2,1,390
+2021,"Delirium/Dementia",2,2,134
+2021,"Delirium/Dementia",2,3,22
+2021,"Delirium/Dementia",2,4,269
+2021,"Delirium/Dementia",3,1,474
+2021,"Delirium/Dementia",3,2,135
+2021,"Delirium/Dementia",3,3,36
+2021,"Delirium/Dementia",3,4,218
+2021,"Delirium/Dementia",4,1,788
+2021,"Delirium/Dementia",4,2,567
+2021,"Delirium/Dementia",4,3,74
+2021,"Delirium/Dementia",4,4,811
+2021,"Delirium/Dementia",5,1,217
+2021,"Delirium/Dementia",5,2,273
+2021,"Delirium/Dementia",5,3,28
+2021,"Delirium/Dementia",5,4,333
+2021,"Bipolar Disorder",1,1,1677
+2021,"Bipolar Disorder",1,2,134
+2021,"Bipolar Disorder",1,3,71
+2021,"Bipolar Disorder",1,4,188
+2021,"Bipolar Disorder",2,1,10095
+2021,"Bipolar Disorder",2,2,2012
+2021,"Bipolar Disorder",2,3,1052
+2021,"Bipolar Disorder",2,4,2761
+2021,"Bipolar Disorder",3,1,29188
+2021,"Bipolar Disorder",3,2,6271
+2021,"Bipolar Disorder",3,3,3534
+2021,"Bipolar Disorder",3,4,8524
+2021,"Bipolar Disorder",4,1,72103
+2021,"Bipolar Disorder",4,2,20601
+2021,"Bipolar Disorder",4,3,9208
+2021,"Bipolar Disorder",4,4,28370
+2021,"Bipolar Disorder",5,1,37854
+2021,"Bipolar Disorder",5,2,13802
+2021,"Bipolar Disorder",5,3,5212
+2021,"Bipolar Disorder",5,4,20973
+2021,"Depressive Disorder",1,1,2800
+2021,"Depressive Disorder",1,2,311
+2021,"Depressive Disorder",1,3,128
+2021,"Depressive Disorder",1,4,346
+2021,"Depressive Disorder",2,1,65299
+2021,"Depressive Disorder",2,2,6164
+2021,"Depressive Disorder",2,3,2694
+2021,"Depressive Disorder",2,4,7030
+2021,"Depressive Disorder",3,1,88374
+2021,"Depressive Disorder",3,2,12417
+2021,"Depressive Disorder",3,3,6468
+2021,"Depressive Disorder",3,4,15869
+2021,"Depressive Disorder",4,1,135393
+2021,"Depressive Disorder",4,2,41895
+2021,"Depressive Disorder",4,3,16197
+2021,"Depressive Disorder",4,4,48988
+2021,"Depressive Disorder",5,1,66891
+2021,"Depressive Disorder",5,2,28270
+2021,"Depressive Disorder",5,3,8487
+2021,"Depressive Disorder",5,4,33482
+2021,"Oppositional Defiant Disorder",1,1,231
+2021,"Oppositional Defiant Disorder",2,1,27735
+2021,"Oppositional Defiant Disorder",2,2,27
+2021,"Oppositional Defiant Disorder",2,3,9
+2021,"Oppositional Defiant Disorder",2,4,17
+2021,"Oppositional Defiant Disorder",3,1,6966
+2021,"Oppositional Defiant Disorder",3,2,36
+2021,"Oppositional Defiant Disorder",3,3,13
+2021,"Oppositional Defiant Disorder",3,4,15
+2021,"Oppositional Defiant Disorder",4,1,932
+2021,"Oppositional Defiant Disorder",4,2,14
+2021,"Oppositional Defiant Disorder",4,3,5
+2021,"Oppositional Defiant Disorder",4,4,8
+2021,"Oppositional Defiant Disorder",5,1,92
+2021,"Oppositional Defiant Disorder",5,2,8
+2021,"Oppositional Defiant Disorder",5,3,5
+2021,"Oppositional Defiant Disorder",5,4,7
+2021,"Pervasive Developmental Disorders",1,1,3982
+2021,"Pervasive Developmental Disorders",1,2,7
+2021,"Pervasive Developmental Disorders",1,4,2
+2021,"Pervasive Developmental Disorders",2,1,12367
+2021,"Pervasive Developmental Disorders",2,2,6
+2021,"Pervasive Developmental Disorders",2,4,5
+2021,"Pervasive Developmental Disorders",3,1,2888
+2021,"Pervasive Developmental Disorders",3,2,8
+2021,"Pervasive Developmental Disorders",3,3,6
+2021,"Pervasive Developmental Disorders",3,4,38
+2021,"Pervasive Developmental Disorders",4,1,4911
+2021,"Pervasive Developmental Disorders",4,2,53
+2021,"Pervasive Developmental Disorders",4,3,9
+2021,"Pervasive Developmental Disorders",4,4,31
+2021,"Pervasive Developmental Disorders",5,1,722
+2021,"Pervasive Developmental Disorders",5,2,47
+2021,"Pervasive Developmental Disorders",5,3,5
+2021,"Pervasive Developmental Disorders",5,4,16
+2021,"Personality Disorders",1,1,75
+2021,"Personality Disorders",1,2,2
+2021,"Personality Disorders",1,3,3
+2021,"Personality Disorders",1,4,6
+2021,"Personality Disorders",2,1,671
+2021,"Personality Disorders",2,2,115
+2021,"Personality Disorders",2,3,46
+2021,"Personality Disorders",2,4,142
+2021,"Personality Disorders",3,1,2573
+2021,"Personality Disorders",3,2,441
+2021,"Personality Disorders",3,3,213
+2021,"Personality Disorders",3,4,434
+2021,"Personality Disorders",4,1,4697
+2021,"Personality Disorders",4,2,1237
+2021,"Personality Disorders",4,3,461
+2021,"Personality Disorders",4,4,1317
+2021,"Personality Disorders",5,1,2501
+2021,"Personality Disorders",5,2,802
+2021,"Personality Disorders",5,3,284
+2021,"Personality Disorders",5,4,1142
+2021,"Schizophrenia or other Psychotic Disorders",1,1,3254
+2021,"Schizophrenia or other Psychotic Disorders",1,2,156
+2021,"Schizophrenia or other Psychotic Disorders",1,3,68
+2021,"Schizophrenia or other Psychotic Disorders",1,4,189
+2021,"Schizophrenia or other Psychotic Disorders",2,1,16089
+2021,"Schizophrenia or other Psychotic Disorders",2,2,2389
+2021,"Schizophrenia or other Psychotic Disorders",2,3,1398
+2021,"Schizophrenia or other Psychotic Disorders",2,4,3899
+2021,"Schizophrenia or other Psychotic Disorders",3,1,49634
+2021,"Schizophrenia or other Psychotic Disorders",3,2,4881
+2021,"Schizophrenia or other Psychotic Disorders",3,3,3329
+2021,"Schizophrenia or other Psychotic Disorders",3,4,9108
+2021,"Schizophrenia or other Psychotic Disorders",4,1,105995
+2021,"Schizophrenia or other Psychotic Disorders",4,2,11802
+2021,"Schizophrenia or other Psychotic Disorders",4,3,6458
+2021,"Schizophrenia or other Psychotic Disorders",4,4,22368
+2021,"Schizophrenia or other Psychotic Disorders",5,1,40314
+2021,"Schizophrenia or other Psychotic Disorders",5,2,5246
+2021,"Schizophrenia or other Psychotic Disorders",5,3,2514
+2021,"Schizophrenia or other Psychotic Disorders",5,4,11665
+2021,"Alcohol/Substance Use Disorders",1,1,41
+2021,"Alcohol/Substance Use Disorders",1,2,8
+2021,"Alcohol/Substance Use Disorders",1,3,3
+2021,"Alcohol/Substance Use Disorders",1,4,4
+2021,"Alcohol/Substance Use Disorders",2,1,2760
+2021,"Alcohol/Substance Use Disorders",2,2,637
+2021,"Alcohol/Substance Use Disorders",2,3,334
+2021,"Alcohol/Substance Use Disorders",2,4,634
+2021,"Alcohol/Substance Use Disorders",3,1,10729
+2021,"Alcohol/Substance Use Disorders",3,2,2092
+2021,"Alcohol/Substance Use Disorders",3,3,1124
+2021,"Alcohol/Substance Use Disorders",3,4,1921
+2021,"Alcohol/Substance Use Disorders",4,1,22168
+2021,"Alcohol/Substance Use Disorders",4,2,6744
+2021,"Alcohol/Substance Use Disorders",4,3,2323
+2021,"Alcohol/Substance Use Disorders",4,4,5682
+2021,"Alcohol/Substance Use Disorders",5,1,8493
+2021,"Alcohol/Substance Use Disorders",5,2,2980
+2021,"Alcohol/Substance Use Disorders",5,3,1093
+2021,"Alcohol/Substance Use Disorders",5,4,3332
+2021,"Other Disorder/Condition",1,1,12683
+2021,"Other Disorder/Condition",1,2,100
+2021,"Other Disorder/Condition",1,3,24
+2021,"Other Disorder/Condition",1,4,117
+2021,"Other Disorder/Condition",2,1,47936
+2021,"Other Disorder/Condition",2,2,922
+2021,"Other Disorder/Condition",2,3,306
+2021,"Other Disorder/Condition",2,4,859
+2021,"Other Disorder/Condition",3,1,24058
+2021,"Other Disorder/Condition",3,2,1838
+2021,"Other Disorder/Condition",3,3,803
+2021,"Other Disorder/Condition",3,4,1865
+2021,"Other Disorder/Condition",4,1,36578
+2021,"Other Disorder/Condition",4,2,7055
+2021,"Other Disorder/Condition",4,3,2031
+2021,"Other Disorder/Condition",4,4,6436
+2021,"Other Disorder/Condition",5,1,10818
+2021,"Other Disorder/Condition",5,2,4461
+2021,"Other Disorder/Condition",5,3,1016
+2021,"Other Disorder/Condition",5,4,4276

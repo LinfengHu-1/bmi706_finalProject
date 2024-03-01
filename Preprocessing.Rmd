@@ -346,3 +346,278 @@ write.csv(stacked_df, "stacked_data_access_state.csv", row.names = FALSE)
 ```
 
 
+
+## for heatmaps, new 6 datasets stacked by diagnosis
+GENDER, EDUC, RACE, MARSTAT
+```{r}
+aggregate_dataset_Diagnosis_genedu <- function(dataset) {
+  result <- dataset %>%
+    group_by(YEAR, MH1, GENDER, EDUC) %>%
+    summarise(
+      Subgroup_Population = n()
+      )
+}
+```
+
+```{r}
+df_2013 <- aggregate_dataset_Diagnosis_genedu(mhcld_puf_2013_r)
+df_2014 <- aggregate_dataset_Diagnosis_genedu(mhcld_puf_2014_r)
+df_2015 <- aggregate_dataset_Diagnosis_genedu(mhcld_puf_2015_r)
+df_2016 <- aggregate_dataset_Diagnosis_genedu(mhcld_puf_2016_r)
+df_2017 <- aggregate_dataset_Diagnosis_genedu(mhcld_puf_2017_r)
+df_2018 <- aggregate_dataset_Diagnosis_genedu(mhcld_puf_2018_r)
+df_2019 <- aggregate_dataset_Diagnosis_genedu(mhcld_puf_2019_r)
+df_2020 <- aggregate_dataset_Diagnosis_genedu(mhcld_puf_2020_r)
+df_2021 <- aggregate_dataset_Diagnosis_genedu(mhcld_puf_2021_r)
+```
+```{r}
+diag_map <- c(
+  "1" = "Trauma/Stress-related Disorder", "2" = "Anxiety Disorder", "3" = "ADHD", "4" = "Conduct Disorder", 
+  "5" = "Delirium/Dementia","6" = "Bipolar Disorder", "7" = "Depressive Disorder", 
+  "8" = "Oppositional Defiant Disorder", "9" = "Pervasive Developmental Disorders" ,
+  "10" = "Personality Disorders", "11" = "Schizophrenia or other Psychotic Disorders",
+  "12" = "Alcohol/Substance Use Disorders", "13" = "Other Disorder/Condition", "-9" = "Missing"
+)
+```
+```{r}
+df_2013$MH1 <- diag_map[as.character(df_2013$MH1)]
+df_2014$MH1 <- diag_map[as.character(df_2014$MH1)]
+df_2015$MH1 <- diag_map[as.character(df_2015$MH1)]
+df_2016$MH1 <- diag_map[as.character(df_2016$MH1)]
+df_2017$MH1 <- diag_map[as.character(df_2017$MH1)]
+df_2018$MH1 <- diag_map[as.character(df_2018$MH1)]
+df_2019$MH1 <- diag_map[as.character(df_2019$MH1)]
+df_2020$MH1 <- diag_map[as.character(df_2020$MH1)]
+df_2021$MH1 <- diag_map[as.character(df_2021$MH1)]
+```
+
+```{r}
+df_list <- list(df_2013, df_2014, df_2015, df_2016, df_2017, df_2018, df_2019, df_2020, df_2021)
+stacked_df <- bind_rows(df_list)
+stacked_df <- stacked_df[stacked_df$GENDER != -9, ]
+stacked_df <- stacked_df[stacked_df$EDUC != -9, ]
+write.csv(stacked_df, "stacked_data_diagnosis_GenderEducation.csv", row.names = FALSE)
+```
+
+#####################
+#####################
+
+
+```{r}
+aggregate_dataset_Diagnosis_genrace <- function(dataset) {
+  result <- dataset %>%
+    group_by(YEAR, MH1, GENDER, RACE) %>%
+    summarise(
+      Subgroup_Population = n()
+      )
+}
+```
+```{r}
+df_2013 <- aggregate_dataset_Diagnosis_genrace(mhcld_puf_2013_r)
+df_2014 <- aggregate_dataset_Diagnosis_genrace(mhcld_puf_2014_r)
+df_2015 <- aggregate_dataset_Diagnosis_genrace(mhcld_puf_2015_r)
+df_2016 <- aggregate_dataset_Diagnosis_genrace(mhcld_puf_2016_r)
+df_2017 <- aggregate_dataset_Diagnosis_genrace(mhcld_puf_2017_r)
+df_2018 <- aggregate_dataset_Diagnosis_genrace(mhcld_puf_2018_r)
+df_2019 <- aggregate_dataset_Diagnosis_genrace(mhcld_puf_2019_r)
+df_2020 <- aggregate_dataset_Diagnosis_genrace(mhcld_puf_2020_r)
+df_2021 <- aggregate_dataset_Diagnosis_genrace(mhcld_puf_2021_r)
+
+df_2013$MH1 <- diag_map[as.character(df_2013$MH1)]
+df_2014$MH1 <- diag_map[as.character(df_2014$MH1)]
+df_2015$MH1 <- diag_map[as.character(df_2015$MH1)]
+df_2016$MH1 <- diag_map[as.character(df_2016$MH1)]
+df_2017$MH1 <- diag_map[as.character(df_2017$MH1)]
+df_2018$MH1 <- diag_map[as.character(df_2018$MH1)]
+df_2019$MH1 <- diag_map[as.character(df_2019$MH1)]
+df_2020$MH1 <- diag_map[as.character(df_2020$MH1)]
+df_2021$MH1 <- diag_map[as.character(df_2021$MH1)]
+```
+
+```{r}
+df_list <- list(df_2013, df_2014, df_2015, df_2016, df_2017, df_2018, df_2019, df_2020, df_2021)
+stacked_df <- bind_rows(df_list)
+stacked_df <- stacked_df[stacked_df$GENDER != -9, ]
+stacked_df <- stacked_df[stacked_df$RACE != -9, ]
+write.csv(stacked_df, "stacked_data_diagnosis_GenderRace.csv", row.names = FALSE)
+```
+
+
+#####################
+#####################
+
+
+```{r}
+aggregate_dataset_Diagnosis_genMar <- function(dataset) {
+  result <- dataset %>%
+    group_by(YEAR, MH1, GENDER, MARSTAT) %>%
+    summarise(
+      Subgroup_Population = n()
+      )
+}
+```
+```{r}
+df_2013 <- aggregate_dataset_Diagnosis_genMar(mhcld_puf_2013_r)
+df_2014 <- aggregate_dataset_Diagnosis_genMar(mhcld_puf_2014_r)
+df_2015 <- aggregate_dataset_Diagnosis_genMar(mhcld_puf_2015_r)
+df_2016 <- aggregate_dataset_Diagnosis_genMar(mhcld_puf_2016_r)
+df_2017 <- aggregate_dataset_Diagnosis_genMar(mhcld_puf_2017_r)
+df_2018 <- aggregate_dataset_Diagnosis_genMar(mhcld_puf_2018_r)
+df_2019 <- aggregate_dataset_Diagnosis_genMar(mhcld_puf_2019_r)
+df_2020 <- aggregate_dataset_Diagnosis_genMar(mhcld_puf_2020_r)
+df_2021 <- aggregate_dataset_Diagnosis_genMar(mhcld_puf_2021_r)
+
+df_2013$MH1 <- diag_map[as.character(df_2013$MH1)]
+df_2014$MH1 <- diag_map[as.character(df_2014$MH1)]
+df_2015$MH1 <- diag_map[as.character(df_2015$MH1)]
+df_2016$MH1 <- diag_map[as.character(df_2016$MH1)]
+df_2017$MH1 <- diag_map[as.character(df_2017$MH1)]
+df_2018$MH1 <- diag_map[as.character(df_2018$MH1)]
+df_2019$MH1 <- diag_map[as.character(df_2019$MH1)]
+df_2020$MH1 <- diag_map[as.character(df_2020$MH1)]
+df_2021$MH1 <- diag_map[as.character(df_2021$MH1)]
+```
+
+```{r}
+df_list <- list(df_2013, df_2014, df_2015, df_2016, df_2017, df_2018, df_2019, df_2020, df_2021)
+stacked_df <- bind_rows(df_list)
+stacked_df <- stacked_df[stacked_df$GENDER != -9, ]
+stacked_df <- stacked_df[stacked_df$MARSTAT != -9, ]
+write.csv(stacked_df, "stacked_data_diagnosis_GenderMarriage.csv", row.names = FALSE)
+```
+
+
+#####################
+#####################
+
+
+```{r}
+aggregate_dataset_Diagnosis_eduRace <- function(dataset) {
+  result <- dataset %>%
+    group_by(YEAR, MH1, EDUC, RACE) %>%
+    summarise(
+      Subgroup_Population = n()
+      )
+}
+```
+```{r}
+df_2013 <- aggregate_dataset_Diagnosis_eduRace(mhcld_puf_2013_r)
+df_2014 <- aggregate_dataset_Diagnosis_eduRace(mhcld_puf_2014_r)
+df_2015 <- aggregate_dataset_Diagnosis_eduRace(mhcld_puf_2015_r)
+df_2016 <- aggregate_dataset_Diagnosis_eduRace(mhcld_puf_2016_r)
+df_2017 <- aggregate_dataset_Diagnosis_eduRace(mhcld_puf_2017_r)
+df_2018 <- aggregate_dataset_Diagnosis_eduRace(mhcld_puf_2018_r)
+df_2019 <- aggregate_dataset_Diagnosis_eduRace(mhcld_puf_2019_r)
+df_2020 <- aggregate_dataset_Diagnosis_eduRace(mhcld_puf_2020_r)
+df_2021 <- aggregate_dataset_Diagnosis_eduRace(mhcld_puf_2021_r)
+
+df_2013$MH1 <- diag_map[as.character(df_2013$MH1)]
+df_2014$MH1 <- diag_map[as.character(df_2014$MH1)]
+df_2015$MH1 <- diag_map[as.character(df_2015$MH1)]
+df_2016$MH1 <- diag_map[as.character(df_2016$MH1)]
+df_2017$MH1 <- diag_map[as.character(df_2017$MH1)]
+df_2018$MH1 <- diag_map[as.character(df_2018$MH1)]
+df_2019$MH1 <- diag_map[as.character(df_2019$MH1)]
+df_2020$MH1 <- diag_map[as.character(df_2020$MH1)]
+df_2021$MH1 <- diag_map[as.character(df_2021$MH1)]
+```
+
+```{r}
+df_list <- list(df_2013, df_2014, df_2015, df_2016, df_2017, df_2018, df_2019, df_2020, df_2021)
+stacked_df <- bind_rows(df_list)
+stacked_df <- stacked_df[stacked_df$EDUC != -9, ]
+stacked_df <- stacked_df[stacked_df$RACE != -9, ]
+write.csv(stacked_df, "stacked_data_diagnosis_EducationRace.csv", row.names = FALSE)
+```
+
+
+
+#####################
+#####################
+
+
+```{r}
+aggregate_dataset_Diagnosis_eduMar <- function(dataset) {
+  result <- dataset %>%
+    group_by(YEAR, MH1, EDUC, MARSTAT) %>%
+    summarise(
+      Subgroup_Population = n()
+      )
+}
+```
+```{r}
+df_2013 <- aggregate_dataset_Diagnosis_eduMar(mhcld_puf_2013_r)
+df_2014 <- aggregate_dataset_Diagnosis_eduMar(mhcld_puf_2014_r)
+df_2015 <- aggregate_dataset_Diagnosis_eduMar(mhcld_puf_2015_r)
+df_2016 <- aggregate_dataset_Diagnosis_eduMar(mhcld_puf_2016_r)
+df_2017 <- aggregate_dataset_Diagnosis_eduMar(mhcld_puf_2017_r)
+df_2018 <- aggregate_dataset_Diagnosis_eduMar(mhcld_puf_2018_r)
+df_2019 <- aggregate_dataset_Diagnosis_eduMar(mhcld_puf_2019_r)
+df_2020 <- aggregate_dataset_Diagnosis_eduMar(mhcld_puf_2020_r)
+df_2021 <- aggregate_dataset_Diagnosis_eduMar(mhcld_puf_2021_r)
+
+df_2013$MH1 <- diag_map[as.character(df_2013$MH1)]
+df_2014$MH1 <- diag_map[as.character(df_2014$MH1)]
+df_2015$MH1 <- diag_map[as.character(df_2015$MH1)]
+df_2016$MH1 <- diag_map[as.character(df_2016$MH1)]
+df_2017$MH1 <- diag_map[as.character(df_2017$MH1)]
+df_2018$MH1 <- diag_map[as.character(df_2018$MH1)]
+df_2019$MH1 <- diag_map[as.character(df_2019$MH1)]
+df_2020$MH1 <- diag_map[as.character(df_2020$MH1)]
+df_2021$MH1 <- diag_map[as.character(df_2021$MH1)]
+```
+
+```{r}
+df_list <- list(df_2013, df_2014, df_2015, df_2016, df_2017, df_2018, df_2019, df_2020, df_2021)
+stacked_df <- bind_rows(df_list)
+stacked_df <- stacked_df[stacked_df$EDUC != -9, ]
+stacked_df <- stacked_df[stacked_df$MARSTAT != -9, ]
+write.csv(stacked_df, "stacked_data_diagnosis_EducationMarriage.csv", row.names = FALSE)
+```
+
+
+
+
+
+#####################
+#####################
+
+
+```{r}
+aggregate_dataset_Diagnosis_raceMar <- function(dataset) {
+  result <- dataset %>%
+    group_by(YEAR, MH1, RACE, MARSTAT) %>%
+    summarise(
+      Subgroup_Population = n()
+      )
+}
+```
+```{r}
+df_2013 <- aggregate_dataset_Diagnosis_raceMar(mhcld_puf_2013_r)
+df_2014 <- aggregate_dataset_Diagnosis_raceMar(mhcld_puf_2014_r)
+df_2015 <- aggregate_dataset_Diagnosis_raceMar(mhcld_puf_2015_r)
+df_2016 <- aggregate_dataset_Diagnosis_raceMar(mhcld_puf_2016_r)
+df_2017 <- aggregate_dataset_Diagnosis_raceMar(mhcld_puf_2017_r)
+df_2018 <- aggregate_dataset_Diagnosis_raceMar(mhcld_puf_2018_r)
+df_2019 <- aggregate_dataset_Diagnosis_raceMar(mhcld_puf_2019_r)
+df_2020 <- aggregate_dataset_Diagnosis_raceMar(mhcld_puf_2020_r)
+df_2021 <- aggregate_dataset_Diagnosis_raceMar(mhcld_puf_2021_r)
+
+df_2013$MH1 <- diag_map[as.character(df_2013$MH1)]
+df_2014$MH1 <- diag_map[as.character(df_2014$MH1)]
+df_2015$MH1 <- diag_map[as.character(df_2015$MH1)]
+df_2016$MH1 <- diag_map[as.character(df_2016$MH1)]
+df_2017$MH1 <- diag_map[as.character(df_2017$MH1)]
+df_2018$MH1 <- diag_map[as.character(df_2018$MH1)]
+df_2019$MH1 <- diag_map[as.character(df_2019$MH1)]
+df_2020$MH1 <- diag_map[as.character(df_2020$MH1)]
+df_2021$MH1 <- diag_map[as.character(df_2021$MH1)]
+```
+
+```{r}
+df_list <- list(df_2013, df_2014, df_2015, df_2016, df_2017, df_2018, df_2019, df_2020, df_2021)
+stacked_df <- bind_rows(df_list)
+stacked_df <- stacked_df[stacked_df$RACE != -9, ]
+stacked_df <- stacked_df[stacked_df$MARSTAT != -9, ]
+write.csv(stacked_df, "stacked_data_diagnosis_RaceMarriage.csv", row.names = FALSE)
+```
