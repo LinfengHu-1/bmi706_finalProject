@@ -1,6 +1,7 @@
 import altair as alt
 import pandas as pd
 import streamlit as st
+import numpy as np
 from vega_datasets import data
 
 from io import StringIO
@@ -15,14 +16,15 @@ def load_data():
    df_stackedState = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_state.csv")
    df_stackedDiag = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis.csv")
    df_stackedAccess = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_access_diagnosis.csv")
+   df_stackedStateAccess = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_access_state.csv")
    df_em = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis_EducationMarriage.csv")
    df_er = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis_EducationRace.csv")
    df_ge = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis_GenderEducation.csv")
    df_gm = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis_GenderMarriage.csv")
    df_gr = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis_GenderRace.csv")
    df_rm = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis_RaceMarriage.csv")
-   return df_stackedState, df_stackedDiag, df_stackedAccess,df_em,df_er,df_ge,df_gm,df_gr,df_rm
-df_stackedState, df_stackedDiag, df_stackedAccess,df_em,df_er,df_ge,df_gm,df_gr,df_rm= load_data()
+   return df_stackedState, df_stackedDiag, df_stackedAccess, df_stackedStateAccess,df_em,df_er,df_ge,df_gm,df_gr,df_rm
+df_stackedState, df_stackedDiag, df_stackedAccess, df_stackedStateAccess, df_em,df_er,df_ge,df_gm,df_gr,df_rm= load_data()
 df_stackedDiag.rename(columns={'MH1': 'Mental Health Outcomes'}, inplace=True)
 df_stackedDiag = df_stackedDiag[df_stackedDiag['Mental Health Outcomes'] != 'Missing']
 df_stackedState = df_stackedState[df_stackedState['CODE'] != 99]
@@ -143,45 +145,46 @@ with tab1:
          id_vars = ["YEAR","Mental Health Outcomes"], value_vars = ['Black','White','OtherRace'], var_name = "Race",value_name = "Prace"
       )
       chart1_3 = alt.Chart(df13_gender).mark_bar().encode(
-         x=alt.X('Gender:O',title = "Gender"),
+         x=alt.X('Gender:O',title = None),
          y=alt.Y('Pgender:Q',title = 'Population'),
          color='Gender:N',
-         column='YEAR:N'
+         column=alt.Column('YEAR:N',title=None)
          ).properties(
-            title = f'Impacts of Gender on {diag1_3}'
+            title = f'Impacts of Gender on {diag1_3}',
+            width=30
          )
       chart1_3edu = alt.Chart(df13_edu).mark_bar().encode(
-         x=alt.X('Edu:O',title = "Education level"),
+         x=alt.X('Edu:O',title = None),
          y=alt.Y('Pedu:Q',title = 'Population'),
-         color='Edu:N',
-         column='YEAR:N'
+         color=alt.Color('Edu:N').title('Education'),
+         column=alt.Column('YEAR:N',title=None)
          ).properties(
             title = f'Impacts of Education level on {diag1_3}'
          )
       chart1_3race = alt.Chart(df13_race).mark_bar().encode(
-         x=alt.X('Race:O',title = "Race"),
+         x=alt.X('Race:O',title = None),
          y=alt.Y('Prace:Q',title = 'Population'),
          color='Race:N',
-         column='YEAR:N'
+         column=alt.Column('YEAR:N',title=None)
          ).properties(
             title = f'Impacts of Race on {diag1_3}'
          )
       chart1_3mar = alt.Chart(df13_mar).mark_bar().encode(
-         x=alt.X('Mar:O',title = "Marital status"),
+         x=alt.X('Mar:O',title = None),
          y=alt.Y('Pmar:Q',title = 'Population'),
-         color='Mar:N',
-         column='YEAR:N'
+         color=alt.Color('Mar:N').title('Marital Status'),
+         column=alt.Column('YEAR:N',title=None)
          ).properties(
-            title = f'Impacts of Marital status on {diag1_3}'
+            title = f'Impacts of Marital status on {diag1_3}',
+            width=30
          )
       #display charts side-by-side
       c0, c1 = st.columns(2)
       c0.altair_chart(chart1_3)
-      c1.altair_chart(chart1_3edu)
-
-      c2, c3 = st.columns(2)
-      c2.altair_chart(chart1_3mar)
-      c3.altair_chart(chart1_3race)
+      c1.altair_chart(chart1_3mar)
+      #display charts
+      st.altair_chart(chart1_3edu)
+      st.altair_chart(chart1_3race)
 
       ### Tab1, task 3 cont'd ###
       #year1_3 = st.slider("Year", min_value=df_stackedDiag["YEAR"].min(), max_value=df_stackedDiag["YEAR"].max(), key = 'heatmap_year')
@@ -268,16 +271,16 @@ with tab1:
          title = f'Impacts of Race and Marital status'
       )
       h1,h2 = st.columns(2)
-      h1.altair_chart(heatmap_1)
-      h2.altair_chart(heatmap_2)
+      h1.altair_chart(heatmap_1, use_container_width=True)
+      h2.altair_chart(heatmap_2, use_container_width=True)
    
       h3,h4 = st.columns(2)
-      h3.altair_chart(heatmap_3)
-      h4.altair_chart(heatmap_4)
+      h3.altair_chart(heatmap_3, use_container_width=True)
+      h4.altair_chart(heatmap_4, use_container_width=True)
 
       h5,h6 = st.columns(2)
-      h5.altair_chart(heatmap_5)
-      h6.altair_chart(heatmap_6)
+      h5.altair_chart(heatmap_5, use_container_width=True)
+      h6.altair_chart(heatmap_6, use_container_width=True)
 
 
 ############## Tab 2: Access to Psychiatric Care ##########################
@@ -288,7 +291,7 @@ with tab2:
       #calculate care accessing proportion
       df_stackedDiag['Prop']=round(df_stackedDiag['SMHAserviceAccess']/df_stackedDiag['Population'],3)
       #create diagnosis selection tab 
-      diag = st.multiselect('Mental Health Disorder', options=df_stackedDiag['Mental Health Outcomes'].unique(), 
+      diag = st.multiselect('Mental Health Outcomes', options=df_stackedDiag['Mental Health Outcomes'].unique(), 
                                  default = ['Trauma/Stress-related Disorder', 'Anxiety Disorder', 'ADHD'],key = '2-1diag')
       subset1=df_stackedDiag[df_stackedDiag['Mental Health Outcomes'].isin(diag)]
       # create bubble chart
@@ -311,7 +314,7 @@ with tab2:
       df_stackedAccess_t.rename(columns={'White': 'White_n'}, inplace=True)
       df_stackedAccess_t.rename(columns={'Black': 'Black_n'}, inplace=True)
       #create diagnosis selection tab 
-      diag = st.multiselect('Mental Health Disorder', options=df_stackedAccess_t['Mental Health Disorder'].unique(), 
+      diag = st.multiselect('Mental Health Outcomes', options=df_stackedAccess_t['Mental Health Disorder'].unique(), 
                                  default = ['Trauma/Stress-related Disorder', 'Anxiety Disorder', 'ADHD'],
                                  key = '2-2diag')
       ### Gender & Marital Status
@@ -357,7 +360,7 @@ with tab2:
    
       ### Race & Education Level
       #create diagnosis selection tab 
-      diag1_3 = st.selectbox('Mental Health Disorder', df_stackedAccess_t['Mental Health Disorder'].unique(),
+      diag1_3 = st.selectbox('Mental Health Outcomes', df_stackedAccess_t['Mental Health Disorder'].unique(),
                            key = '2-3diag13')
       #calculate care accessing proportion
       ##race
@@ -403,34 +406,45 @@ with tab2:
 
    ### Tab 2, Task 3 ###
    if 'Geospatial Pattern' in option:
-      task2 = st.header("Geospatial Pattern")
-      test = df_stackedState[df_stackedState['YEAR']==2013]
-      test['prop'] = test['CMPSERVICE']/(test['POPULATION']-test['Missing'])
-      test.rename(columns={'STATEFIP': 'state'}, inplace=True)
-      
-      #US states background
-      #states = alt.topo_feature(data.us_10m.url, feature='states')
-      #background = alt.Chart(states).mark_geoshape(
-      #fill='lightgray',
-      #stroke='white'
-   # ).properties(
-      # width=500,
-      # height=300
-   # ).project('albersUsa')
-      #create diagnosis selection tab 
-      #diagosis_tab2_4 = st.selectbox("Mental Health Disorder", options = df_stackedDiag["Mental Health Outcomes"].unique())
-      #test_subset = test2[test2['Mental Health Outcome']==diagnosis_tab2_4]
-      #prop_scale = alt.Scale(domain=[test['prop'].min(), test['prop'].max()], scheme='orangered')
-      #prop_color = alt.Color(field="prop", type="quantitative", scale=prop_scale)
+      #create user interactive bar&slider
+      year = st.slider("Year", min_value=df_stackedState["YEAR"].min(), max_value=df_stackedState["YEAR"].max(),key = '2-3slider')
+      diag2_3 = st.selectbox("Mental Health Outcome", options = df_stackedDiag["Mental Health Outcomes"].unique(),key = '2-3select')
+      #melt 'df_stackedState'
+      select_column=df_stackedDiag["Mental Health Outcomes"].unique()
+      select_column = select_column.tolist()
+      select_column.extend(['STATEFIP','YEAR'])
+      df_stackedState_subset=df_stackedState[select_column]
+      df_stackedState_subset_melt=df_stackedState_subset.melt(['STATEFIP','YEAR'],var_name='Mental Health Outcomes',value_name='total_N')
+      #join 'df_stackedStateAccess' & 'df_stackedState'
+      df_stackedStateAccess_t=df_stackedStateAccess[df_stackedStateAccess['CMPSERVICE']==1]
+      df_stackedStateAccess_t.rename(columns={'MH1': 'Mental Health Outcomes'}, inplace=True)
+      df_stackedStateAccess_t=df_stackedStateAccess_t[['STATEFIP','YEAR','Population','Mental Health Outcomes','CODE']]
+      merged_df=df_stackedStateAccess_t.merge(df_stackedState_subset_melt,on=['STATEFIP','YEAR','Mental Health Outcomes'],how='left')
+      #calculate prop access to care for each state in each year
+      merged_df['Proportion']=merged_df['Population']/merged_df['total_N']
+      merged_df=merged_df[merged_df['Mental Health Outcomes']!='Missing']
+      #subset data
+      merged_df_subset = merged_df[(merged_df["YEAR"]==year)&(merged_df["Mental Health Outcomes"]==diag2_3)]
+      #background map
+      source = alt.topo_feature(data.us_10m.url, 'states')
+      width = 900
+      height  = 600
+      background = alt.Chart(source).mark_geoshape(fill='#aaa', stroke='white').encode(
+         tooltip=[alt.Tooltip('Missing Data:Q') ]
+      ).properties(width=width, height=height).project('albersUsa')
+      #create chart
+      Proportion=merged_df_subset['Proportion']
+      chart2_6 = alt.Chart(source).mark_geoshape().encode(
+        color = 'Proportion:Q',
+        tooltip=['Proportion:Q']
+         ).transform_lookup(
+            lookup='id',
+            from_=alt.LookupData(merged_df_subset, 'CODE',['Proportion'])
+         ).properties(
+            width=width, 
+            height=height,
+            title=f'Proportion of Patients with {diag2_3} in {year} who Received Services'
+            ).project('albersUsa')
+      st.altair_chart(background+chart2_6, use_container_width=True)
 
-   #chart_rate = alt.Chart(test).mark_geoshape().encode(
-      #color=('prop:Q'),
-   #).properties(
-      #width=500,
-      #height=300
-      #).project('albersUsa')
 
-   # Display the map in Streamlit
-   #st.map(background+chart_rate, use_container_width=True)
-
-   
