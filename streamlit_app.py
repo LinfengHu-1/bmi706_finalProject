@@ -27,6 +27,25 @@ df_stackedDiag.rename(columns={'MH1': 'Mental Health Outcomes'}, inplace=True)
 df_stackedDiag = df_stackedDiag[df_stackedDiag['Mental Health Outcomes'] != 'Missing']
 df_stackedState = df_stackedState[df_stackedState['CODE'] != 99]
 df_stackedAccess.rename(columns={'MH1': 'Mental Health Disorder'}, inplace=True)
+
+df_em["EDUC"].replace({1:"Specifal education",2:"Grade 0-8",3:"Grade 9-11",4:"Grade 12/(GED)",5:"More than Grade 12"},inplace = True)
+df_em["MARSTAT"].replace({1:"Never married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
+
+df_er["EDUC"].replace({1:"Specifal education",2:"Grade 0-8",3:"Grade 9-11",4:"Grade 12/(GED)",5:"More than Grade 12"},inplace = True)
+df_er["RACE"].replace({1:"American Indian",2:"Asian",3:"Black",4:"Pacific Islander",5:"White",6:"Other"},inplace = True)
+
+df_ge["GENDER"].replace({1:"Male",2:"Female"},inplace = True)
+df_ge["EDUC"].replace({1:"Specifal education",2:"Grade 0-8",3:"Grade 9-11",4:"Grade 12/(GED)",5:"More than Grade 12"},inplace = True)
+
+df_gm["GENDER"].replace({1:"Male",2:"Female"},inplace = True)
+df_gm["MARSTAT"].replace({1:"Never married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
+
+df_gr["GENDER"].replace({1:"Male",2:"Female"},inplace = True)
+df_gr["RACE"].replace({1:"American Indian",2:"Asian",3:"Black",4:"Pacific Islander",5:"White",6:"Other"}, inplace=True)
+
+df_rm["RACE"].replace({1:"American Indian",2:"Asian",3:"Black",4:"Pacific Islander",5:"White",6:"Other"},inplace = True)
+df_rm["MARSTAT"].replace({1:"Never married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
+         
 ### Layout ###
 st.title("Mental Health Outcomes and Intervention Investigation")
 tab1, tab2 = st.tabs(["Mental Health Outcomes", "Access to Mental Health Services"])
@@ -132,59 +151,29 @@ with tab1:
       ).properties(
          title = f'Impacts of Marital status on {diag1_3}'
       )
-   
-   st.altair_chart(chart1_3)
-   st.altair_chart(chart1_3edu)
-   st.altair_chart(chart1_3race)
-   st.altair_chart(chart1_3mar)
+   #display charts side-by-side
+   c0, c1 = st.columns(2)
+   c0.altair_chart(chart1_3)
+   c1.altair_chart(chart1_3edu)
+
+   c2, c3 = st.columns(2)
+   c2.altair_chart(chart1_3mar)
+   c3.altair_chart(chart1_3race)
 
    ### Tab1, task 3 cont'd ###
    year1_3 = st.slider("Year", min_value=df_stackedDiag["YEAR"].min(), max_value=df_stackedDiag["YEAR"].max(), key = 'heatmap_year')
-   outcome1_3 = st.selectbox("Mental Health Outcome", options = df_stackedDiag["Mental Health Outcomes"].unique(), key = 'heatmap_outcome')
-   f1 = st.selectbox("Influencial factor 1 (X-axis of Heatmap)", options = ['Gender',"Race","Education level","Marital status"],key = 'f1')
-   option_list2 = ["Gender","Race","Education level","Marital status"]
-   option_list2.remove(f1)
-   f2 = st.selectbox("Influencial factor 2 (Y-axis of Heatmap)", options = option_list2,key = 'f2')
+   outcome1_3 = st.selectbox("Mental Health Outcome", options = df_stackedDiag["Mental Health Outcomes"].unique(), key = 'heatmap')
 
-   def data_selection(f1,f2):
-      if ((f1=="Education level") & (f2 == "Marital status")):
-         df_em.rename(columns={"EDUC":f1,"MARSTAT":f2}, inplace=True)
-         df_em[f1].replace({1:"Specifal education",2:"Grade 0-8",3:"Grade 9-11",4:"Grade 12/(GED)",5:"More than Grade 12"},inplace = True)
-         df_em[f2].replace({1:"Never married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
-         return df_em
-      elif ((f1=="Education level") & (f2 == "Race")):
-         df_er.rename(columns={"EDUC":f1,"RACE":f2}, inplace=True)
-         df_er[f1].replace({1:"Specifal education",2:"Grade 0-8",3:"Grade 9-11",4:"Grade 12/(GED)",5:"More than Grade 12"},inplace = True)
-         df_er[f2].replace({1:"American Indian/Alaska Native",2:"Asian",3:"Black/African American",4:"Native Hawaiian/Other Pacific Islander",5:"White",6:"Other/2 or more race"},inplace = True)
-         return df_er
-      elif((f1=="Gender") & (f2 == "Education level")):
-         df_ge.rename(columns={"GENDER":f1,"EDUC":f2}, inplace=True)
-         df_ge[f1].replace({1:"Male",2:"Female"},inplace = True)
-         df_ge[f2].replace({1:"Specifal education",2:"Grade 0-8",3:"Grade 9-11",4:"Grade 12/(GED)",5:"More than Grade 12"},inplace = True)
-         return df_ge
-      elif((f1=="Gender") & (f2 == "Marital status")):
-         df_gm.rename(columns={"GENDER":f1,"MARSTAT":f2}, inplace=True)
-         df_gm[f1].replace({1:"Male",2:"Female"},inplace = True)
-         df_gm[f2].replace({1:"Never married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
-         return df_gm
-      elif((f1=="Gender") & (f2 == "Race")):
-         df_gr.rename(columns={"GENDER":f1,"RACE":f2}, inplace=True)
-         df_gr[f1].replace({1:"Male",2:"Female"},inplace = True)
-         df_gr[f2].replace({1:"American Indian/Alaska Native",2:"Asian",3:"Black/African American",4:"Native Hawaiian/Other Pacific Islander",5:"White",6:"Other/2 or more race"}, inplace=True)
-         return df_gr
-      elif((f1=="Race") & (f2 == "Marital status")):
-         df_rm.rename(columns={"RACE":f1,"MARSTAT":f2}, inplace=True)
-         df_rm[f1].replace({1:"American Indian/Alaska Native",2:"Asian",3:"Black/African American",4:"Native Hawaiian/Other Pacific Islander",5:"White",6:"Other/2 or more race"},inplace = True)
-         df_rm[f2].replace({1:"Never married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
-         return df_rm
+   heatmap1 = df_em[(df_em['YEAR']==year1_3)&(df_em['MH1']==outcome1_3)]
+   heatmap2 = df_er[(df_er['YEAR']==year1_3)&(df_er['MH1']==outcome1_3)]
+   heatmap3 = df_ge[(df_ge['YEAR']==year1_3)&(df_ge['MH1']==outcome1_3)]
+   heatmap4 = df_gm[(df_gm['YEAR']==year1_3)&(df_gm['MH1']==outcome1_3)]
+   heatmap5 = df_gr[(df_gr['YEAR']==year1_3)&(df_gr['MH1']==outcome1_3)]
+   heatmap6 = df_rm[(df_rm['YEAR']==year1_3)&(df_rm['MH1']==outcome1_3)]
 
-   df13_heatmap = data_selection(f1,f2)
-   df13_heatmap = df13_heatmap[df13_heatmap['YEAR']==year1_3]
-   df13_heatmap = df13_heatmap[df13_heatmap['MH1']==outcome1_3]
-
-   heatmap1_3 = alt.Chart(df13_heatmap).mark_rect().encode(
-      alt.X(f"{f1}:O").title(f1),
-      alt.Y(f"{f2}:O").title(f2),
+   heatmap_1 = alt.Chart(heatmap1).mark_rect().encode(
+      alt.X("EDUC:O").title("Education level"),
+      alt.Y("MARSTAT:O").title("Marital status"),
       alt.Color("Subgroup_Population").title("Subgroup_Population"),
       tooltip=[
          alt.Tooltip("Subgroup_Population", title="Number of individuals"),
@@ -192,13 +181,77 @@ with tab1:
    ).configure_axis(
       domain=False
    ).properties(
-      title = f'Impacts of {f1} and {f2} on {outcome1_3} in {year1_3}'
+      title = f'Impacts of Education level and Marital status'
    )
+   heatmap_2 = alt.Chart(heatmap2).mark_rect().encode(
+      alt.X("EDUC:O").title("Education level"),
+      alt.Y("RACE:O").title("Race"),
+      alt.Color("Subgroup_Population").title("Subgroup_Population"),
+      tooltip=[
+         alt.Tooltip("Subgroup_Population", title="Number of individuals"),
+         ],
+   ).configure_axis(
+      domain=False
+   ).properties(
+      title = f'Impacts of Education level and Race'
+   )
+   heatmap_3 = alt.Chart(heatmap3).mark_rect().encode(
+      alt.X("EDUC:O").title("Education level"),
+      alt.Y("GENDER:O").title("Gender"),
+      alt.Color("Subgroup_Population").title("Subgroup_Population"),
+      tooltip=[
+         alt.Tooltip("Subgroup_Population", title="Number of individuals"),
+         ],
+   ).configure_axis(
+      domain=False
+   ).properties(
+      title = f'Impacts of Education level and Gender '
+   )
+   heatmap_4 = alt.Chart(heatmap4).mark_rect().encode(
+      alt.X("GENDER:O").title("Gender"),
+      alt.Y("MARSTAT:O").title("Marital status"),
+      alt.Color("Subgroup_Population").title("Subgroup_Population"),
+      tooltip=[
+         alt.Tooltip("Subgroup_Population", title="Number of individuals"),
+         ],
+   ).configure_axis(
+      domain=False
+   ).properties(
+      title = f'Impacts of Gender and Marital status'
+   )
+   heatmap_5 = alt.Chart(heatmap5).mark_rect().encode(
+      alt.X("GENDER:O").title("Gender"),
+      alt.Y("RACE:O").title("Race"),
+      alt.Color("Subgroup_Population").title("Subgroup_Population"),
+      tooltip=[
+         alt.Tooltip("Subgroup_Population", title="Number of individuals"),
+         ],
+   ).configure_axis(
+      domain=False
+   ).properties(
+      title = f'Impacts of Gender and Race'
+   )
+   heatmap_6 = alt.Chart(heatmap6).mark_rect().encode(
+      alt.X("RACE:O").title("Race"),
+      alt.Y("MARSTAT:O").title("Marital status"),
+      alt.Color("Subgroup_Population").title("Subgroup_Population"),
+      tooltip=[
+         alt.Tooltip("Subgroup_Population", title="Number of individuals"),
+         ],
+   ).configure_axis(
+      domain=False
+   ).properties(
+      title = f'Impacts of Race and Marital status'
+   )
+   h1,h2,h3 = st.columns(3)
+   h1.altair_chart(heatmap_1)
+   h2.altair_chart(heatmap_2)
+   h3.altair_chart(heatmap_3)
 
-   st.altair_chart(heatmap1_3)
-
-
-
+   h4,h5,h6 = st.columns(3)
+   h4.altair_chart(heatmap_4)
+   h5.altair_chart(heatmap_5)
+   h6.altair_chart(heatmap_6)
 
 
 ############## Tab 2: Access to Psychiatric Care ##########################
