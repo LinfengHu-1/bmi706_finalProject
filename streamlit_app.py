@@ -79,7 +79,54 @@ with tab1:
 
    ### Tab 1, Task 3 ###
    task3 = st.header("Explore influential factors of mental health outcomes")
+   diag1_3 = st.selectbox("Mental Health Outcome", options = df_stackedDiag["Mental Health Outcomes"].unique(), key = df_stackedDiag["Mental Health Outcomes"].unique())
+   filtered_df13 = df_stackedDiag[df_stackedDiag["Mental Health Outcomes"]==diag1_3]
+   filtered_df13['Female'] = filtered_df13['Population']-filtered_df13['Male']
+   df13_gender = filtered_df13.melt(
+      id_vars = ["YEAR","Mental Health Outcomes"], value_vars = ['Male','Female'], var_name = "Gender",value_name = "Pgender"
+   )
+   df13_edu = filtered_df13.melt(
+      id_vars = ["YEAR","Mental Health Outcomes"], value_vars = ['SpecialEdu','Edu8','Edu12','EduHigh'], var_name = "Edu",value_name = "Pedu"
+   )
+   df13_mar = filtered_df13.melt(
+      id_vars = ["YEAR","Mental Health Outcomes"], value_vars = ['NeverMarried','MarriageHistory'], var_name = "Mar",value_name = "Pmar"
+   )
+   df13_race = filtered_df13.melt(
+      id_vars = ["YEAR","Mental Health Outcomes"], value_vars = ['Black','White','OtherRace'], var_name = "Race",value_name = "Prace"
+   )
+   chart1_3 = alt.Chart(df13_gender).mark_bar().encode(
+      x='Gender:O',
+      y=alt.Y('Pgender:Q',title = 'Population'),
+      color='Gender:N',
+      column='YEAR:N'
+      ).properties(
+         title = f'Gender impacts on {diag1_3}'
+      )
+   st.altair_chart(chart1_3)
 
+   ### Tab1, task 3 cont'd ###
+   year1_3 = st.slider("Year", min_value=df_stackedDiag["YEAR"].min(), max_value=df_stackedDiag["YEAR"].max())
+   outcome1_3 = st.selectbox("Mental Health Outcome", options = df_stackedDiag["Mental Health Outcomes"].unique(), key = df_stackedDiag["Mental Health Outcomes"].unique())
+   factor1 = st.selectbox("Influencial factor 1 (X-axis on Heatmap)", options = ['Gender',"Race","Education level","Marital status"])
+   factor2 = st.selectbox("Influencial factor 1 (X-axis on Heatmap)", options = ['Gender',"Race","Education level","Marital status"])
+   filtered_df13d = df_stackedDiag[(df_stackedDiag["Mental Health Outcomes"]==outcome1_3)&(df_stackedDiag['YEAR']==year1_3)]
+   
+
+   heatmap1_3 = alt.Chart(source).mark_rect().encode(
+      alt.X("day:O").title("Day"),
+      alt.Y("month(date):O").title("Month"),
+      alt.Color("max(temp_max)").title(None),
+      tooltip=[
+         alt.Tooltip("monthdate(date)", title="Date"),
+         alt.Tooltip("max(temp_max)", title="Max Temp"),
+    ],
+   ).configure_axis(
+      domain=False
+   ).properties(
+      title = f'Impacts of {factor1} and {factor2} on {outcome1_3} in {year1_3}'
+   )
+
+   st.altair_chart(heatmap1_3)
 
 
 
