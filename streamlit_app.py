@@ -31,17 +31,17 @@ df_stackedState = df_stackedState[df_stackedState['CODE'] != 99]
 df_stackedAccess.rename(columns={'MH1': 'Mental Health Disorder'}, inplace=True)
 
 df_em["EDUC"].replace({1:"Specifal education",2:"Grade 0-8",3:"Grade 9-11",4:"Grade 12/(GED)",5:"More than Grade 12"},inplace = True)
-df_em["MARSTAT"].replace({1:"Never married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
+df_em["MARSTAT"].replace({1:"Never Married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
 df_er["EDUC"].replace({1:"Specifal education",2:"Grade 0-8",3:"Grade 9-11",4:"Grade 12/(GED)",5:"More than Grade 12"},inplace = True)
 df_er["RACE"].replace({1:"American Indian",2:"Asian",3:"Black",4:"Pacific Islander",5:"White",6:"Other"},inplace = True)
 df_ge["GENDER"].replace({1:"Male",2:"Female"},inplace = True)
 df_ge["EDUC"].replace({1:"Specifal education",2:"Grade 0-8",3:"Grade 9-11",4:"Grade 12/(GED)",5:"More than Grade 12"},inplace = True)
 df_gm["GENDER"].replace({1:"Male",2:"Female"},inplace = True)
-df_gm["MARSTAT"].replace({1:"Never married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
+df_gm["MARSTAT"].replace({1:"Never Married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
 df_gr["GENDER"].replace({1:"Male",2:"Female"},inplace = True)
 df_gr["RACE"].replace({1:"American Indian",2:"Asian",3:"Black",4:"Pacific Islander",5:"White",6:"Other"}, inplace=True)
 df_rm["RACE"].replace({1:"American Indian",2:"Asian",3:"Black",4:"Pacific Islander",5:"White",6:"Other"},inplace = True)
-df_rm["MARSTAT"].replace({1:"Never married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
+df_rm["MARSTAT"].replace({1:"Never Married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
          
 ### Layout ###
 st.title("Mental Health Outcomes and Intervention Investigation")
@@ -108,13 +108,13 @@ with tab1:
       ]
       ).properties(width=width, height=height).project('albersUsa')
       filtered_df12 = df_stackedState[df_stackedState["YEAR"]==year][['STATEFIP', 'YEAR', 'POPULATION', 'CODE', diag1_3]]
-      filtered_df12[diag1_3] = filtered_df12[diag1_3] / filtered_df12['POPULATION'] * 100
+      filtered_df12[diag1_3] = filtered_df12[diag1_3] / filtered_df12['POPULATION']
       rate_scale = alt.Scale(domain=[filtered_df12[diag1_3].min(), filtered_df12[diag1_3].max()], scheme='oranges')
-      rate_color = alt.Color(field=diag1_3, type="quantitative", scale=rate_scale)
+      rate_color = alt.Color(field=diag1_3, type="quantitative", scale=rate_scale,title='Proportion')
       chart1_2 = alt.Chart(source).mark_geoshape().encode(
          color = rate_color,
          tooltip=[
-         alt.Tooltip(f'{diag1_3}:Q', title=f'Proportion(in %): ', format='.2f')  
+         alt.Tooltip(f'{diag1_3}:Q', title=f'Proportion: ')  
       ]
          ).transform_lookup(
             lookup='id',
@@ -129,21 +129,31 @@ with tab1:
    if 'Influential Factors' in option:
       task3 = st.header("Factors Impacting Mental Health Outcomes")
       diag1_3 = st.selectbox("Mental Health Outcome", options = df_stackedDiag["Mental Health Outcomes"].unique(), key = "dgf")
-      #diag1_3 = st.selectbox("Mental Health Outcome", options = df_stackedDiag["Mental Health Outcomes"].unique(), key = df_stackedDiag["Mental Health Outcomes"].unique())
       filtered_df13 = df_stackedDiag[df_stackedDiag["Mental Health Outcomes"]==diag1_3]
+      column_rename_map = {
+         'MarriageHistory': 'Ever Married',
+         'NeverMarried': 'Never Married',
+         'SpecialEdu':'Special Education',
+         'Edu8':'School Grade 0 to 8',
+         'Edu12':'School Grade 9 to 12',
+         'EduHigh':'School Grade >12',
+         'OtherRace':'Other'
+         }
+      filtered_df13 = filtered_df13.rename(columns=column_rename_map)
       filtered_df13['Female'] = filtered_df13['Population']-filtered_df13['Male']
       df13_gender = filtered_df13.melt(
          id_vars = ["YEAR","Mental Health Outcomes"], value_vars = ['Male','Female'], var_name = "Gender",value_name = "Pgender"
       )
       df13_edu = filtered_df13.melt(
-         id_vars = ["YEAR","Mental Health Outcomes"], value_vars = ['SpecialEdu','Edu8','Edu12','EduHigh'], var_name = "Edu",value_name = "Pedu"
+         id_vars = ["YEAR","Mental Health Outcomes"], value_vars = ['Special Education','School Grade 0 to 8','School Grade 9 to 12','School Grade >12'], var_name = "Edu",value_name = "Pedu"
       )
       df13_mar = filtered_df13.melt(
-         id_vars = ["YEAR","Mental Health Outcomes"], value_vars = ['NeverMarried','MarriageHistory'], var_name = "Mar",value_name = "Pmar"
+         id_vars = ["YEAR","Mental Health Outcomes"], value_vars = ['Never Married','Ever Married'], var_name = "Mar",value_name = "Pmar"
       )
       df13_race = filtered_df13.melt(
-         id_vars = ["YEAR","Mental Health Outcomes"], value_vars = ['Black','White','OtherRace'], var_name = "Race",value_name = "Prace"
+         id_vars = ["YEAR","Mental Health Outcomes"], value_vars = ['Black','White','Other'], var_name = "Race",value_name = "Prace"
       )
+      
       chart1_3 = alt.Chart(df13_gender).mark_bar().encode(
          x=alt.X('Gender:O',title = None),
          y=alt.Y('Pgender:Q',title = 'Population'),
