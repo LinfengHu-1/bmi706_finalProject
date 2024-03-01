@@ -15,8 +15,14 @@ def load_data():
    df_stackedState = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_state.csv")
    df_stackedDiag = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis.csv")
    df_stackedAccess = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_access_diagnosis.csv")
-   return df_stackedState, df_stackedDiag, df_stackedAccess
-df_stackedState, df_stackedDiag, df_stackedAccess= load_data()
+   df_em = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis_EducationMarriage.csv")
+   df_er = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis_EducationRace.csv")
+   df_ge = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis_GenderEducation.csv")
+   df_gm = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis_GenderMarriage.csv")
+   df_gr = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis_GenderRace.csv")
+   df_rm = pd.read_csv("https://raw.githubusercontent.com/LinfengHu-1/bmi706_finalProject/main/stacked_data_diagnosis_RaceMarriage.csv")
+   return df_stackedState, df_stackedDiag, df_stackedAccess,df_em,df_er,df_ge,df_gm,df_gr,df_rm
+df_stackedState, df_stackedDiag, df_stackedAccess,df_em,df_er,df_ge,df_gm,df_gr,df_rm= load_data()
 df_stackedDiag.rename(columns={'MH1': 'Mental Health Outcomes'}, inplace=True)
 df_stackedDiag = df_stackedDiag[df_stackedDiag['Mental Health Outcomes'] != 'Missing']
 df_stackedState = df_stackedState[df_stackedState['CODE'] != 99]
@@ -95,38 +101,102 @@ with tab1:
       id_vars = ["YEAR","Mental Health Outcomes"], value_vars = ['Black','White','OtherRace'], var_name = "Race",value_name = "Prace"
    )
    chart1_3 = alt.Chart(df13_gender).mark_bar().encode(
-      x='Gender:O',
+      x=alt.X('Gender:O',title = "Gender"),
       y=alt.Y('Pgender:Q',title = 'Population'),
       color='Gender:N',
       column='YEAR:N'
       ).properties(
-         title = f'Gender impacts on {diag1_3}'
+         title = f'Impacts of Gender on {diag1_3}'
       )
+   chart1_3edu = alt.Chart(df13_edu).mark_bar().encode(
+      x=alt.X('Edu:O',title = "Education level"),
+      y=alt.Y('Pedu:Q',title = 'Population'),
+      color='Edu:N',
+      column='YEAR:N'
+      ).properties(
+         title = f'Impacts of Education level on {diag1_3}'
+      )
+   chart1_3race = alt.Chart(df13_race).mark_bar().encode(
+      x=alt.X('Race:O',title = "Race"),
+      y=alt.Y('Prace:Q',title = 'Population'),
+      color='Race:N',
+      column='YEAR:N'
+      ).properties(
+         title = f'Impacts of Race on {diag1_3}'
+      )
+   chart1_3mar = alt.Chart(df13_mar).mark_bar().encode(
+      x=alt.X('Mar:O',title = "Marital status"),
+      y=alt.Y('Pmar:Q',title = 'Population'),
+      color='Mar:N',
+      column='YEAR:N'
+      ).properties(
+         title = f'Impacts of Marital status on {diag1_3}'
+      )
+   
    st.altair_chart(chart1_3)
+   st.altair_chart(chart1_3edu)
+   st.altair_chart(chart1_3race)
+   st.altair_chart(chart1_3mar)
 
    ### Tab1, task 3 cont'd ###
-   year1_3 = st.slider("Year", min_value=df_stackedDiag["YEAR"].min(), max_value=df_stackedDiag["YEAR"].max())
-   outcome1_3 = st.selectbox("Mental Health Outcome", options = df_stackedDiag["Mental Health Outcomes"].unique(), key = df_stackedDiag["Mental Health Outcomes"].unique())
-   factor1 = st.selectbox("Influencial factor 1 (X-axis on Heatmap)", options = ['Gender',"Race","Education level","Marital status"])
-   factor2 = st.selectbox("Influencial factor 1 (X-axis on Heatmap)", options = ['Gender',"Race","Education level","Marital status"])
-   filtered_df13d = df_stackedDiag[(df_stackedDiag["Mental Health Outcomes"]==outcome1_3)&(df_stackedDiag['YEAR']==year1_3)]
-   
+   year1_3 = st.slider("Year", min_value=df_stackedDiag["YEAR"].min(), max_value=df_stackedDiag["YEAR"].max(), key = 'heatmap_year')
+   outcome1_3 = st.selectbox("Mental Health Outcome", options = df_stackedDiag["Mental Health Outcomes"].unique(), key = 'heatmap_outcome')
+   f1 = st.selectbox("Influencial factor 1 (X-axis of Heatmap)", options = ['Gender',"Race","Education level","Marital status"],key = 'f1')
+   option_list2 = ["Gender","Race","Education level","Marital status"]
+   option_list2.remove(f1)
+   f2 = st.selectbox("Influencial factor 2 (Y-axis of Heatmap)", options = option_list2,key = 'f2')
 
-   heatmap1_3 = alt.Chart(source).mark_rect().encode(
-      alt.X("day:O").title("Day"),
-      alt.Y("month(date):O").title("Month"),
-      alt.Color("max(temp_max)").title(None),
+   def data_selection(f1,f2):
+      if ((f1=="Education level") & (f2 == "Marital status")):
+         df_em.rename(columns={"EDUC":f1,"MARSTAT":f2}, inplace=True)
+         df_em[f1].replace({1:"Specifal education",2:"Grade 0-8",3:"Grade 9-11",4:"Grade 12/(GED)",5:"More than Grade 12"},inplace = True)
+         df_em[f2].replace({1:"Never married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
+         return df_em
+      elif ((f1=="Education level") & (f2 == "Race")):
+         df_er.rename(columns={"EDUC":f1,"RACE":f2}, inplace=True)
+         df_er[f1].replace({1:"Specifal education",2:"Grade 0-8",3:"Grade 9-11",4:"Grade 12/(GED)",5:"More than Grade 12"},inplace = True)
+         df_er[f2].replace({1:"American Indian/Alaska Native",2:"Asian",3:"Black/African American",4:"Native Hawaiian/Other Pacific Islander",5:"White",6:"Other/2 or more race"},inplace = True)
+         return df_er
+      elif((f1=="Gender") & (f2 == "Education level")):
+         df_ge.rename(columns={"GENDER":f1,"EDUC":f2}, inplace=True)
+         df_ge[f1].replace({1:"Male",2:"Female"},inplace = True)
+         df_ge[f2].replace({1:"Specifal education",2:"Grade 0-8",3:"Grade 9-11",4:"Grade 12/(GED)",5:"More than Grade 12"},inplace = True)
+         return df_ge
+      elif((f1=="Gender") & (f2 == "Marital status")):
+         df_gm.rename(columns={"GENDER":f1,"MARSTAT":f2}, inplace=True)
+         df_gm[f1].replace({1:"Male",2:"Female"},inplace = True)
+         df_gm[f2].replace({1:"Never married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
+         return df_gm
+      elif((f1=="Gender") & (f2 == "Race")):
+         df_gr.rename(columns={"GENDER":f1,"RACE":f2}, inplace=True)
+         df_gr[f1].replace({1:"Male",2:"Female"},inplace = True)
+         df_gr[f2].replace({1:"American Indian/Alaska Native",2:"Asian",3:"Black/African American",4:"Native Hawaiian/Other Pacific Islander",5:"White",6:"Other/2 or more race"}, inplace=True)
+         return df_gr
+      elif((f1=="Race") & (f2 == "Marital status")):
+         df_rm.rename(columns={"RACE":f1,"MARSTAT":f2}, inplace=True)
+         df_rm[f1].replace({1:"American Indian/Alaska Native",2:"Asian",3:"Black/African American",4:"Native Hawaiian/Other Pacific Islander",5:"White",6:"Other/2 or more race"},inplace = True)
+         df_rm[f2].replace({1:"Never married",2:"Married",3:"Separated",4:"Divorced,widowed"},inplace = True)
+         return df_rm
+
+   df13_heatmap = data_selection(f1,f2)
+   df13_heatmap = df13_heatmap[df13_heatmap['YEAR']==year1_3]
+   df13_heatmap = df13_heatmap[df13_heatmap['MH1']==outcome1_3]
+
+   heatmap1_3 = alt.Chart(df13_heatmap).mark_rect().encode(
+      alt.X(f"{f1}:O").title(f1),
+      alt.Y(f"{f2}:O").title(f2),
+      alt.Color("Subgroup_Population").title("Subgroup_Population"),
       tooltip=[
-         alt.Tooltip("monthdate(date)", title="Date"),
-         alt.Tooltip("max(temp_max)", title="Max Temp"),
-    ],
+         alt.Tooltip("Subgroup_Population", title="Number of individuals"),
+         ],
    ).configure_axis(
       domain=False
    ).properties(
-      title = f'Impacts of {factor1} and {factor2} on {outcome1_3} in {year1_3}'
+      title = f'Impacts of {f1} and {f2} on {outcome1_3} in {year1_3}'
    )
 
    st.altair_chart(heatmap1_3)
+
 
 
 
