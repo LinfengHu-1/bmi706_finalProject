@@ -161,7 +161,7 @@ with tab1:
          column=alt.Column('YEAR:N',title=None)
          ).properties(
             title = f'Impacts of Gender on {diag1_3}',
-            width=30
+            width=20
          )
       chart1_3edu = alt.Chart(df13_edu).mark_bar().encode(
          x=alt.X('Edu:O',title = None,axis=alt.Axis(labels=False)),
@@ -186,7 +186,7 @@ with tab1:
          column=alt.Column('YEAR:N',title=None)
          ).properties(
             title = f'Impacts of Marital status on {diag1_3}',
-            width=30
+            width=20
          )
       #display charts side-by-side
       c0, c1 = st.columns(2)
