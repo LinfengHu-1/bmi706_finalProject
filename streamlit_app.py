@@ -346,7 +346,7 @@ with tab2:
       ##gender
       chart2_2 = alt.Chart(df_gender_melt_subset).mark_bar().encode(
          x=alt.X('Proportion:Q', title='Proportion of Patients Received Services'),
-         y=alt.Y('Gender',title=None),
+         y=alt.Y('Gender',title=None,axis=alt.Axis(labels=False)),
          row=alt.Row('Mental Health Disorder',header=alt.Header(labelAngle=0,labelAlign='left')),
          color=alt.Color('Gender'),
          tooltip=['Mental Health Disorder','Gender','Proportion']
@@ -358,7 +358,7 @@ with tab2:
       ##marital status
       chart2_3 = alt.Chart(df_marital_melt_subset).mark_bar().encode(
          x=alt.X('Proportion:Q', title='Proportion of Patients Received Services'),
-         y=alt.Y('Marital Status',title=None),
+         y=alt.Y('Marital Status',title=None,axis=alt.Axis(labels=False)),
          row=alt.Row('Mental Health Disorder',header=alt.Header(labelAngle=0,labelAlign='left')),
          color=alt.Color('Marital Status'),
          tooltip=['Mental Health Disorder','Marital Status','Proportion']
