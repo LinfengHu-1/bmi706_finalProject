@@ -155,7 +155,7 @@ with tab1:
       )
       
       chart1_3 = alt.Chart(df13_gender).mark_bar().encode(
-         x=alt.X('Gender:O',title = None),
+         x=alt.X('Gender:O',title = None,axis=alt.Axis(labels=False)),
          y=alt.Y('Pgender:Q',title = 'Population'),
          color='Gender:N',
          column=alt.Column('YEAR:N',title=None)
@@ -164,7 +164,7 @@ with tab1:
             width=30
          )
       chart1_3edu = alt.Chart(df13_edu).mark_bar().encode(
-         x=alt.X('Edu:O',title = None),
+         x=alt.X('Edu:O',title = None,axis=alt.Axis(labels=False)),
          y=alt.Y('Pedu:Q',title = 'Population'),
          color=alt.Color('Edu:N').title('Education'),
          column=alt.Column('YEAR:N',title=None)
@@ -172,7 +172,7 @@ with tab1:
             title = f'Impacts of Education level on {diag1_3}'
          )
       chart1_3race = alt.Chart(df13_race).mark_bar().encode(
-         x=alt.X('Race:O',title = None),
+         x=alt.X('Race:O',title = None,axis=alt.Axis(labels=False)),
          y=alt.Y('Prace:Q',title = 'Population'),
          color='Race:N',
          column=alt.Column('YEAR:N',title=None)
@@ -180,7 +180,7 @@ with tab1:
             title = f'Impacts of Race on {diag1_3}'
          )
       chart1_3mar = alt.Chart(df13_mar).mark_bar().encode(
-         x=alt.X('Mar:O',title = None),
+         x=alt.X('Mar:O',title = None,axis=alt.Axis(labels=False)),
          y=alt.Y('Pmar:Q',title = 'Population'),
          color=alt.Color('Mar:N').title('Marital Status'),
          column=alt.Column('YEAR:N',title=None)
